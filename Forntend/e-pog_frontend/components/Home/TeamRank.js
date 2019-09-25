@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 const TeamRank = () => {
+    
     return (
         <>
             <div className="FluidContainer container-fluid">

@@ -66,4 +66,12 @@ public class RestRunner {
 
         return helloResult;
     }
+    @GetMapping("/pastMatch")
+    public String pastMatch() throws InterruptedException {
+        RestTemplate restTemplate = restTemplateBuilder.build();
+        String helloResult = restTemplate.getForObject("https://api.pandascore.co/lol/matches/past?token="+pandaApi_key, String.class);
+        System.out.println(helloResult);
+
+        return helloResult;
+    }
 }

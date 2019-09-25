@@ -1,6 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import * as api from '../../api/api';
 
 const MatchSchedule = () => {
+    const [pastLCLMatch, SetPastLCLmatch] = useState([]);
+    const [pastLJLMatch, SetPastLJLmatch] = useState([]);
+    const [pastLECMatch, SetPastLECmatch] = useState([]);
+    const [pastVCSMatch, SetPastVCSmatch] = useState([]);
+    const matchFilter = (match) => {
+        for(let i = 0; i < match.length; i++) {
+            if(match[i].league.name === "LCL") {
+                SetPastLCLmatch(pastLCLMatch => pastLCLMatch.concat(match[i]))
+            } else if(match[i].league.name === "LJL") {
+                SetPastLJLmatch(pastLJLMatch => pastLJLMatch.concat(match[i]))
+            } else if(match[i].league.name === "LEC") {
+                SetPastLECmatch(pastLECMatch => pastLECMatch.concat(match[i]))
+            } else if(match[i].league.name === "VCS") {
+                SetPastVCSmatch(pastVCSMatch => pastVCSMatch.concat(match[i]))
+            }
+        }
+    }
+    useEffect(() => {
+        api.getPastMatch()
+        .then(response => {
+            matchFilter(response.data)
+        })
+        .catch(error => console.log(error))
+    },[])
     return (
         <>
             <div className="FluidContainer container-fluid">
@@ -15,38 +40,162 @@ const MatchSchedule = () => {
                         </div>
                     </h3>
                     <ul className="RecentMatches">
-                        <div className="RecentMatches__split Gilroy">LCK 2019 Summer Season</div>
-                        <li>
-                            <a className="MatchBar" href="#">
-                                <div className="MatchBar__column date Gilroy finished">
-                                    2019.09.16
-                                    <br/>
-                                    13:00
-                                </div>
-                                <div className="MatchBar__column home">
-                                    <span className="Gilroy MatchBar__team__line">DFM</span>
-                                    <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
-                                        <div className="TeamSymbol__image" style={{backgroundImage: "url(https://qwer.gg/images/logos/DFM.png)"}}></div>
-                                    </figure>
-                                </div>
-                                <div className="MatchBar__column board">
-                                    <div className="ScoreBoard Gilroy MatchBar__column__score">
-                                        <div className="ScoreBoard__overlay">RESULT</div>
-                                        3:1
-                                    </div>
-                                </div>
-                                <div className="MatchBar__column away">            
-                                        <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
-                                            <div className="TeamSymbol__image" style={{backgroundImage: "url(https://qwer.gg/images/logos/V3.png)"}}></div>
-                                        </figure>
-                                        <span className="Gilroy MatchBar__team__line">V3</span>
-                                    </div>
-                                
-                                <div className="MatchBar__column arrow Gilroy">
-                                    DETAIL
-                                </div>
-                            </a>
-                        </li>
+                        <div className="RecentMatches__split Gilroy">LCL 2019 Summer Season</div>
+                        {
+                            pastLCLMatch && pastLCLMatch.map(v => {
+                                console.log(v)
+                                return (
+                                    <li>
+                                        <a className="MatchBar" href="#">
+                                            <div className="MatchBar__column date Gilroy finished">
+                                                {v.end_at}
+                                                <br/>
+                                                13:00
+                                            </div>
+                                            <div className="MatchBar__column home">
+                                                <span className="Gilroy MatchBar__team__line">{v.opponents[0].opponent.acronym}</span>
+                                                <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                    <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[0].opponent.image_url})`}}></div>
+                                                </figure>
+                                            </div>
+                                            <div className="MatchBar__column board">
+                                                <div className="ScoreBoard Gilroy MatchBar__column__score">
+                                                    <div className="ScoreBoard__overlay">RESULT</div>
+                                                    3:1
+                                                </div>
+                                            </div>
+                                            <div className="MatchBar__column away">            
+                                                    <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                        <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[1].opponent.image_url}`}}></div>
+                                                    </figure>
+                                                    <span className="Gilroy MatchBar__team__line">{v.opponents[1].opponent.acronym}</span>
+                                                </div>
+                                            
+                                            <div className="MatchBar__column arrow Gilroy">
+                                                DETAIL
+                                            </div>
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }   
+                        <div className="RecentMatches__split Gilroy">LJL 2019 Summer Season</div>
+                        {
+                            pastLJLMatch && pastLJLMatch.map(v => {
+                                console.log(v)
+                                return (
+                                    <li>
+                                        <a className="MatchBar" href="#">
+                                            <div className="MatchBar__column date Gilroy finished">
+                                                {v.end_at}
+                                                <br/>
+                                                13:00
+                                            </div>
+                                            <div className="MatchBar__column home">
+                                                <span className="Gilroy MatchBar__team__line">{v.opponents[0].opponent.acronym}</span>
+                                                <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                    <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[0].opponent.image_url})`}}></div>
+                                                </figure>
+                                            </div>
+                                            <div className="MatchBar__column board">
+                                                <div className="ScoreBoard Gilroy MatchBar__column__score">
+                                                    <div className="ScoreBoard__overlay">RESULT</div>
+                                                    3:1
+                                                </div>
+                                            </div>
+                                            <div className="MatchBar__column away">            
+                                                    <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                        <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[1].opponent.image_url}`}}></div>
+                                                    </figure>
+                                                    <span className="Gilroy MatchBar__team__line">{v.opponents[1].opponent.acronym}</span>
+                                                </div>
+                                            
+                                            <div className="MatchBar__column arrow Gilroy">
+                                                DETAIL
+                                            </div>
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }
+                        <div className="RecentMatches__split Gilroy">LEC 2019 Summer Season</div>
+                        {
+                            pastLECMatch && pastLECMatch.map(v => {
+                                console.log(v)
+                                return (
+                                    <li>
+                                        <a className="MatchBar" href="#">
+                                            <div className="MatchBar__column date Gilroy finished">
+                                                {v.end_at}
+                                                <br/>
+                                                13:00
+                                            </div>
+                                            <div className="MatchBar__column home">
+                                                <span className="Gilroy MatchBar__team__line">{v.opponents[0].opponent.acronym}</span>
+                                                <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                    <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[0].opponent.image_url})`}}></div>
+                                                </figure>
+                                            </div>
+                                            <div className="MatchBar__column board">
+                                                <div className="ScoreBoard Gilroy MatchBar__column__score">
+                                                    <div className="ScoreBoard__overlay">RESULT</div>
+                                                    3:1
+                                                </div>
+                                            </div>
+                                            <div className="MatchBar__column away">            
+                                                    <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                        <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[1].opponent.image_url}`}}></div>
+                                                    </figure>
+                                                    <span className="Gilroy MatchBar__team__line">{v.opponents[1].opponent.acronym}</span>
+                                                </div>
+                                            
+                                            <div className="MatchBar__column arrow Gilroy">
+                                                DETAIL
+                                            </div>
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }    
+                        <div className="RecentMatches__split Gilroy">VCS 2019 Summer Season</div>
+                        {
+                            pastVCSMatch && pastVCSMatch.map(v => {
+                                console.log(v)
+                                return (
+                                    <li>
+                                        <a className="MatchBar" href="#">
+                                            <div className="MatchBar__column date Gilroy finished">
+                                                {v.end_at}
+                                                <br/>
+                                                13:00
+                                            </div>
+                                            <div className="MatchBar__column home">
+                                                <span className="Gilroy MatchBar__team__line">{v.opponents[0].opponent.acronym}</span>
+                                                <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                    <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[0].opponent.image_url})`}}></div>
+                                                </figure>
+                                            </div>
+                                            <div className="MatchBar__column board">
+                                                <div className="ScoreBoard Gilroy MatchBar__column__score">
+                                                    <div className="ScoreBoard__overlay">RESULT</div>
+                                                    3:1
+                                                </div>
+                                            </div>
+                                            <div className="MatchBar__column away">            
+                                                    <figure className="TeamSymbol MatchBar__column__symbol hidden-in-phone circleless">
+                                                        <div className="TeamSymbol__image" style={{backgroundImage: `url(${v.opponents[1].opponent.image_url}`}}></div>
+                                                    </figure>
+                                                    <span className="Gilroy MatchBar__team__line">{v.opponents[1].opponent.acronym}</span>
+                                                </div>
+                                            
+                                            <div className="MatchBar__column arrow Gilroy">
+                                                DETAIL
+                                            </div>
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }     
                     </ul>
                 </div>
             </div>
