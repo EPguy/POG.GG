@@ -3,6 +3,7 @@ import React from 'react';
 const AppLayout = ({children}) => {
     return(
         <div>
+            <div className="LeagueBackground"></div>
             <nav className="Navigation">
                 <div className="container">
                     <a className="Menus__link Gilroy brand" href="#">E-Pog.GG</a>

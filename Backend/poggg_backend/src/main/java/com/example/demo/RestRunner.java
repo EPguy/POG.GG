@@ -74,4 +74,12 @@ public class RestRunner {
 
         return helloResult;
     }
+    @GetMapping("/tournanments")
+    public String tournanments(@RequestParam String id) throws InterruptedException {
+        RestTemplate restTemplate = restTemplateBuilder.build();
+        String helloResult = restTemplate.getForObject("https://api.pandascore.co/lol/tournaments/"+id +"/teams?token="+pandaApi_key, String.class);
+        System.out.println(helloResult);
+
+        return helloResult;
+    }
 }

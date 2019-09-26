@@ -43,14 +43,11 @@ const MatchSchedule = () => {
                         <div className="RecentMatches__split Gilroy">LCL 2019 Summer Season</div>
                         {
                             pastLCLMatch && pastLCLMatch.map(v => {
-                                console.log(v)
                                 return (
                                     <li>
                                         <a className="MatchBar" href="#">
                                             <div className="MatchBar__column date Gilroy finished">
                                                 {v.end_at}
-                                                <br/>
-                                                13:00
                                             </div>
                                             <div className="MatchBar__column home">
                                                 <span className="Gilroy MatchBar__team__line">{v.opponents[0].opponent.acronym}</span>
@@ -61,7 +58,7 @@ const MatchSchedule = () => {
                                             <div className="MatchBar__column board">
                                                 <div className="ScoreBoard Gilroy MatchBar__column__score">
                                                     <div className="ScoreBoard__overlay">RESULT</div>
-                                                    3:1
+                                                    {v.results[0].score} : {v.results[1].score}
                                                 </div>
                                             </div>
                                             <div className="MatchBar__column away">            
@@ -100,7 +97,7 @@ const MatchSchedule = () => {
                                             <div className="MatchBar__column board">
                                                 <div className="ScoreBoard Gilroy MatchBar__column__score">
                                                     <div className="ScoreBoard__overlay">RESULT</div>
-                                                    3:1
+                                                    {v.results[0].score} : {v.results[1].score}
                                                 </div>
                                             </div>
                                             <div className="MatchBar__column away">            
@@ -139,7 +136,7 @@ const MatchSchedule = () => {
                                             <div className="MatchBar__column board">
                                                 <div className="ScoreBoard Gilroy MatchBar__column__score">
                                                     <div className="ScoreBoard__overlay">RESULT</div>
-                                                    3:1
+                                                    {v.results[0].score} : {v.results[1].score}
                                                 </div>
                                             </div>
                                             <div className="MatchBar__column away">            
@@ -178,7 +175,7 @@ const MatchSchedule = () => {
                                             <div className="MatchBar__column board">
                                                 <div className="ScoreBoard Gilroy MatchBar__column__score">
                                                     <div className="ScoreBoard__overlay">RESULT</div>
-                                                    3:1
+                                                    {v.results[0].score} : {v.results[1].score}
                                                 </div>
                                             </div>
                                             <div className="MatchBar__column away">            
@@ -221,10 +218,12 @@ const MatchSchedule = () => {
                         background-color: #27282d;
                         width: 100%;
                         color: #fbfbfb;
-                        -webkit-transition: background-color .15s;
-                        transition: background-color .15s;
                         margin-bottom: .125rem;
                         position: relative;
+                        transition: background-color 150ms ease 0ms;
+                    }
+                    .MatchBar:hover {
+                        background-color : #33343B;
                     }
                     .MatchBar__column.arrow, .MatchBar__column.date {
                         width: 6.25rem;
@@ -280,22 +279,13 @@ const MatchSchedule = () => {
                         top: 0;
                         width: 100%;
                         height: 100%;
-                        -webkit-transition: top .15s;
-                        transition: top .15s;
+                        animation-fill-mode: both;
                         background-color: #db0442;
+                        transition: transform 300ms ease-in-out;
+                        
                     }
-                    .ScoreBoard__overlay :hover {
-                        -webkit-animation:overlay  0.3s ease 1;
-                        -webkit-animation-fill-mode:both
-                    }
-                    @-webkit-keyframes overlay{
-                        100%{
-                            transition: top .15s;
-                            transition-property: top;
-                            transition-duration: 0.15s;
-                            transition-timing-function: ease;
-                            transition-delay: 0s;
-                        }
+                    .ScoreBoard__overlay:hover {
+                        transform:translateY(-100%) 
                     }
                     .MatchBar__team__line {
                         margin: 0 1.5625rem;
