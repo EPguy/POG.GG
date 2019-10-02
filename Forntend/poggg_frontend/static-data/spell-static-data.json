@@ -39,6 +39,10 @@
         "Teleport": {
             "id": 12,
             "key": "Teleport"
+        },
+        "Snowball": {
+            "id": 32,
+            "key": "Snowball"
         }
     }
 }

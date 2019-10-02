@@ -30,7 +30,7 @@ const AppLayout = ({ children }) => {
             </header>
             <div class="sub-items">
                 <div class="sub-items-top">
-                        <div class="sub-items-top-logo"><img src={"../../static/main_logo.png"}/><span>포그지지</span></div>
+                        <div class="sub-items-top-logo"><h1>POG.GG</h1></div>
                         <div class="sub-items-top-input">
                             <input value={username} onKeyPress={onEnterClick} onChange={(e) => setUsername(e.target.value)} placeholder="챔피언, 소환사명 검색"/>
                             <button onClick={(e) => onClick(e)}><i className="fas fa-search"></i></button>
@@ -40,8 +40,7 @@ const AppLayout = ({ children }) => {
                     <div class="sub-items-list">
                         <ul>
                             <li><a href="/">홈</a></li>
-                            <li><a href="#">챔피언분석</a></li>
-                            <li><a href="#">e스포츠</a></li>
+                            <li><a href="http://localhost:3001/">e스포츠</a></li>
                             <li><a href="#">프로관전</a></li>
                         </ul>
                     </div>

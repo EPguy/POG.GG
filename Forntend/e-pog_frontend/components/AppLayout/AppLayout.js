@@ -12,9 +12,9 @@ const AppLayout = ({children}) => {
                     <a className="Menus__link" href="#">경기 일정</a>
                     <a className="Menus__link" href="#">하이라이트</a>
                     <a className="Menus__link" href="#">커뮤니티</a>
-                    <span className="Menus__login float-right">
+                    <a href="/login" className="Menus__login float-right">
                         <span>로그인</span>
-                    </span>
+                    </a>
                 </div>
             </nav>
             {children}
