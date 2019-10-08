@@ -1,12 +1,13 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 const Highlight = ({youtubeLink}) => {
+    const [videoTitle, SetVideoTitle] = useState('');
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var matchs = youtubeLink.match(regExp);
     useEffect(() => {
-        axios.get("http://youtube.com/get_video_info?video_id=iUpqKAf8x3g")
-        .then(response => console.log(response))
+        axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${matchs[7]}&key=AIzaSyCHeNSQ55mXUVr5NgyOWWBTKhw2XjFT8tw&fields=items(snippet(title))&part=snippet`)
+        .then(response => SetVideoTitle(response.data.items[0].snippet.title))
     }, [])
     return (
         <>
@@ -16,8 +17,8 @@ const Highlight = ({youtubeLink}) => {
                 </div>
                 <div className="article-list content">
                     <div className="article__title">
-                        <a href="#">
-                            <span>유튜브 테스트</span>
+                        <a href={youtubeLink}>
+                            <span>{videoTitle}</span>
                         </a>
                     </div>
                 </div>
@@ -38,6 +39,11 @@ const Highlight = ({youtubeLink}) => {
                         float: left;
                     }
                     .highlight .raiting{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        height: 112px;
                         font-size: 20px;
                     }
                     .highlight .raiting img {

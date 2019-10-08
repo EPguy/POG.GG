@@ -8,7 +8,6 @@ const LoginForm = () => {
                 <h1 className="login-from__logo"><img class="login-form__logo-image" src="/static/logo.png"/></h1>
                 <div className="login">
                     <form>
-                        <h2 className="login__email-title">Email Login</h2>
                         <div className="member-input">
                             <div className="member-input__state">
                                 <input class="member-input__box" type="text" placeholder="Email"/>
@@ -27,14 +26,19 @@ const LoginForm = () => {
         <style global jsx>
             {`
                 .login-form__contianer {
-                    background-color: #2a2b30;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     position: relative;
                     margin: 0 auto;
-                    width: 450px;
-                    min-height: 682px;
-                    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+                    width: 500px;
+                    min-height: 800px;
+                    
                 }
                 .login-form__inner {
+                    width: 500px;
+                    background-color: #2a2b30;
+                    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
                     margin: 0 40px;
                     padding-bottom: 40px;
                 }
@@ -53,11 +57,21 @@ const LoginForm = () => {
                     font-size: 16px;
                     line-height: 19px;
                 }
+                .member-input {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
                 .member-input__state {
+                    width: 300px;
                     margin-top: 27px;
                     position: relative;
                     padding: 10px 0 11px;
                     border-bottom: 1px solid #dddfe4;
+                }
+                .member-input__state input{ 
+                    color: white;
                 }
                 .member-input__box {
                     font-size: 20px;
@@ -71,7 +85,7 @@ const LoginForm = () => {
                 }
                 .login__btn {
                     margin-top: 40px;
-                    width: 100%;
+                    width: 300px;
                 }
                 .member-button {
                     position: relative;
