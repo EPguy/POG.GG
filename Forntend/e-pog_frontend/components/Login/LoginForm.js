@@ -27,7 +27,7 @@ const LoginForm = () => {
         <style global jsx>
             {`
                 .login-form__contianer {
-                    background-color: #27282d;
+                    background-color: #2a2b30;
                     position: relative;
                     margin: 0 auto;
                     width: 450px;

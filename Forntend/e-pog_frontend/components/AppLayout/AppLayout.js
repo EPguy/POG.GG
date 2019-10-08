@@ -6,11 +6,8 @@ const AppLayout = ({children}) => {
             <div className="LeagueBackground"></div>
             <nav className="Navigation">
                 <div className="container">
-                    <a className="Menus__link Gilroy brand" href="#">E-Pog.GG</a>
-                    <a className="Menus__link" href="#">경기 결과</a>
-                    <a className="Menus__link" href="#">프로빌드</a>
-                    <a className="Menus__link" href="#">경기 일정</a>
-                    <a className="Menus__link" href="#">하이라이트</a>
+                    <a className="Menus__link Gilroy brand" href="/">E-Pog.GG</a>
+                    <a className="Menus__link" href="/highlights">하이라이트</a>
                     <a className="Menus__link" href="#">커뮤니티</a>
                     <a href="/login" className="Menus__login float-right">
                         <span>로그인</span>
