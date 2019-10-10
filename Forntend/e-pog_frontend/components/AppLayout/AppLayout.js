@@ -1,17 +1,19 @@
 import React from 'react';
-
+import Link from 'next/link';
 const AppLayout = ({children}) => {
     return(
         <div>
             <div className="LeagueBackground"></div>
             <nav className="Navigation">
                 <div className="container">
-                    <a className="Menus__link Gilroy brand" href="/">E-Pog.GG</a>
-                    <a className="Menus__link" href="/highlights">하이라이트</a>
-                    <a className="Menus__link" href="#">커뮤니티</a>
-                    <a href="/login" className="Menus__login float-right">
-                        <span>로그인</span>
-                    </a>
+                    <Link href="/"><a className="Menus__link Gilroy brand" >E-Pog.GG</a></Link>
+                    <Link href="/highlights"><a className="Menus__link" >하이라이트</a></Link>
+                    <Link href="#"><a className="Menus__link">커뮤니티</a></Link>
+                    <Link href="/login">
+                        <a className="Menus__login float-right">
+                            <span>로그인</span>
+                        </a>
+                    </Link>
                 </div>
             </nav>
             {children}

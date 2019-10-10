@@ -8,6 +8,7 @@ const EPogg = ({ Component }) => {
         <>
             <Head>
                 <title>e-pog.gg</title>
+                <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/antd/3.23.6/antd.css' />
             </Head>
             <AppLayout>
                 <Component/>
