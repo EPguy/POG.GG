@@ -6,10 +6,8 @@ import { white } from 'ansi-colors';
 
 const Highlight = ({youtubeLink}) => {
     console.log(youtubeLink)
-    const [likes, SetLikes] = useState(0);
-    const [dislikes, SetDislikes] = useState(0);
-    const [action, SetAction] = useState(null);
     const [showPreview, SetShowPreview] = useState('none');
+    const [showComment, SetShowComment] = useState('none');
     const [videoTitle, SetVideoTitle] = useState('');
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var matchs = youtubeLink.match(regExp);
@@ -24,40 +22,13 @@ const Highlight = ({youtubeLink}) => {
             SetShowPreview('none');
         }
     }
-    const like = () => {
-        SetLikes(1);
-        SetDislikes(0);
-        SetAction('liked');
-    };
-    
-    const dislike = () => {
-        SetLikes(0);
-        SetDislikes(1);
-        SetAction('disliked');
-    };
-    const actions = [
-        <span key="comment-basic-like">
-          <Tooltip title="Like">
-            <Icon
-              type="like"
-              theme={action === 'liked' ? 'filled' : 'outlined'}
-              onClick={like}
-            />
-          </Tooltip>
-          <span style={{ paddingLeft: 8, cursor: 'auto' }}>{likes}</span>
-        </span>,
-        <span key=' key="comment-basic-dislike"'>
-          <Tooltip title="Dislike">
-            <Icon
-              type="dislike"
-              theme={action === 'disliked' ? 'filled' : 'outlined'}
-              onClick={dislike}
-            />
-          </Tooltip>
-          <span style={{ paddingLeft: 8, cursor: 'auto' }}>{dislikes}</span>
-        </span>,
-        <span key="comment-basic-reply-to">Reply to</span>,
-    ];
+    const onCommentClick = () => {
+        if(showComment === "none") {
+            SetShowComment('block');
+        } else if(showComment === "block") {
+            SetShowComment('none');
+        }
+    }
     return (
         <>
             <div className="highlight">
@@ -71,7 +42,7 @@ const Highlight = ({youtubeLink}) => {
                         </a>
                     </div>
                     <div className="article__comment">
-                        <span>댓글 (16개)</span>
+                        <span onClick={() => onCommentClick()}>댓글 (16개)</span>
                         <span>삭제</span>
                     </div>
                 </div>
@@ -86,40 +57,31 @@ const Highlight = ({youtubeLink}) => {
                 src={`https://www.youtube.com/embed/${matchs[7]}`}
                 frameborder="0"></iframe>
             </div>
-            <div className="comment">
-                <Input.Search
-                    placeholder="댓글을 입력해 주세요."
-                    enterButton="입력"
-                    onSearch={value => console.log(value)}
-                />
-                <Comment
-                    style={{backgroundColor: "white"}}
-                    actions={actions}
-                    author={<a>Han Solo</a>}
-                    avatar={
-                    <Avatar
-                        src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-                        alt="Han Solo"
+            <div className="comment" style={{display: showComment}}>
+                <div className="comment_inner">
+                    <Input.Search
+                        placeholder="댓글을 입력해 주세요."
+                        enterButton="입력"
+                        onSearch={value => console.log(value)}
                     />
-                    }
-                    content={
-                    <p>
-                        We supply a series of design principles, practical patterns and high quality design
-                        resources (Sketch and Axure), to help people create their product prototypes beautifully
-                        and efficiently.
-                    </p>
-                    }
-                    datetime={
-                    <Tooltip title={moment().format('YYYY-MM-DD HH:mm:ss')}>
-                        <span>{moment().fromNow()}</span>
-                    </Tooltip>
-                    }
-                />
+                    <Comment
+                        author={<a style={{color: "#77D"}}>샌즈TV</a>}
+                        content={
+                        <p>
+                            샌즈보고싶다.
+                        </p>
+                        }
+                        datetime={
+                        <Tooltip title={moment().format('YYYY-MM-DD HH:mm:ss')}>
+                            <span>{moment().fromNow()}</span>
+                        </Tooltip>
+                        }
+                    />
+                </div>
             </div>
             <style jsx>
                 {`
                     .highlight {
-                        cursor: pointer;
                         display: flex;
                         padding: 20px;
                         width: 740px;
@@ -155,6 +117,7 @@ const Highlight = ({youtubeLink}) => {
                         height: 60px;
                     }
                     .article__comment {
+                        cursor: pointer;
                         width: 260px;
                         height: 50px;
                     }
@@ -180,6 +143,7 @@ const Highlight = ({youtubeLink}) => {
                         text-decoration: none;
                     }
                     .thumbnail img{
+                        cursor: pointer;
                         width: 150px;    
                     }
                     .preview {
@@ -190,7 +154,11 @@ const Highlight = ({youtubeLink}) => {
                     .comment {
                         padding-top: 10px;
                         width: 740px;
-                        background-color: #2a2b30;
+                        background-color: #2A2B30   ;
+                    }
+                    .comment_inner {
+                        width: 700px;
+                        margin: 0 auto;
                     }
                 `}
             </style>

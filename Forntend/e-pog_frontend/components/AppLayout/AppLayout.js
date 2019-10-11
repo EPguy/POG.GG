@@ -31,7 +31,7 @@ const AppLayout = ({children}) => {
                         border-bottom: 1px solid #2a2b30;
                     }
                     .container {
-                        color: #fbfbfb;
+                        color: white;
                         max-width: 1140px;
                         width: 100%;
                         padding-right: 15px;
