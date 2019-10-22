@@ -9,117 +9,292 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _LoginForm_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LoginForm.scss */ "./components/Login/LoginForm.scss");
+/* harmony import */ var _LoginForm_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_LoginForm_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Login\\LoginForm.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 var LoginForm = function LoginForm() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    className: "jsx-1156299938" + " " + "login-form__contianer",
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+      username = _useState[0],
+      SetUsername = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+      Email = _useState2[0],
+      SetEmail = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+      Password = _useState3[0],
+      SetPassword = _useState3[1];
+
+  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      Disabled = _useState4[0],
+      SetDisabled = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      isLogin = _useState5[0],
+      SetIsLogin = _useState5[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (Email === '' || Password === '') {
+      SetDisabled(true);
+    } else {
+      SetDisabled(false);
+    }
+  }, [Email, Password]);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, isLogin ? __jsx("div", {
+    className: "login-form__contianer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 21
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-1156299938" + " " + "login-form__inner",
+    className: "login-form__inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 22
     },
     __self: this
   }, __jsx("h1", {
-    className: "jsx-1156299938" + " " + "login-from__logo",
+    className: "login-from__logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 23
     },
     __self: this
   }, __jsx("img", {
     "class": "login-form__logo-image",
     src: "/static/logo.png",
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 23
     },
     __self: this
   })), __jsx("div", {
-    className: "jsx-1156299938" + " " + "login",
+    className: "login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 24
     },
     __self: this
   }, __jsx("form", {
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 25
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-1156299938" + " " + "member-input",
+    className: "member-input",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 26
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-1156299938" + " " + "member-input__state",
+    className: "member-input__state",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 27
     },
     __self: this
   }, __jsx("input", {
     "class": "member-input__box",
+    onChange: function onChange(e) {
+      return SetEmail(e.target.value);
+    },
     type: "text",
     placeholder: "Email",
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 28
     },
     __self: this
   })), __jsx("div", {
-    className: "jsx-1156299938" + " " + "member-input__state",
+    className: "member-input__state",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 30
     },
     __self: this
   }, __jsx("input", {
     "class": "member-input__box",
+    onChange: function onChange(e) {
+      return SetPassword(e.target.value);
+    },
     type: "text",
     placeholder: "Password",
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 31
     },
     __self: this
   })), __jsx("button", {
     type: "submit",
     "class": "member-button login__btn",
-    className: "jsx-1156299938",
+    disabled: Disabled,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 33
     },
     __self: this
-  }, "LOGIN")))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1156299938",
+  }, "LOGIN"))), __jsx("div", {
+    className: "login__l-sign-up",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
     __self: this
-  }, ".login-form__contianer{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin:0 auto;width:500px;min-height:800px;}.login-form__inner{width:500px;background-color:#2a2b30;box-shadow:0 2px 4px 0 rgba(0,0,0,.2);margin:0 40px;padding-bottom:40px;}.login-from__logo{padding-top:48px;text-align:center;margin-bottom:42px;}.login-form__logo-image{width:200px;height:100px;}.login__email-title{margin-top:42px;font-weight:400;font-size:16px;line-height:19px;}.member-input{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.member-input__state{width:300px;margin-top:27px;position:relative;padding:10px 0 11px;border-bottom:1px solid #dddfe4;}.member-input__state input{color:white;}.member-input__box{font-size:20px;position:relative;z-index:10;border:0;padding:0;background-color:transparent;outline:0;}.login__btn{margin-top:40px;width:300px;}.member-button{position:relative;font-weight:400;line-height:19px;text-align:center;background-color:#1ea1f7;font-weight:700;cursor:pointer;line-height:56px;padding:0 20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcTG9naW5cXExvZ2luRm9ybS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEwQmEsQUFHa0MsQUFVRCxBQU9LLEFBS0wsQUFJSSxBQU1ILEFBTUQsQUFPQSxBQUdHLEFBVUMsQUFJRSxZQW5ETyxBQVlaLEFBZ0JHLEFBT3BCLEdBR1csQUFDVyxDQXZCRixBQWdDSixDQXpDTSxDQTZDRixPQXZDcEIsR0FnQnNCLEFBb0J0QixJQWhDbUIsQ0F1QkosQ0FhTSxDQTdDRSxFQVBtQixPQXdDN0IsRUFYVyxDQVpILElBb0NDLEVBWlIsQ0FqQ2QsU0FrQ2lDLENBeEJqQyxFQVlvQyxHQXdCUCxLQWpFRixBQWdDQSxDQXBCVCxjQUNNLEdBeUNWLEVBWU0sSUF4QnBCLElBYUEsT0F6Q0EsQ0FxRG1CLGVBQ0UsaUJBQ0YsZUFDbkIsZ0JBckV1QixBQWdDQSw2RkEvQkQsQUFnQ0ksa0JBL0JSLGNBQ0YsWUFDSyxpQkFFckIsaUJBNEJBIiwiZmlsZSI6IkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcTG9naW5cXExvZ2luRm9ybS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuY29uc3QgTG9naW5Gb3JtID0gKCkgPT4ge1xyXG4gICAgcmV0dXJuIChcclxuICAgIDw+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsb2dpbi1mb3JtX19jb250aWFuZXJcIj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsb2dpbi1mb3JtX19pbm5lclwiPlxyXG4gICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImxvZ2luLWZyb21fX2xvZ29cIj48aW1nIGNsYXNzPVwibG9naW4tZm9ybV9fbG9nby1pbWFnZVwiIHNyYz1cIi9zdGF0aWMvbG9nby5wbmdcIi8+PC9oMT5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibG9naW5cIj5cclxuICAgICAgICAgICAgICAgICAgICA8Zm9ybT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtZW1iZXItaW5wdXRcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWVtYmVyLWlucHV0X19zdGF0ZVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCBjbGFzcz1cIm1lbWJlci1pbnB1dF9fYm94XCIgdHlwZT1cInRleHRcIiBwbGFjZWhvbGRlcj1cIkVtYWlsXCIvPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1lbWJlci1pbnB1dF9fc3RhdGVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgY2xhc3M9XCJtZW1iZXItaW5wdXRfX2JveFwiIHR5cGU9XCJ0ZXh0XCIgcGxhY2Vob2xkZXI9XCJQYXNzd29yZFwiLz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiB0eXBlPVwic3VibWl0XCIgY2xhc3M9XCJtZW1iZXItYnV0dG9uIGxvZ2luX19idG5cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBMT0dJTlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZm9ybT5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8c3R5bGUgZ2xvYmFsIGpzeD5cclxuICAgICAgICAgICAge2BcclxuICAgICAgICAgICAgICAgIC5sb2dpbi1mb3JtX19jb250aWFuZXIge1xyXG4gICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDUwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDgwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLmxvZ2luLWZvcm1fX2lubmVyIHtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogNTAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzJhMmIzMDtcclxuICAgICAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggMCByZ2JhKDAsMCwwLC4yKTtcclxuICAgICAgICAgICAgICAgICAgICBtYXJnaW46IDAgNDBweDtcclxuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogNDBweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbi1mcm9tX19sb2dvIHtcclxuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLXRvcDogNDhweDtcclxuICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogNDJweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbi1mb3JtX19sb2dvLWltYWdlIHtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMjAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDBweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbl9fZW1haWwtdGl0bGUge1xyXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi10b3A6IDQycHg7XHJcbiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICAgICAgICAgICAgICAgICAgbGluZS1oZWlnaHQ6IDE5cHg7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAubWVtYmVyLWlucHV0IHtcclxuICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgICAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgICAgICAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5tZW1iZXItaW5wdXRfX3N0YXRlIHtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMzAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luLXRvcDogMjdweDtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZzogMTBweCAwIDExcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNkZGRmZTQ7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAubWVtYmVyLWlucHV0X19zdGF0ZSBpbnB1dHsgXHJcbiAgICAgICAgICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLm1lbWJlci1pbnB1dF9fYm94IHtcclxuICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgY29sb3I6IDtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgei1pbmRleDogMTA7XHJcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyOiAwO1xyXG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XHJcbiAgICAgICAgICAgICAgICAgICAgb3V0bGluZTogMDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbl9fYnRuIHtcclxuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiA0MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMDBweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5tZW1iZXItYnV0dG9uIHtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgICAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDogMTlweDtcclxuICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzFlYTFmNztcclxuICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNzAwO1xyXG4gICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDogNTZweDtcclxuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiAwIDIwcHg7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIGB9XHJcbiAgICAgICAgPC9zdHlsZT5cclxuICAgIDwvPlxyXG4gICAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBMb2dpbkZvcm07Il19 */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Login\\LoginForm.js */"));
+  }, "Don\u2019t have an account?", __jsx("div", {
+    className: "login__sign-up-link",
+    onClick: function onClick() {
+      return SetIsLogin(false);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, "Sign Up"))))) : __jsx("div", {
+    className: "login-form__contianer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "login-form__inner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, __jsx("h1", {
+    className: "login-from__logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, __jsx("img", {
+    "class": "login-form__logo-image",
+    src: "/static/logo.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, __jsx("form", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "member-input",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "member-input__state",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, __jsx("input", {
+    "class": "member-input__box",
+    onChange: function onChange(e) {
+      return SetUsername(e.target.value);
+    },
+    type: "text",
+    placeholder: "Username",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "member-input__state",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, __jsx("input", {
+    "class": "member-input__box",
+    onChange: function onChange(e) {
+      return SetEmail(e.target.value);
+    },
+    type: "text",
+    placeholder: "Email",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "member-input__state",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, __jsx("input", {
+    "class": "member-input__box",
+    onChange: function onChange(e) {
+      return SetPassword(e.target.value);
+    },
+    type: "text",
+    placeholder: "Password",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  })), __jsx("button", {
+    type: "submit",
+    "class": "member-button login__btn",
+    disabled: Disabled,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, "LOGIN"))), __jsx("div", {
+    className: "login__l-sign-up",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, "Do you have an account?", __jsx("div", {
+    className: "login__sign-up-link",
+    onClick: function onClick() {
+      return SetIsLogin(true);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, "Login"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LoginForm);
@@ -8407,537 +8582,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/node-libs-browser/node_modules/punycode/punycode.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/node-libs-browser/node_modules/punycode/punycode.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
-;(function(root) {
-
-	/** Detect free variables */
-	var freeExports =  true && exports &&
-		!exports.nodeType && exports;
-	var freeModule =  true && module &&
-		!module.nodeType && module;
-	var freeGlobal = typeof global == 'object' && global;
-	if (
-		freeGlobal.global === freeGlobal ||
-		freeGlobal.window === freeGlobal ||
-		freeGlobal.self === freeGlobal
-	) {
-		root = freeGlobal;
-	}
-
-	/**
-	 * The `punycode` object.
-	 * @name punycode
-	 * @type Object
-	 */
-	var punycode,
-
-	/** Highest positive signed 32-bit float value */
-	maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
-
-	/** Bootstring parameters */
-	base = 36,
-	tMin = 1,
-	tMax = 26,
-	skew = 38,
-	damp = 700,
-	initialBias = 72,
-	initialN = 128, // 0x80
-	delimiter = '-', // '\x2D'
-
-	/** Regular expressions */
-	regexPunycode = /^xn--/,
-	regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
-	regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
-
-	/** Error messages */
-	errors = {
-		'overflow': 'Overflow: input needs wider integers to process',
-		'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
-		'invalid-input': 'Invalid input'
-	},
-
-	/** Convenience shortcuts */
-	baseMinusTMin = base - tMin,
-	floor = Math.floor,
-	stringFromCharCode = String.fromCharCode,
-
-	/** Temporary variable */
-	key;
-
-	/*--------------------------------------------------------------------------*/
-
-	/**
-	 * A generic error utility function.
-	 * @private
-	 * @param {String} type The error type.
-	 * @returns {Error} Throws a `RangeError` with the applicable error message.
-	 */
-	function error(type) {
-		throw new RangeError(errors[type]);
-	}
-
-	/**
-	 * A generic `Array#map` utility function.
-	 * @private
-	 * @param {Array} array The array to iterate over.
-	 * @param {Function} callback The function that gets called for every array
-	 * item.
-	 * @returns {Array} A new array of values returned by the callback function.
-	 */
-	function map(array, fn) {
-		var length = array.length;
-		var result = [];
-		while (length--) {
-			result[length] = fn(array[length]);
-		}
-		return result;
-	}
-
-	/**
-	 * A simple `Array#map`-like wrapper to work with domain name strings or email
-	 * addresses.
-	 * @private
-	 * @param {String} domain The domain name or email address.
-	 * @param {Function} callback The function that gets called for every
-	 * character.
-	 * @returns {Array} A new string of characters returned by the callback
-	 * function.
-	 */
-	function mapDomain(string, fn) {
-		var parts = string.split('@');
-		var result = '';
-		if (parts.length > 1) {
-			// In email addresses, only the domain name should be punycoded. Leave
-			// the local part (i.e. everything up to `@`) intact.
-			result = parts[0] + '@';
-			string = parts[1];
-		}
-		// Avoid `split(regex)` for IE8 compatibility. See #17.
-		string = string.replace(regexSeparators, '\x2E');
-		var labels = string.split('.');
-		var encoded = map(labels, fn).join('.');
-		return result + encoded;
-	}
-
-	/**
-	 * Creates an array containing the numeric code points of each Unicode
-	 * character in the string. While JavaScript uses UCS-2 internally,
-	 * this function will convert a pair of surrogate halves (each of which
-	 * UCS-2 exposes as separate characters) into a single code point,
-	 * matching UTF-16.
-	 * @see `punycode.ucs2.encode`
-	 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-	 * @memberOf punycode.ucs2
-	 * @name decode
-	 * @param {String} string The Unicode input string (UCS-2).
-	 * @returns {Array} The new array of code points.
-	 */
-	function ucs2decode(string) {
-		var output = [],
-		    counter = 0,
-		    length = string.length,
-		    value,
-		    extra;
-		while (counter < length) {
-			value = string.charCodeAt(counter++);
-			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
-				// high surrogate, and there is a next character
-				extra = string.charCodeAt(counter++);
-				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
-					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
-				} else {
-					// unmatched surrogate; only append this code unit, in case the next
-					// code unit is the high surrogate of a surrogate pair
-					output.push(value);
-					counter--;
-				}
-			} else {
-				output.push(value);
-			}
-		}
-		return output;
-	}
-
-	/**
-	 * Creates a string based on an array of numeric code points.
-	 * @see `punycode.ucs2.decode`
-	 * @memberOf punycode.ucs2
-	 * @name encode
-	 * @param {Array} codePoints The array of numeric code points.
-	 * @returns {String} The new Unicode string (UCS-2).
-	 */
-	function ucs2encode(array) {
-		return map(array, function(value) {
-			var output = '';
-			if (value > 0xFFFF) {
-				value -= 0x10000;
-				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
-				value = 0xDC00 | value & 0x3FF;
-			}
-			output += stringFromCharCode(value);
-			return output;
-		}).join('');
-	}
-
-	/**
-	 * Converts a basic code point into a digit/integer.
-	 * @see `digitToBasic()`
-	 * @private
-	 * @param {Number} codePoint The basic numeric code point value.
-	 * @returns {Number} The numeric value of a basic code point (for use in
-	 * representing integers) in the range `0` to `base - 1`, or `base` if
-	 * the code point does not represent a value.
-	 */
-	function basicToDigit(codePoint) {
-		if (codePoint - 48 < 10) {
-			return codePoint - 22;
-		}
-		if (codePoint - 65 < 26) {
-			return codePoint - 65;
-		}
-		if (codePoint - 97 < 26) {
-			return codePoint - 97;
-		}
-		return base;
-	}
-
-	/**
-	 * Converts a digit/integer into a basic code point.
-	 * @see `basicToDigit()`
-	 * @private
-	 * @param {Number} digit The numeric value of a basic code point.
-	 * @returns {Number} The basic code point whose value (when used for
-	 * representing integers) is `digit`, which needs to be in the range
-	 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
-	 * used; else, the lowercase form is used. The behavior is undefined
-	 * if `flag` is non-zero and `digit` has no uppercase form.
-	 */
-	function digitToBasic(digit, flag) {
-		//  0..25 map to ASCII a..z or A..Z
-		// 26..35 map to ASCII 0..9
-		return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
-	}
-
-	/**
-	 * Bias adaptation function as per section 3.4 of RFC 3492.
-	 * https://tools.ietf.org/html/rfc3492#section-3.4
-	 * @private
-	 */
-	function adapt(delta, numPoints, firstTime) {
-		var k = 0;
-		delta = firstTime ? floor(delta / damp) : delta >> 1;
-		delta += floor(delta / numPoints);
-		for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
-			delta = floor(delta / baseMinusTMin);
-		}
-		return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
-	}
-
-	/**
-	 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
-	 * symbols.
-	 * @memberOf punycode
-	 * @param {String} input The Punycode string of ASCII-only symbols.
-	 * @returns {String} The resulting string of Unicode symbols.
-	 */
-	function decode(input) {
-		// Don't use UCS-2
-		var output = [],
-		    inputLength = input.length,
-		    out,
-		    i = 0,
-		    n = initialN,
-		    bias = initialBias,
-		    basic,
-		    j,
-		    index,
-		    oldi,
-		    w,
-		    k,
-		    digit,
-		    t,
-		    /** Cached calculation results */
-		    baseMinusT;
-
-		// Handle the basic code points: let `basic` be the number of input code
-		// points before the last delimiter, or `0` if there is none, then copy
-		// the first basic code points to the output.
-
-		basic = input.lastIndexOf(delimiter);
-		if (basic < 0) {
-			basic = 0;
-		}
-
-		for (j = 0; j < basic; ++j) {
-			// if it's not a basic code point
-			if (input.charCodeAt(j) >= 0x80) {
-				error('not-basic');
-			}
-			output.push(input.charCodeAt(j));
-		}
-
-		// Main decoding loop: start just after the last delimiter if any basic code
-		// points were copied; start at the beginning otherwise.
-
-		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
-
-			// `index` is the index of the next character to be consumed.
-			// Decode a generalized variable-length integer into `delta`,
-			// which gets added to `i`. The overflow checking is easier
-			// if we increase `i` as we go, then subtract off its starting
-			// value at the end to obtain `delta`.
-			for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
-
-				if (index >= inputLength) {
-					error('invalid-input');
-				}
-
-				digit = basicToDigit(input.charCodeAt(index++));
-
-				if (digit >= base || digit > floor((maxInt - i) / w)) {
-					error('overflow');
-				}
-
-				i += digit * w;
-				t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-
-				if (digit < t) {
-					break;
-				}
-
-				baseMinusT = base - t;
-				if (w > floor(maxInt / baseMinusT)) {
-					error('overflow');
-				}
-
-				w *= baseMinusT;
-
-			}
-
-			out = output.length + 1;
-			bias = adapt(i - oldi, out, oldi == 0);
-
-			// `i` was supposed to wrap around from `out` to `0`,
-			// incrementing `n` each time, so we'll fix that now:
-			if (floor(i / out) > maxInt - n) {
-				error('overflow');
-			}
-
-			n += floor(i / out);
-			i %= out;
-
-			// Insert `n` at position `i` of the output
-			output.splice(i++, 0, n);
-
-		}
-
-		return ucs2encode(output);
-	}
-
-	/**
-	 * Converts a string of Unicode symbols (e.g. a domain name label) to a
-	 * Punycode string of ASCII-only symbols.
-	 * @memberOf punycode
-	 * @param {String} input The string of Unicode symbols.
-	 * @returns {String} The resulting Punycode string of ASCII-only symbols.
-	 */
-	function encode(input) {
-		var n,
-		    delta,
-		    handledCPCount,
-		    basicLength,
-		    bias,
-		    j,
-		    m,
-		    q,
-		    k,
-		    t,
-		    currentValue,
-		    output = [],
-		    /** `inputLength` will hold the number of code points in `input`. */
-		    inputLength,
-		    /** Cached calculation results */
-		    handledCPCountPlusOne,
-		    baseMinusT,
-		    qMinusT;
-
-		// Convert the input in UCS-2 to Unicode
-		input = ucs2decode(input);
-
-		// Cache the length
-		inputLength = input.length;
-
-		// Initialize the state
-		n = initialN;
-		delta = 0;
-		bias = initialBias;
-
-		// Handle the basic code points
-		for (j = 0; j < inputLength; ++j) {
-			currentValue = input[j];
-			if (currentValue < 0x80) {
-				output.push(stringFromCharCode(currentValue));
-			}
-		}
-
-		handledCPCount = basicLength = output.length;
-
-		// `handledCPCount` is the number of code points that have been handled;
-		// `basicLength` is the number of basic code points.
-
-		// Finish the basic string - if it is not empty - with a delimiter
-		if (basicLength) {
-			output.push(delimiter);
-		}
-
-		// Main encoding loop:
-		while (handledCPCount < inputLength) {
-
-			// All non-basic code points < n have been handled already. Find the next
-			// larger one:
-			for (m = maxInt, j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-				if (currentValue >= n && currentValue < m) {
-					m = currentValue;
-				}
-			}
-
-			// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
-			// but guard against overflow
-			handledCPCountPlusOne = handledCPCount + 1;
-			if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
-				error('overflow');
-			}
-
-			delta += (m - n) * handledCPCountPlusOne;
-			n = m;
-
-			for (j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-
-				if (currentValue < n && ++delta > maxInt) {
-					error('overflow');
-				}
-
-				if (currentValue == n) {
-					// Represent delta as a generalized variable-length integer
-					for (q = delta, k = base; /* no condition */; k += base) {
-						t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-						if (q < t) {
-							break;
-						}
-						qMinusT = q - t;
-						baseMinusT = base - t;
-						output.push(
-							stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
-						);
-						q = floor(qMinusT / baseMinusT);
-					}
-
-					output.push(stringFromCharCode(digitToBasic(q, 0)));
-					bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
-					delta = 0;
-					++handledCPCount;
-				}
-			}
-
-			++delta;
-			++n;
-
-		}
-		return output.join('');
-	}
-
-	/**
-	 * Converts a Punycode string representing a domain name or an email address
-	 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
-	 * it doesn't matter if you call it on a string that has already been
-	 * converted to Unicode.
-	 * @memberOf punycode
-	 * @param {String} input The Punycoded domain name or email address to
-	 * convert to Unicode.
-	 * @returns {String} The Unicode representation of the given Punycode
-	 * string.
-	 */
-	function toUnicode(input) {
-		return mapDomain(input, function(string) {
-			return regexPunycode.test(string)
-				? decode(string.slice(4).toLowerCase())
-				: string;
-		});
-	}
-
-	/**
-	 * Converts a Unicode string representing a domain name or an email address to
-	 * Punycode. Only the non-ASCII parts of the domain name will be converted,
-	 * i.e. it doesn't matter if you call it with a domain that's already in
-	 * ASCII.
-	 * @memberOf punycode
-	 * @param {String} input The domain name or email address to convert, as a
-	 * Unicode string.
-	 * @returns {String} The Punycode representation of the given domain name or
-	 * email address.
-	 */
-	function toASCII(input) {
-		return mapDomain(input, function(string) {
-			return regexNonASCII.test(string)
-				? 'xn--' + encode(string)
-				: string;
-		});
-	}
-
-	/*--------------------------------------------------------------------------*/
-
-	/** Define the public API */
-	punycode = {
-		/**
-		 * A string representing the current Punycode.js version number.
-		 * @memberOf punycode
-		 * @type String
-		 */
-		'version': '1.4.1',
-		/**
-		 * An object of methods to convert from JavaScript's internal character
-		 * representation (UCS-2) to Unicode code points, and back.
-		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-		 * @memberOf punycode
-		 * @type Object
-		 */
-		'ucs2': {
-			'decode': ucs2decode,
-			'encode': ucs2encode
-		},
-		'decode': decode,
-		'encode': encode,
-		'toASCII': toASCII,
-		'toUnicode': toUnicode
-	};
-
-	/** Expose `punycode` */
-	// Some AMD build optimizers, like r.js, check for specific condition patterns
-	// like the following:
-	if (
-		true
-	) {
-		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
-			return punycode;
-		}).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-
-}(this));
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
   !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_13346faca0e924a89b24 ***!
@@ -10262,6 +9906,537 @@ module.exports = (__webpack_require__(/*! dll-reference dll_13346faca0e924a89b24
 
 /***/ }),
 
+/***/ "./node_modules/punycode/punycode.js":
+/*!*******************************************!*\
+  !*** ./node_modules/punycode/punycode.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
+;(function(root) {
+
+	/** Detect free variables */
+	var freeExports =  true && exports &&
+		!exports.nodeType && exports;
+	var freeModule =  true && module &&
+		!module.nodeType && module;
+	var freeGlobal = typeof global == 'object' && global;
+	if (
+		freeGlobal.global === freeGlobal ||
+		freeGlobal.window === freeGlobal ||
+		freeGlobal.self === freeGlobal
+	) {
+		root = freeGlobal;
+	}
+
+	/**
+	 * The `punycode` object.
+	 * @name punycode
+	 * @type Object
+	 */
+	var punycode,
+
+	/** Highest positive signed 32-bit float value */
+	maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
+
+	/** Bootstring parameters */
+	base = 36,
+	tMin = 1,
+	tMax = 26,
+	skew = 38,
+	damp = 700,
+	initialBias = 72,
+	initialN = 128, // 0x80
+	delimiter = '-', // '\x2D'
+
+	/** Regular expressions */
+	regexPunycode = /^xn--/,
+	regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
+	regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
+
+	/** Error messages */
+	errors = {
+		'overflow': 'Overflow: input needs wider integers to process',
+		'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
+		'invalid-input': 'Invalid input'
+	},
+
+	/** Convenience shortcuts */
+	baseMinusTMin = base - tMin,
+	floor = Math.floor,
+	stringFromCharCode = String.fromCharCode,
+
+	/** Temporary variable */
+	key;
+
+	/*--------------------------------------------------------------------------*/
+
+	/**
+	 * A generic error utility function.
+	 * @private
+	 * @param {String} type The error type.
+	 * @returns {Error} Throws a `RangeError` with the applicable error message.
+	 */
+	function error(type) {
+		throw new RangeError(errors[type]);
+	}
+
+	/**
+	 * A generic `Array#map` utility function.
+	 * @private
+	 * @param {Array} array The array to iterate over.
+	 * @param {Function} callback The function that gets called for every array
+	 * item.
+	 * @returns {Array} A new array of values returned by the callback function.
+	 */
+	function map(array, fn) {
+		var length = array.length;
+		var result = [];
+		while (length--) {
+			result[length] = fn(array[length]);
+		}
+		return result;
+	}
+
+	/**
+	 * A simple `Array#map`-like wrapper to work with domain name strings or email
+	 * addresses.
+	 * @private
+	 * @param {String} domain The domain name or email address.
+	 * @param {Function} callback The function that gets called for every
+	 * character.
+	 * @returns {Array} A new string of characters returned by the callback
+	 * function.
+	 */
+	function mapDomain(string, fn) {
+		var parts = string.split('@');
+		var result = '';
+		if (parts.length > 1) {
+			// In email addresses, only the domain name should be punycoded. Leave
+			// the local part (i.e. everything up to `@`) intact.
+			result = parts[0] + '@';
+			string = parts[1];
+		}
+		// Avoid `split(regex)` for IE8 compatibility. See #17.
+		string = string.replace(regexSeparators, '\x2E');
+		var labels = string.split('.');
+		var encoded = map(labels, fn).join('.');
+		return result + encoded;
+	}
+
+	/**
+	 * Creates an array containing the numeric code points of each Unicode
+	 * character in the string. While JavaScript uses UCS-2 internally,
+	 * this function will convert a pair of surrogate halves (each of which
+	 * UCS-2 exposes as separate characters) into a single code point,
+	 * matching UTF-16.
+	 * @see `punycode.ucs2.encode`
+	 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+	 * @memberOf punycode.ucs2
+	 * @name decode
+	 * @param {String} string The Unicode input string (UCS-2).
+	 * @returns {Array} The new array of code points.
+	 */
+	function ucs2decode(string) {
+		var output = [],
+		    counter = 0,
+		    length = string.length,
+		    value,
+		    extra;
+		while (counter < length) {
+			value = string.charCodeAt(counter++);
+			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
+				// high surrogate, and there is a next character
+				extra = string.charCodeAt(counter++);
+				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
+					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
+				} else {
+					// unmatched surrogate; only append this code unit, in case the next
+					// code unit is the high surrogate of a surrogate pair
+					output.push(value);
+					counter--;
+				}
+			} else {
+				output.push(value);
+			}
+		}
+		return output;
+	}
+
+	/**
+	 * Creates a string based on an array of numeric code points.
+	 * @see `punycode.ucs2.decode`
+	 * @memberOf punycode.ucs2
+	 * @name encode
+	 * @param {Array} codePoints The array of numeric code points.
+	 * @returns {String} The new Unicode string (UCS-2).
+	 */
+	function ucs2encode(array) {
+		return map(array, function(value) {
+			var output = '';
+			if (value > 0xFFFF) {
+				value -= 0x10000;
+				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
+				value = 0xDC00 | value & 0x3FF;
+			}
+			output += stringFromCharCode(value);
+			return output;
+		}).join('');
+	}
+
+	/**
+	 * Converts a basic code point into a digit/integer.
+	 * @see `digitToBasic()`
+	 * @private
+	 * @param {Number} codePoint The basic numeric code point value.
+	 * @returns {Number} The numeric value of a basic code point (for use in
+	 * representing integers) in the range `0` to `base - 1`, or `base` if
+	 * the code point does not represent a value.
+	 */
+	function basicToDigit(codePoint) {
+		if (codePoint - 48 < 10) {
+			return codePoint - 22;
+		}
+		if (codePoint - 65 < 26) {
+			return codePoint - 65;
+		}
+		if (codePoint - 97 < 26) {
+			return codePoint - 97;
+		}
+		return base;
+	}
+
+	/**
+	 * Converts a digit/integer into a basic code point.
+	 * @see `basicToDigit()`
+	 * @private
+	 * @param {Number} digit The numeric value of a basic code point.
+	 * @returns {Number} The basic code point whose value (when used for
+	 * representing integers) is `digit`, which needs to be in the range
+	 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
+	 * used; else, the lowercase form is used. The behavior is undefined
+	 * if `flag` is non-zero and `digit` has no uppercase form.
+	 */
+	function digitToBasic(digit, flag) {
+		//  0..25 map to ASCII a..z or A..Z
+		// 26..35 map to ASCII 0..9
+		return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
+	}
+
+	/**
+	 * Bias adaptation function as per section 3.4 of RFC 3492.
+	 * https://tools.ietf.org/html/rfc3492#section-3.4
+	 * @private
+	 */
+	function adapt(delta, numPoints, firstTime) {
+		var k = 0;
+		delta = firstTime ? floor(delta / damp) : delta >> 1;
+		delta += floor(delta / numPoints);
+		for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
+			delta = floor(delta / baseMinusTMin);
+		}
+		return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
+	}
+
+	/**
+	 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
+	 * symbols.
+	 * @memberOf punycode
+	 * @param {String} input The Punycode string of ASCII-only symbols.
+	 * @returns {String} The resulting string of Unicode symbols.
+	 */
+	function decode(input) {
+		// Don't use UCS-2
+		var output = [],
+		    inputLength = input.length,
+		    out,
+		    i = 0,
+		    n = initialN,
+		    bias = initialBias,
+		    basic,
+		    j,
+		    index,
+		    oldi,
+		    w,
+		    k,
+		    digit,
+		    t,
+		    /** Cached calculation results */
+		    baseMinusT;
+
+		// Handle the basic code points: let `basic` be the number of input code
+		// points before the last delimiter, or `0` if there is none, then copy
+		// the first basic code points to the output.
+
+		basic = input.lastIndexOf(delimiter);
+		if (basic < 0) {
+			basic = 0;
+		}
+
+		for (j = 0; j < basic; ++j) {
+			// if it's not a basic code point
+			if (input.charCodeAt(j) >= 0x80) {
+				error('not-basic');
+			}
+			output.push(input.charCodeAt(j));
+		}
+
+		// Main decoding loop: start just after the last delimiter if any basic code
+		// points were copied; start at the beginning otherwise.
+
+		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
+
+			// `index` is the index of the next character to be consumed.
+			// Decode a generalized variable-length integer into `delta`,
+			// which gets added to `i`. The overflow checking is easier
+			// if we increase `i` as we go, then subtract off its starting
+			// value at the end to obtain `delta`.
+			for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
+
+				if (index >= inputLength) {
+					error('invalid-input');
+				}
+
+				digit = basicToDigit(input.charCodeAt(index++));
+
+				if (digit >= base || digit > floor((maxInt - i) / w)) {
+					error('overflow');
+				}
+
+				i += digit * w;
+				t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+
+				if (digit < t) {
+					break;
+				}
+
+				baseMinusT = base - t;
+				if (w > floor(maxInt / baseMinusT)) {
+					error('overflow');
+				}
+
+				w *= baseMinusT;
+
+			}
+
+			out = output.length + 1;
+			bias = adapt(i - oldi, out, oldi == 0);
+
+			// `i` was supposed to wrap around from `out` to `0`,
+			// incrementing `n` each time, so we'll fix that now:
+			if (floor(i / out) > maxInt - n) {
+				error('overflow');
+			}
+
+			n += floor(i / out);
+			i %= out;
+
+			// Insert `n` at position `i` of the output
+			output.splice(i++, 0, n);
+
+		}
+
+		return ucs2encode(output);
+	}
+
+	/**
+	 * Converts a string of Unicode symbols (e.g. a domain name label) to a
+	 * Punycode string of ASCII-only symbols.
+	 * @memberOf punycode
+	 * @param {String} input The string of Unicode symbols.
+	 * @returns {String} The resulting Punycode string of ASCII-only symbols.
+	 */
+	function encode(input) {
+		var n,
+		    delta,
+		    handledCPCount,
+		    basicLength,
+		    bias,
+		    j,
+		    m,
+		    q,
+		    k,
+		    t,
+		    currentValue,
+		    output = [],
+		    /** `inputLength` will hold the number of code points in `input`. */
+		    inputLength,
+		    /** Cached calculation results */
+		    handledCPCountPlusOne,
+		    baseMinusT,
+		    qMinusT;
+
+		// Convert the input in UCS-2 to Unicode
+		input = ucs2decode(input);
+
+		// Cache the length
+		inputLength = input.length;
+
+		// Initialize the state
+		n = initialN;
+		delta = 0;
+		bias = initialBias;
+
+		// Handle the basic code points
+		for (j = 0; j < inputLength; ++j) {
+			currentValue = input[j];
+			if (currentValue < 0x80) {
+				output.push(stringFromCharCode(currentValue));
+			}
+		}
+
+		handledCPCount = basicLength = output.length;
+
+		// `handledCPCount` is the number of code points that have been handled;
+		// `basicLength` is the number of basic code points.
+
+		// Finish the basic string - if it is not empty - with a delimiter
+		if (basicLength) {
+			output.push(delimiter);
+		}
+
+		// Main encoding loop:
+		while (handledCPCount < inputLength) {
+
+			// All non-basic code points < n have been handled already. Find the next
+			// larger one:
+			for (m = maxInt, j = 0; j < inputLength; ++j) {
+				currentValue = input[j];
+				if (currentValue >= n && currentValue < m) {
+					m = currentValue;
+				}
+			}
+
+			// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
+			// but guard against overflow
+			handledCPCountPlusOne = handledCPCount + 1;
+			if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
+				error('overflow');
+			}
+
+			delta += (m - n) * handledCPCountPlusOne;
+			n = m;
+
+			for (j = 0; j < inputLength; ++j) {
+				currentValue = input[j];
+
+				if (currentValue < n && ++delta > maxInt) {
+					error('overflow');
+				}
+
+				if (currentValue == n) {
+					// Represent delta as a generalized variable-length integer
+					for (q = delta, k = base; /* no condition */; k += base) {
+						t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+						if (q < t) {
+							break;
+						}
+						qMinusT = q - t;
+						baseMinusT = base - t;
+						output.push(
+							stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
+						);
+						q = floor(qMinusT / baseMinusT);
+					}
+
+					output.push(stringFromCharCode(digitToBasic(q, 0)));
+					bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
+					delta = 0;
+					++handledCPCount;
+				}
+			}
+
+			++delta;
+			++n;
+
+		}
+		return output.join('');
+	}
+
+	/**
+	 * Converts a Punycode string representing a domain name or an email address
+	 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
+	 * it doesn't matter if you call it on a string that has already been
+	 * converted to Unicode.
+	 * @memberOf punycode
+	 * @param {String} input The Punycoded domain name or email address to
+	 * convert to Unicode.
+	 * @returns {String} The Unicode representation of the given Punycode
+	 * string.
+	 */
+	function toUnicode(input) {
+		return mapDomain(input, function(string) {
+			return regexPunycode.test(string)
+				? decode(string.slice(4).toLowerCase())
+				: string;
+		});
+	}
+
+	/**
+	 * Converts a Unicode string representing a domain name or an email address to
+	 * Punycode. Only the non-ASCII parts of the domain name will be converted,
+	 * i.e. it doesn't matter if you call it with a domain that's already in
+	 * ASCII.
+	 * @memberOf punycode
+	 * @param {String} input The domain name or email address to convert, as a
+	 * Unicode string.
+	 * @returns {String} The Punycode representation of the given domain name or
+	 * email address.
+	 */
+	function toASCII(input) {
+		return mapDomain(input, function(string) {
+			return regexNonASCII.test(string)
+				? 'xn--' + encode(string)
+				: string;
+		});
+	}
+
+	/*--------------------------------------------------------------------------*/
+
+	/** Define the public API */
+	punycode = {
+		/**
+		 * A string representing the current Punycode.js version number.
+		 * @memberOf punycode
+		 * @type String
+		 */
+		'version': '1.4.1',
+		/**
+		 * An object of methods to convert from JavaScript's internal character
+		 * representation (UCS-2) to Unicode code points, and back.
+		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+		 * @memberOf punycode
+		 * @type Object
+		 */
+		'ucs2': {
+			'decode': ucs2decode,
+			'encode': ucs2encode
+		},
+		'decode': decode,
+		'encode': encode,
+		'toASCII': toASCII,
+		'toUnicode': toUnicode
+	};
+
+	/** Expose `punycode` */
+	// Some AMD build optimizers, like r.js, check for specific condition patterns
+	// like the following:
+	if (
+		true
+	) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+			return punycode;
+		}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+
+}(this));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/querystring-es3/decode.js":
 /*!************************************************!*\
   !*** ./node_modules/querystring-es3/decode.js ***!
@@ -11484,754 +11659,6 @@ try {
 
 /***/ }),
 
-/***/ "./node_modules/string-hash/index.js":
-/*!*******************************************!*\
-  !*** ./node_modules/string-hash/index.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function hash(str) {
-  var hash = 5381,
-      i    = str.length;
-
-  while(i) {
-    hash = (hash * 33) ^ str.charCodeAt(--i);
-  }
-
-  /* JavaScript does bitwise operations (like XOR, above) on 32-bit signed
-   * integers. Since we want the results to be always positive, convert the
-   * signed int to an unsigned by doing an unsigned bitshift. */
-  return hash >>> 0;
-}
-
-module.exports = hash;
-
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/dist/lib/stylesheet.js":
-/*!********************************************************!*\
-  !*** ./node_modules/styled-jsx/dist/lib/stylesheet.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-/*
-Based on Glamor's sheet
-https://github.com/threepointone/glamor/blob/667b480d31b3721a905021b26e1290ce92ca2879/src/sheet.js
-*/
-var isProd = process.env && "development" === 'production';
-
-var isString = function isString(o) {
-  return Object.prototype.toString.call(o) === '[object String]';
-};
-
-var StyleSheet =
-/*#__PURE__*/
-function () {
-  function StyleSheet() {
-    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-        _ref$name = _ref.name,
-        name = _ref$name === void 0 ? 'stylesheet' : _ref$name,
-        _ref$optimizeForSpeed = _ref.optimizeForSpeed,
-        optimizeForSpeed = _ref$optimizeForSpeed === void 0 ? isProd : _ref$optimizeForSpeed,
-        _ref$isBrowser = _ref.isBrowser,
-        isBrowser = _ref$isBrowser === void 0 ? typeof window !== 'undefined' : _ref$isBrowser;
-
-    _classCallCheck(this, StyleSheet);
-
-    invariant(isString(name), '`name` must be a string');
-    this._name = name;
-    this._deletedRulePlaceholder = "#".concat(name, "-deleted-rule____{}");
-    invariant(typeof optimizeForSpeed === 'boolean', '`optimizeForSpeed` must be a boolean');
-    this._optimizeForSpeed = optimizeForSpeed;
-    this._isBrowser = isBrowser;
-    this._serverSheet = undefined;
-    this._tags = [];
-    this._injected = false;
-    this._rulesCount = 0;
-    var node = this._isBrowser && document.querySelector('meta[property="csp-nonce"]');
-    this._nonce = node ? node.getAttribute('content') : null;
-  }
-
-  _createClass(StyleSheet, [{
-    key: "setOptimizeForSpeed",
-    value: function setOptimizeForSpeed(bool) {
-      invariant(typeof bool === 'boolean', '`setOptimizeForSpeed` accepts a boolean');
-      invariant(this._rulesCount === 0, 'optimizeForSpeed cannot be when rules have already been inserted');
-      this.flush();
-      this._optimizeForSpeed = bool;
-      this.inject();
-    }
-  }, {
-    key: "isOptimizeForSpeed",
-    value: function isOptimizeForSpeed() {
-      return this._optimizeForSpeed;
-    }
-  }, {
-    key: "inject",
-    value: function inject() {
-      var _this = this;
-
-      invariant(!this._injected, 'sheet already injected');
-      this._injected = true;
-
-      if (this._isBrowser && this._optimizeForSpeed) {
-        this._tags[0] = this.makeStyleTag(this._name);
-        this._optimizeForSpeed = 'insertRule' in this.getSheet();
-
-        if (!this._optimizeForSpeed) {
-          if (!isProd) {
-            console.warn('StyleSheet: optimizeForSpeed mode not supported falling back to standard mode.');
-          }
-
-          this.flush();
-          this._injected = true;
-        }
-
-        return;
-      }
-
-      this._serverSheet = {
-        cssRules: [],
-        insertRule: function insertRule(rule, index) {
-          if (typeof index === 'number') {
-            _this._serverSheet.cssRules[index] = {
-              cssText: rule
-            };
-          } else {
-            _this._serverSheet.cssRules.push({
-              cssText: rule
-            });
-          }
-
-          return index;
-        },
-        deleteRule: function deleteRule(index) {
-          _this._serverSheet.cssRules[index] = null;
-        }
-      };
-    }
-  }, {
-    key: "getSheetForTag",
-    value: function getSheetForTag(tag) {
-      if (tag.sheet) {
-        return tag.sheet;
-      } // this weirdness brought to you by firefox
-
-
-      for (var i = 0; i < document.styleSheets.length; i++) {
-        if (document.styleSheets[i].ownerNode === tag) {
-          return document.styleSheets[i];
-        }
-      }
-    }
-  }, {
-    key: "getSheet",
-    value: function getSheet() {
-      return this.getSheetForTag(this._tags[this._tags.length - 1]);
-    }
-  }, {
-    key: "insertRule",
-    value: function insertRule(rule, index) {
-      invariant(isString(rule), '`insertRule` accepts only strings');
-
-      if (!this._isBrowser) {
-        if (typeof index !== 'number') {
-          index = this._serverSheet.cssRules.length;
-        }
-
-        this._serverSheet.insertRule(rule, index);
-
-        return this._rulesCount++;
-      }
-
-      if (this._optimizeForSpeed) {
-        var sheet = this.getSheet();
-
-        if (typeof index !== 'number') {
-          index = sheet.cssRules.length;
-        } // this weirdness for perf, and chrome's weird bug
-        // https://stackoverflow.com/questions/20007992/chrome-suddenly-stopped-accepting-insertrule
-
-
-        try {
-          sheet.insertRule(rule, index);
-        } catch (error) {
-          if (!isProd) {
-            console.warn("StyleSheet: illegal rule: \n\n".concat(rule, "\n\nSee https://stackoverflow.com/q/20007992 for more info"));
-          }
-
-          return -1;
-        }
-      } else {
-        var insertionPoint = this._tags[index];
-
-        this._tags.push(this.makeStyleTag(this._name, rule, insertionPoint));
-      }
-
-      return this._rulesCount++;
-    }
-  }, {
-    key: "replaceRule",
-    value: function replaceRule(index, rule) {
-      if (this._optimizeForSpeed || !this._isBrowser) {
-        var sheet = this._isBrowser ? this.getSheet() : this._serverSheet;
-
-        if (!rule.trim()) {
-          rule = this._deletedRulePlaceholder;
-        }
-
-        if (!sheet.cssRules[index]) {
-          // @TBD Should we throw an error?
-          return index;
-        }
-
-        sheet.deleteRule(index);
-
-        try {
-          sheet.insertRule(rule, index);
-        } catch (error) {
-          if (!isProd) {
-            console.warn("StyleSheet: illegal rule: \n\n".concat(rule, "\n\nSee https://stackoverflow.com/q/20007992 for more info"));
-          } // In order to preserve the indices we insert a deleteRulePlaceholder
-
-
-          sheet.insertRule(this._deletedRulePlaceholder, index);
-        }
-      } else {
-        var tag = this._tags[index];
-        invariant(tag, "old rule at index `".concat(index, "` not found"));
-        tag.textContent = rule;
-      }
-
-      return index;
-    }
-  }, {
-    key: "deleteRule",
-    value: function deleteRule(index) {
-      if (!this._isBrowser) {
-        this._serverSheet.deleteRule(index);
-
-        return;
-      }
-
-      if (this._optimizeForSpeed) {
-        this.replaceRule(index, '');
-      } else {
-        var tag = this._tags[index];
-        invariant(tag, "rule at index `".concat(index, "` not found"));
-        tag.parentNode.removeChild(tag);
-        this._tags[index] = null;
-      }
-    }
-  }, {
-    key: "flush",
-    value: function flush() {
-      this._injected = false;
-      this._rulesCount = 0;
-
-      if (this._isBrowser) {
-        this._tags.forEach(function (tag) {
-          return tag && tag.parentNode.removeChild(tag);
-        });
-
-        this._tags = [];
-      } else {
-        // simpler on server
-        this._serverSheet.cssRules = [];
-      }
-    }
-  }, {
-    key: "cssRules",
-    value: function cssRules() {
-      var _this2 = this;
-
-      if (!this._isBrowser) {
-        return this._serverSheet.cssRules;
-      }
-
-      return this._tags.reduce(function (rules, tag) {
-        if (tag) {
-          rules = rules.concat(_this2.getSheetForTag(tag).cssRules.map(function (rule) {
-            return rule.cssText === _this2._deletedRulePlaceholder ? null : rule;
-          }));
-        } else {
-          rules.push(null);
-        }
-
-        return rules;
-      }, []);
-    }
-  }, {
-    key: "makeStyleTag",
-    value: function makeStyleTag(name, cssString, relativeToTag) {
-      if (cssString) {
-        invariant(isString(cssString), 'makeStyleTag acceps only strings as second parameter');
-      }
-
-      var tag = document.createElement('style');
-      if (this._nonce) tag.setAttribute('nonce', this._nonce);
-      tag.type = 'text/css';
-      tag.setAttribute("data-".concat(name), '');
-
-      if (cssString) {
-        tag.appendChild(document.createTextNode(cssString));
-      }
-
-      var head = document.head || document.getElementsByTagName('head')[0];
-
-      if (relativeToTag) {
-        head.insertBefore(tag, relativeToTag);
-      } else {
-        head.appendChild(tag);
-      }
-
-      return tag;
-    }
-  }, {
-    key: "length",
-    get: function get() {
-      return this._rulesCount;
-    }
-  }]);
-
-  return StyleSheet;
-}();
-
-exports.default = StyleSheet;
-
-function invariant(condition, message) {
-  if (!condition) {
-    throw new Error("StyleSheet: ".concat(message, "."));
-  }
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../process/browser.js */ "./node_modules/process/browser.js")))
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/dist/style.js":
-/*!***********************************************!*\
-  !*** ./node_modules/styled-jsx/dist/style.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.flush = flush;
-exports.default = void 0;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _stylesheetRegistry = _interopRequireDefault(__webpack_require__(/*! ./stylesheet-registry */ "./node_modules/styled-jsx/dist/stylesheet-registry.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var styleSheetRegistry = new _stylesheetRegistry.default();
-
-var JSXStyle =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(JSXStyle, _Component);
-
-  function JSXStyle(props) {
-    var _this;
-
-    _classCallCheck(this, JSXStyle);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(JSXStyle).call(this, props));
-    _this.prevProps = {};
-    return _this;
-  }
-
-  _createClass(JSXStyle, [{
-    key: "shouldComponentUpdate",
-    // probably faster than PureComponent (shallowEqual)
-    value: function shouldComponentUpdate(otherProps) {
-      return this.props.id !== otherProps.id || // We do this check because `dynamic` is an array of strings or undefined.
-      // These are the computed values for dynamic styles.
-      String(this.props.dynamic) !== String(otherProps.dynamic);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      styleSheetRegistry.remove(this.props);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      // This is a workaround to make the side effect async safe in the "render" phase.
-      // See https://github.com/zeit/styled-jsx/pull/484
-      if (this.shouldComponentUpdate(this.prevProps)) {
-        // Updates
-        if (this.prevProps.id) {
-          styleSheetRegistry.remove(this.prevProps);
-        }
-
-        styleSheetRegistry.add(this.props);
-        this.prevProps = this.props;
-      }
-
-      return null;
-    }
-  }], [{
-    key: "dynamic",
-    value: function dynamic(info) {
-      return info.map(function (tagInfo) {
-        var baseId = tagInfo[0];
-        var props = tagInfo[1];
-        return styleSheetRegistry.computeId(baseId, props);
-      }).join(' ');
-    }
-  }]);
-
-  return JSXStyle;
-}(_react.Component);
-
-exports.default = JSXStyle;
-
-function flush() {
-  var cssRules = styleSheetRegistry.cssRules();
-  styleSheetRegistry.flush();
-  return cssRules;
-}
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/dist/stylesheet-registry.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/styled-jsx/dist/stylesheet-registry.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _stringHash = _interopRequireDefault(__webpack_require__(/*! string-hash */ "./node_modules/string-hash/index.js"));
-
-var _stylesheet = _interopRequireDefault(__webpack_require__(/*! ./lib/stylesheet */ "./node_modules/styled-jsx/dist/lib/stylesheet.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var sanitize = function sanitize(rule) {
-  return rule.replace(/\/style/gi, '\\/style');
-};
-
-var StyleSheetRegistry =
-/*#__PURE__*/
-function () {
-  function StyleSheetRegistry() {
-    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-        _ref$styleSheet = _ref.styleSheet,
-        styleSheet = _ref$styleSheet === void 0 ? null : _ref$styleSheet,
-        _ref$optimizeForSpeed = _ref.optimizeForSpeed,
-        optimizeForSpeed = _ref$optimizeForSpeed === void 0 ? false : _ref$optimizeForSpeed,
-        _ref$isBrowser = _ref.isBrowser,
-        isBrowser = _ref$isBrowser === void 0 ? typeof window !== 'undefined' : _ref$isBrowser;
-
-    _classCallCheck(this, StyleSheetRegistry);
-
-    this._sheet = styleSheet || new _stylesheet.default({
-      name: 'styled-jsx',
-      optimizeForSpeed: optimizeForSpeed
-    });
-
-    this._sheet.inject();
-
-    if (styleSheet && typeof optimizeForSpeed === 'boolean') {
-      this._sheet.setOptimizeForSpeed(optimizeForSpeed);
-
-      this._optimizeForSpeed = this._sheet.isOptimizeForSpeed();
-    }
-
-    this._isBrowser = isBrowser;
-    this._fromServer = undefined;
-    this._indices = {};
-    this._instancesCounts = {};
-    this.computeId = this.createComputeId();
-    this.computeSelector = this.createComputeSelector();
-  }
-
-  _createClass(StyleSheetRegistry, [{
-    key: "add",
-    value: function add(props) {
-      var _this = this;
-
-      if (undefined === this._optimizeForSpeed) {
-        this._optimizeForSpeed = Array.isArray(props.children);
-
-        this._sheet.setOptimizeForSpeed(this._optimizeForSpeed);
-
-        this._optimizeForSpeed = this._sheet.isOptimizeForSpeed();
-      }
-
-      if (this._isBrowser && !this._fromServer) {
-        this._fromServer = this.selectFromServer();
-        this._instancesCounts = Object.keys(this._fromServer).reduce(function (acc, tagName) {
-          acc[tagName] = 0;
-          return acc;
-        }, {});
-      }
-
-      var _this$getIdAndRules = this.getIdAndRules(props),
-          styleId = _this$getIdAndRules.styleId,
-          rules = _this$getIdAndRules.rules; // Deduping: just increase the instances count.
-
-
-      if (styleId in this._instancesCounts) {
-        this._instancesCounts[styleId] += 1;
-        return;
-      }
-
-      var indices = rules.map(function (rule) {
-        return _this._sheet.insertRule(rule);
-      }) // Filter out invalid rules
-      .filter(function (index) {
-        return index !== -1;
-      });
-      this._indices[styleId] = indices;
-      this._instancesCounts[styleId] = 1;
-    }
-  }, {
-    key: "remove",
-    value: function remove(props) {
-      var _this2 = this;
-
-      var _this$getIdAndRules2 = this.getIdAndRules(props),
-          styleId = _this$getIdAndRules2.styleId;
-
-      invariant(styleId in this._instancesCounts, "styleId: `".concat(styleId, "` not found"));
-      this._instancesCounts[styleId] -= 1;
-
-      if (this._instancesCounts[styleId] < 1) {
-        var tagFromServer = this._fromServer && this._fromServer[styleId];
-
-        if (tagFromServer) {
-          tagFromServer.parentNode.removeChild(tagFromServer);
-          delete this._fromServer[styleId];
-        } else {
-          this._indices[styleId].forEach(function (index) {
-            return _this2._sheet.deleteRule(index);
-          });
-
-          delete this._indices[styleId];
-        }
-
-        delete this._instancesCounts[styleId];
-      }
-    }
-  }, {
-    key: "update",
-    value: function update(props, nextProps) {
-      this.add(nextProps);
-      this.remove(props);
-    }
-  }, {
-    key: "flush",
-    value: function flush() {
-      this._sheet.flush();
-
-      this._sheet.inject();
-
-      this._fromServer = undefined;
-      this._indices = {};
-      this._instancesCounts = {};
-      this.computeId = this.createComputeId();
-      this.computeSelector = this.createComputeSelector();
-    }
-  }, {
-    key: "cssRules",
-    value: function cssRules() {
-      var _this3 = this;
-
-      var fromServer = this._fromServer ? Object.keys(this._fromServer).map(function (styleId) {
-        return [styleId, _this3._fromServer[styleId]];
-      }) : [];
-
-      var cssRules = this._sheet.cssRules();
-
-      return fromServer.concat(Object.keys(this._indices).map(function (styleId) {
-        return [styleId, _this3._indices[styleId].map(function (index) {
-          return cssRules[index].cssText;
-        }).join(_this3._optimizeForSpeed ? '' : '\n')];
-      }) // filter out empty rules
-      .filter(function (rule) {
-        return Boolean(rule[1]);
-      }));
-    }
-    /**
-     * createComputeId
-     *
-     * Creates a function to compute and memoize a jsx id from a basedId and optionally props.
-     */
-
-  }, {
-    key: "createComputeId",
-    value: function createComputeId() {
-      var cache = {};
-      return function (baseId, props) {
-        if (!props) {
-          return "jsx-".concat(baseId);
-        }
-
-        var propsToString = String(props);
-        var key = baseId + propsToString; // return `jsx-${hashString(`${baseId}-${propsToString}`)}`
-
-        if (!cache[key]) {
-          cache[key] = "jsx-".concat((0, _stringHash.default)("".concat(baseId, "-").concat(propsToString)));
-        }
-
-        return cache[key];
-      };
-    }
-    /**
-     * createComputeSelector
-     *
-     * Creates a function to compute and memoize dynamic selectors.
-     */
-
-  }, {
-    key: "createComputeSelector",
-    value: function createComputeSelector() {
-      var selectoPlaceholderRegexp = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : /__jsx-style-dynamic-selector/g;
-      var cache = {};
-      return function (id, css) {
-        // Sanitize SSR-ed CSS.
-        // Client side code doesn't need to be sanitized since we use
-        // document.createTextNode (dev) and the CSSOM api sheet.insertRule (prod).
-        if (!this._isBrowser) {
-          css = sanitize(css);
-        }
-
-        var idcss = id + css;
-
-        if (!cache[idcss]) {
-          cache[idcss] = css.replace(selectoPlaceholderRegexp, id);
-        }
-
-        return cache[idcss];
-      };
-    }
-  }, {
-    key: "getIdAndRules",
-    value: function getIdAndRules(props) {
-      var _this4 = this;
-
-      var css = props.children,
-          dynamic = props.dynamic,
-          id = props.id;
-
-      if (dynamic) {
-        var styleId = this.computeId(id, dynamic);
-        return {
-          styleId: styleId,
-          rules: Array.isArray(css) ? css.map(function (rule) {
-            return _this4.computeSelector(styleId, rule);
-          }) : [this.computeSelector(styleId, css)]
-        };
-      }
-
-      return {
-        styleId: this.computeId(id),
-        rules: Array.isArray(css) ? css : [css]
-      };
-    }
-    /**
-     * selectFromServer
-     *
-     * Collects style tags from the document with id __jsx-XXX
-     */
-
-  }, {
-    key: "selectFromServer",
-    value: function selectFromServer() {
-      var elements = Array.prototype.slice.call(document.querySelectorAll('[id^="__jsx-"]'));
-      return elements.reduce(function (acc, element) {
-        var id = element.id.slice(2);
-        acc[id] = element;
-        return acc;
-      }, {});
-    }
-  }]);
-
-  return StyleSheetRegistry;
-}();
-
-exports.default = StyleSheetRegistry;
-
-function invariant(condition, message) {
-  if (!condition) {
-    throw new Error("StyleSheetRegistry: ".concat(message, "."));
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/style.js":
-/*!******************************************!*\
-  !*** ./node_modules/styled-jsx/style.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-jsx/dist/style.js")
-
-
-/***/ }),
-
 /***/ "./node_modules/url/url.js":
 /*!*********************************!*\
   !*** ./node_modules/url/url.js ***!
@@ -12263,7 +11690,7 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 
 
-var punycode = __webpack_require__(/*! punycode */ "./node_modules/node-libs-browser/node_modules/punycode/punycode.js");
+var punycode = __webpack_require__(/*! punycode */ "./node_modules/punycode/punycode.js");
 var util = __webpack_require__(/*! ./util */ "./node_modules/url/util.js");
 
 exports.parse = urlParse;
@@ -13132,5 +12559,5 @@ module.exports = dll_13346faca0e924a89b24;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=login.js.map

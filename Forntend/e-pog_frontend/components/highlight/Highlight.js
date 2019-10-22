@@ -3,6 +3,7 @@ import { Icon, Avatar, Comment, Tooltip, Button, Input } from 'antd';
 import axios from 'axios';
 import moment from 'moment';
 import { white } from 'ansi-colors';
+import './Highlight.scss';
 
 const Highlight = ({youtubeLink}) => {
     console.log(youtubeLink)

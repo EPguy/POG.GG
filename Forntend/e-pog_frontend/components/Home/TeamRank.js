@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import * as api from '../../api/api';
+import './TeamRank.scss';
 const TeamRank = () => {
     useEffect(() => {
         api.getTournanments(2392)
@@ -175,76 +176,6 @@ const TeamRank = () => {
                     </div>
                 </div>
             </div>
-            <style global jsx>
-                {`
-                    .Ranks table {
-                        width: 100%;
-                    }
-                    .RankTable {
-                        cursor: pointer;
-                        border-collapse: inital;
-                        border-spacing: 0 1rem;
-                        width: 100%;
-                    }
-                    thead {
-                        display: table-header-group;
-                        vertical-align: middle;
-                        border-color: inherit;
-                    }
-                    .RankTable thead th:first-child {
-                        font-size: 1.875px;
-                        font-size: 1.875rem;
-                    }
-                    .RankTable thead th {
-                        height: 3.125rem;
-                        text-transform: uppercase;
-                    }
-                    th {
-                        text-align: inherit;
-                    }
-                    .RankTable thead th {
-                        height: 3.125rem;
-                        text-transform: uppercase;
-                    }
-                    tbody {
-                        display: table-row-group;
-                        vertical-align: middle;
-                        border-color: inherit;
-                        
-                    }
-                    .RankTable tbody td:first-child {
-                        width: 5rem;
-                        position: relative;
-                        background-color: #fbfbfb;
-                        background-size: 60%;
-                        background-position: .625rem;
-                        background-repeat: no-repeat;
-                    }
-                    .RankTable tbody td {
-                        height: 3.75rem;
-                        background-color: #5b5c64;
-                        transition: opacity 150ms ease 0ms;
-                    }
-                    .RankTable tbody tr:hover td{
-                        opacity:0.6;
-                    }
-                    .RankTable tbody tr.RankTable__lead td:not(:first-child) {
-                        background-color: #db0442;
-                    }
-                    .RankTable tbody td:nth-child(2) {
-                        font-size: 1.5px;
-                        font-size: 1.5rem;
-                        text-align: center;
-                        width: 3rem;
-                    }
-                    .RankTable tbody td:nth-child(4) {
-                        width: 6rem;
-                    }
-                    .RankTable tbody td:last-child {
-                        width: 5rem;
-                    }                    
-                `}
-            </style>
         </>
     )
 }

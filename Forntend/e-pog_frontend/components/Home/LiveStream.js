@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './LiveStream.scss';
 const LiveStream = () => {
     return (
         <>
@@ -27,49 +27,6 @@ const LiveStream = () => {
                     </div>
                 </div>
             </div>
-            <style global jsx>
-                {`
-                    .LiveStreams__container {
-                        margin-right: -.625rem;
-                    }
-                    .LiveStreams__streaming {
-                        display: inline-block;
-                        vertical-align: top;
-                        margin-bottom: 1.25rem;
-                        margin-right: .625rem;
-                        width: calc(20% - .625rem);
-                    }
-                    .LiveStreams__streaming__thumbnail {
-                        width: 100%;
-                        height: auto;
-                        margin-bottom: .5rem;
-                    }
-                    .PlayerIcon {
-                        width: 2.5rem;
-                        height: 2.5rem;
-                        background-size: cover;
-                        border-radius: 50%;
-                        margin: 0;
-                    }
-                    .PlayerIcon.small {
-                        width: 1.875rem;
-                        height: 1.875rem;
-                    }
-                    .LiveStreams__streaming__playerName {
-                        display: inline-block;
-                        vertical-align: top;
-                        position: relative;
-                        margin-left: .5rem;
-                        top: .2rem;
-                        color: #fbfbfb;
-                    }
-                    .LiveStreams__streaming__playerIcon {
-                        display: inline-block;
-                        vertical-align: top;
-                        border: 1px solid #d8d8d8;
-                    }
-                `}
-            </style>
         </>
     )
 }

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -102,120 +102,292 @@ module.exports =
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _LoginForm_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LoginForm.scss */ "./components/Login/LoginForm.scss");
+/* harmony import */ var _LoginForm_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_LoginForm_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Login\\LoginForm.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 const LoginForm = () => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    className: "jsx-1156299938" + " " + "login-form__contianer",
+  const {
+    0: username,
+    1: SetUsername
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const {
+    0: Email,
+    1: SetEmail
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const {
+    0: Password,
+    1: SetPassword
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const {
+    0: Disabled,
+    1: SetDisabled
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const {
+    0: isLogin,
+    1: SetIsLogin
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (Email === '' || Password === '') {
+      SetDisabled(true);
+    } else {
+      SetDisabled(false);
+    }
+  }, [Email, Password]);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, isLogin ? __jsx("div", {
+    className: "login-form__contianer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 21
     },
     __self: undefined
   }, __jsx("div", {
-    className: "jsx-1156299938" + " " + "login-form__inner",
+    className: "login-form__inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 22
     },
     __self: undefined
   }, __jsx("h1", {
-    className: "jsx-1156299938" + " " + "login-from__logo",
+    className: "login-from__logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 23
     },
     __self: undefined
   }, __jsx("img", {
     class: "login-form__logo-image",
     src: "/static/logo.png",
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 23
     },
     __self: undefined
   })), __jsx("div", {
-    className: "jsx-1156299938" + " " + "login",
+    className: "login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx("form", {
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 25
     },
     __self: undefined
   }, __jsx("div", {
-    className: "jsx-1156299938" + " " + "member-input",
+    className: "member-input",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 26
     },
     __self: undefined
   }, __jsx("div", {
-    className: "jsx-1156299938" + " " + "member-input__state",
+    className: "member-input__state",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 27
     },
     __self: undefined
   }, __jsx("input", {
     class: "member-input__box",
+    onChange: e => SetEmail(e.target.value),
     type: "text",
     placeholder: "Email",
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 28
     },
     __self: undefined
   })), __jsx("div", {
-    className: "jsx-1156299938" + " " + "member-input__state",
+    className: "member-input__state",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx("input", {
     class: "member-input__box",
+    onChange: e => SetPassword(e.target.value),
     type: "text",
     placeholder: "Password",
-    className: "jsx-1156299938",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 31
     },
     __self: undefined
   })), __jsx("button", {
     type: "submit",
     class: "member-button login__btn",
-    className: "jsx-1156299938",
+    disabled: Disabled,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 33
     },
     __self: undefined
-  }, "LOGIN")))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1156299938",
+  }, "LOGIN"))), __jsx("div", {
+    className: "login__l-sign-up",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
     __self: undefined
-  }, ".login-form__contianer{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin:0 auto;width:500px;min-height:800px;}.login-form__inner{width:500px;background-color:#2a2b30;box-shadow:0 2px 4px 0 rgba(0,0,0,.2);margin:0 40px;padding-bottom:40px;}.login-from__logo{padding-top:48px;text-align:center;margin-bottom:42px;}.login-form__logo-image{width:200px;height:100px;}.login__email-title{margin-top:42px;font-weight:400;font-size:16px;line-height:19px;}.member-input{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.member-input__state{width:300px;margin-top:27px;position:relative;padding:10px 0 11px;border-bottom:1px solid #dddfe4;}.member-input__state input{color:white;}.member-input__box{font-size:20px;position:relative;z-index:10;border:0;padding:0;background-color:transparent;outline:0;}.login__btn{margin-top:40px;width:300px;}.member-button{position:relative;font-weight:400;line-height:19px;text-align:center;background-color:#1ea1f7;font-weight:700;cursor:pointer;line-height:56px;padding:0 20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcTG9naW5cXExvZ2luRm9ybS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEwQmEsQUFHa0MsQUFVRCxBQU9LLEFBS0wsQUFJSSxBQU1ILEFBTUQsQUFPQSxBQUdHLEFBVUMsQUFJRSxZQW5ETyxBQVlaLEFBZ0JHLEFBT3BCLEdBR1csQUFDVyxDQXZCRixBQWdDSixDQXpDTSxDQTZDRixPQXZDcEIsR0FnQnNCLEFBb0J0QixJQWhDbUIsQ0F1QkosQ0FhTSxDQTdDRSxFQVBtQixPQXdDN0IsRUFYVyxDQVpILElBb0NDLEVBWlIsQ0FqQ2QsU0FrQ2lDLENBeEJqQyxFQVlvQyxHQXdCUCxLQWpFRixBQWdDQSxDQXBCVCxjQUNNLEdBeUNWLEVBWU0sSUF4QnBCLElBYUEsT0F6Q0EsQ0FxRG1CLGVBQ0UsaUJBQ0YsZUFDbkIsZ0JBckV1QixBQWdDQSw2RkEvQkQsQUFnQ0ksa0JBL0JSLGNBQ0YsWUFDSyxpQkFFckIsaUJBNEJBIiwiZmlsZSI6IkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcTG9naW5cXExvZ2luRm9ybS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuY29uc3QgTG9naW5Gb3JtID0gKCkgPT4ge1xyXG4gICAgcmV0dXJuIChcclxuICAgIDw+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsb2dpbi1mb3JtX19jb250aWFuZXJcIj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsb2dpbi1mb3JtX19pbm5lclwiPlxyXG4gICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImxvZ2luLWZyb21fX2xvZ29cIj48aW1nIGNsYXNzPVwibG9naW4tZm9ybV9fbG9nby1pbWFnZVwiIHNyYz1cIi9zdGF0aWMvbG9nby5wbmdcIi8+PC9oMT5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibG9naW5cIj5cclxuICAgICAgICAgICAgICAgICAgICA8Zm9ybT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtZW1iZXItaW5wdXRcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWVtYmVyLWlucHV0X19zdGF0ZVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCBjbGFzcz1cIm1lbWJlci1pbnB1dF9fYm94XCIgdHlwZT1cInRleHRcIiBwbGFjZWhvbGRlcj1cIkVtYWlsXCIvPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1lbWJlci1pbnB1dF9fc3RhdGVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgY2xhc3M9XCJtZW1iZXItaW5wdXRfX2JveFwiIHR5cGU9XCJ0ZXh0XCIgcGxhY2Vob2xkZXI9XCJQYXNzd29yZFwiLz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiB0eXBlPVwic3VibWl0XCIgY2xhc3M9XCJtZW1iZXItYnV0dG9uIGxvZ2luX19idG5cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBMT0dJTlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZm9ybT5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8c3R5bGUgZ2xvYmFsIGpzeD5cclxuICAgICAgICAgICAge2BcclxuICAgICAgICAgICAgICAgIC5sb2dpbi1mb3JtX19jb250aWFuZXIge1xyXG4gICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDUwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDgwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLmxvZ2luLWZvcm1fX2lubmVyIHtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogNTAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzJhMmIzMDtcclxuICAgICAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggMCByZ2JhKDAsMCwwLC4yKTtcclxuICAgICAgICAgICAgICAgICAgICBtYXJnaW46IDAgNDBweDtcclxuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogNDBweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbi1mcm9tX19sb2dvIHtcclxuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLXRvcDogNDhweDtcclxuICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogNDJweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbi1mb3JtX19sb2dvLWltYWdlIHtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMjAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDBweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbl9fZW1haWwtdGl0bGUge1xyXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi10b3A6IDQycHg7XHJcbiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICAgICAgICAgICAgICAgICAgbGluZS1oZWlnaHQ6IDE5cHg7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAubWVtYmVyLWlucHV0IHtcclxuICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgICAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgICAgICAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5tZW1iZXItaW5wdXRfX3N0YXRlIHtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMzAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luLXRvcDogMjdweDtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZzogMTBweCAwIDExcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNkZGRmZTQ7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAubWVtYmVyLWlucHV0X19zdGF0ZSBpbnB1dHsgXHJcbiAgICAgICAgICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLm1lbWJlci1pbnB1dF9fYm94IHtcclxuICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgY29sb3I6IDtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgei1pbmRleDogMTA7XHJcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyOiAwO1xyXG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XHJcbiAgICAgICAgICAgICAgICAgICAgb3V0bGluZTogMDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5sb2dpbl9fYnRuIHtcclxuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiA0MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMDBweDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5tZW1iZXItYnV0dG9uIHtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgICAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDogMTlweDtcclxuICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzFlYTFmNztcclxuICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNzAwO1xyXG4gICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDogNTZweDtcclxuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiAwIDIwcHg7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIGB9XHJcbiAgICAgICAgPC9zdHlsZT5cclxuICAgIDwvPlxyXG4gICAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBMb2dpbkZvcm07Il19 */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Login\\LoginForm.js */"));
+  }, "Don\u2019t have an account?", __jsx("div", {
+    className: "login__sign-up-link",
+    onClick: () => SetIsLogin(false),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, "Sign Up"))))) : __jsx("div", {
+    className: "login-form__contianer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "login-form__inner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, __jsx("h1", {
+    className: "login-from__logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  }, __jsx("img", {
+    class: "login-form__logo-image",
+    src: "/static/logo.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  })), __jsx("div", {
+    className: "login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }, __jsx("form", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "member-input",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "member-input__state",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: undefined
+  }, __jsx("input", {
+    class: "member-input__box",
+    onChange: e => SetUsername(e.target.value),
+    type: "text",
+    placeholder: "Username",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  })), __jsx("div", {
+    className: "member-input__state",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: undefined
+  }, __jsx("input", {
+    class: "member-input__box",
+    onChange: e => SetEmail(e.target.value),
+    type: "text",
+    placeholder: "Email",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: undefined
+  })), __jsx("div", {
+    className: "member-input__state",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: undefined
+  }, __jsx("input", {
+    class: "member-input__box",
+    onChange: e => SetPassword(e.target.value),
+    type: "text",
+    placeholder: "Password",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: undefined
+  })), __jsx("button", {
+    type: "submit",
+    class: "member-button login__btn",
+    disabled: Disabled,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: undefined
+  }, "LOGIN"))), __jsx("div", {
+    className: "login__l-sign-up",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: undefined
+  }, "Do you have an account?", __jsx("div", {
+    className: "login__sign-up-link",
+    onClick: () => SetIsLogin(true),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: undefined
+  }, "Login"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LoginForm);
+
+/***/ }),
+
+/***/ "./components/Login/LoginForm.scss":
+/*!*****************************************!*\
+  !*** ./components/Login/LoginForm.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -2200,7 +2372,7 @@ const Login = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/login.js ***!
   \******************************/
@@ -2330,17 +2502,6 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
-
-/***/ }),
-
-/***/ "styled-jsx/style":
-/*!***********************************!*\
-  !*** external "styled-jsx/style" ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("styled-jsx/style");
 
 /***/ }),
 

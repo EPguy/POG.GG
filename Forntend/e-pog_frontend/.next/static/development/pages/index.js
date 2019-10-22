@@ -43,109 +43,112 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _AppLayout_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AppLayout.scss */ "./components/AppLayout/AppLayout.scss");
+/* harmony import */ var _AppLayout_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_AppLayout_scss__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\AppLayout\\AppLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 var AppLayout = function AppLayout(_ref) {
   var children = _ref.children;
   return __jsx("div", {
-    className: "jsx-3986967398",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "jsx-3986967398" + " " + "LeagueBackground",
+    className: "jsx-3197201476",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }), __jsx("nav", {
-    className: "jsx-3986967398" + " " + "Navigation",
+  }, __jsx("div", {
+    className: "jsx-3197201476" + " " + "LeagueBackground",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, __jsx("div", {
-    className: "jsx-3986967398" + " " + "container",
+  }), __jsx("nav", {
+    className: "jsx-3197201476" + " " + "Navigation",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "jsx-3197201476" + " " + "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3986967398" + " " + "Menus__link Gilroy brand",
+    className: "jsx-3197201476" + " " + "Menus__link Gilroy brand",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, "E-Pog.GG")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/highlights",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3986967398" + " " + "Menus__link",
+    className: "jsx-3197201476" + " " + "Menus__link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, "\uD558\uC774\uB77C\uC774\uD2B8")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3986967398" + " " + "Menus__link",
+    className: "jsx-3197201476" + " " + "Menus__link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, "\uCEE4\uBBA4\uB2C8\uD2F0")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3986967398" + " " + "Menus__login float-right",
+    className: "jsx-3197201476" + " " + "Menus__login float-right",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
   }, __jsx("span", {
-    className: "jsx-3986967398",
+    className: "jsx-3197201476",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, "\uB85C\uADF8\uC778"))))), children, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3986967398",
+    id: "3197201476",
     __self: this
-  }, ".Navigation{clear:both;height:3.75rem;line-height:3.75rem;background-color:#27282d;color:#fff;position:-webkit-sticky;position:sticky;top:0;z-index:10;border-bottom:1px solid #2a2b30;}.container{color:white;max-width:1140px;width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}.Menus__link{font-size:1px;font-size:1rem;margin-right:1.6rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;}.Menus__link.brand{font-size:1.875rem;font-family:Gilroy;color:#db0442;margin-right:4rem;}.Menus__link:not(.brand){top:-.25rem;position:relative;color:#fbfbfb;}.Menus__login{font-size:.75px;font-size:.75rem;padding-left:1.25rem;padding-right:1.25rem;cursor:pointer;margin-top:.875rem;height:2rem;line-height:normal;border:1px solid #01d1b2;color:#01d1b2;padding-top:.4rem;}.Menus__login:hover{-webkit-animation:login 0.3s ease 1;-webkit-animation-fill-mode:both;}@-webkit-keyframes login{100%{border-color:#16776A;color:#16776A;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcQXBwTGF5b3V0XFxBcHBMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0JpQixBQUdvQyxBQVdDLEFBU0UsQUFPSyxBQU1QLEFBS0ksQUFhcUIsQUFLWixXQXZEVixDQVdFLEFBc0JDLEVBYkgsRUFrQkUsR0FYRSxFQTZCQSxLQXZEQyxHQVdULEFBU1MsQ0FhTixHQUtPLEVBa0JyQixDQUxMLEVBeEJtQixFQWZLLElBc0J2QixFQWpDNkIsR0FvQlIsR0FPQyxFQVdJLEtBMUJKLFVBc0N0QixDQXRCQSxDQTNCZSxLQXNDSSxDQTFCRyxLQVhGLFNBc0NHLElBMUJGLGVBMkJMLEVBMUJoQixVQVpVLEFBdUNhLE1BdENSLE1BaUJPLEtBaEJjLEVBc0NQLFdBckI3QixjQXNCa0IsS0F0Q2xCLFNBdUNzQixrQkFDdEIiLCJmaWxlIjoiRDpcXFJlYWN0UHJvamVjdFxcamF2YXByb2plY3RcXGxvZC5nZ1xcRm9ybnRlbmRcXGUtcG9nX2Zyb250ZW5kXFxjb21wb25lbnRzXFxBcHBMYXlvdXRcXEFwcExheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcbmNvbnN0IEFwcExheW91dCA9ICh7Y2hpbGRyZW59KSA9PiB7XHJcbiAgICByZXR1cm4oXHJcbiAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJMZWFndWVCYWNrZ3JvdW5kXCI+PC9kaXY+XHJcbiAgICAgICAgICAgIDxuYXYgY2xhc3NOYW1lPVwiTmF2aWdhdGlvblwiPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cclxuICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPVwiL1wiPjxhIGNsYXNzTmFtZT1cIk1lbnVzX19saW5rIEdpbHJveSBicmFuZFwiID5FLVBvZy5HRzwvYT48L0xpbms+XHJcbiAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9oaWdobGlnaHRzXCI+PGEgY2xhc3NOYW1lPVwiTWVudXNfX2xpbmtcIiA+7ZWY7J2065287J207Yq4PC9hPjwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPVwiI1wiPjxhIGNsYXNzTmFtZT1cIk1lbnVzX19saW5rXCI+7Luk666k64uI7YuwPC9hPjwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPVwiL2xvZ2luXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cIk1lbnVzX19sb2dpbiBmbG9hdC1yaWdodFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+66Gc6re47J24PC9zcGFuPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvbmF2PlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgICAgIDxzdHlsZSBnbG9iYWwganN4PlxyXG4gICAgICAgICAgICAgICAge2BcclxuICAgICAgICAgICAgICAgICAgICAuTmF2aWdhdGlvbiB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGNsZWFyOiBib3RoO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDMuNzVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAzLjc1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjcyODJkO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZmZjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHN0aWNreTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdG9wOiAwO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB6LWluZGV4OiAxMDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICMyYTJiMzA7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5jb250YWluZXIge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogd2hpdGU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1heC13aWR0aDogMTE0MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1yaWdodDogMTVweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1sZWZ0OiAxNXB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTWVudXNfX2xpbmsge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDFweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAxcmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDEuNnJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdXNlci1zZWxlY3Q6IG5vbmU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1lbnVzX19saW5rLmJyYW5kIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAxLjg3NXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6IEdpbHJveTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICNkYjA0NDI7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogNHJlbTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1lbnVzX19saW5rOm5vdCguYnJhbmQpIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdG9wOiAtLjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjZmJmYmZiO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTWVudXNfX2xvZ2luIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAuNzVweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAuNzVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctbGVmdDogMS4yNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1yaWdodDogMS4yNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiAuODc1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDJyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiBub3JtYWw7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMWQxYjI7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjMDFkMWIyO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLXRvcDogLjRyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5NZW51c19fbG9naW46aG92ZXIge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAtd2Via2l0LWFuaW1hdGlvbjpsb2dpbiAgIDAuM3MgZWFzZSAxO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAtd2Via2l0LWFuaW1hdGlvbi1maWxsLW1vZGU6Ym90aFxyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICBALXdlYmtpdC1rZXlmcmFtZXMgbG9naW57XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDEwMCV7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItY29sb3I6ICMxNjc3NkE7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogICMxNjc3NkE7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICBgfVxyXG4gICAgICAgICAgICA8L3N0eWxlPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBBcHBMYXlvdXQ7Il19 */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\AppLayout\\AppLayout.js */"));
+  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcQXBwTGF5b3V0XFxBcHBMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUJpQiIsImZpbGUiOiJEOlxcUmVhY3RQcm9qZWN0XFxqYXZhcHJvamVjdFxcbG9kLmdnXFxGb3JudGVuZFxcZS1wb2dfZnJvbnRlbmRcXGNvbXBvbmVudHNcXEFwcExheW91dFxcQXBwTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcclxuaW1wb3J0ICcuL0FwcExheW91dC5zY3NzJztcclxuY29uc3QgQXBwTGF5b3V0ID0gKHtjaGlsZHJlbn0pID0+IHtcclxuICAgIHJldHVybihcclxuICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkxlYWd1ZUJhY2tncm91bmRcIj48L2Rpdj5cclxuICAgICAgICAgICAgPG5hdiBjbGFzc05hbWU9XCJOYXZpZ2F0aW9uXCI+XHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvXCI+PGEgY2xhc3NOYW1lPVwiTWVudXNfX2xpbmsgR2lscm95IGJyYW5kXCIgPkUtUG9nLkdHPC9hPjwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPVwiL2hpZ2hsaWdodHNcIj48YSBjbGFzc05hbWU9XCJNZW51c19fbGlua1wiID7tlZjsnbTrnbzsnbTtirg8L2E+PC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIjXCI+PGEgY2xhc3NOYW1lPVwiTWVudXNfX2xpbmtcIj7su6TrrqTri4jti7A8L2E+PC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rICBocmVmPVwiL2xvZ2luXCI+PGEgY2xhc3NOYW1lPVwiTWVudXNfX2xvZ2luIGZsb2F0LXJpZ2h0XCI+PHNwYW4+66Gc6re47J24PC9zcGFuPjwvYT48L0xpbms+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPC9uYXY+XHJcbiAgICAgICAgICAgIHtjaGlsZHJlbn1cclxuICAgICAgICAgICAgPHN0eWxlIGdsb2JhbCBqc3g+XHJcbiAgICAgICAgICAgICAgICB7YFxyXG4gICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgYH1cclxuICAgICAgICAgICAgPC9zdHlsZT5cclxuICAgICAgICA8L2Rpdj5cclxuICAgIClcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgQXBwTGF5b3V0OyJdfQ== */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\AppLayout\\AppLayout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AppLayout);
@@ -161,65 +164,61 @@ var AppLayout = function AppLayout(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _LeagueSelector_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeagueSelector.scss */ "./components/Home/LeagueSelector.scss");
+/* harmony import */ var _LeagueSelector_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_LeagueSelector_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\LeagueSelector.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var LeagueSelector = function LeagueSelector() {
   console.log("hi");
   return __jsx("div", {
-    className: "jsx-2918769045",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "jsx-2918769045" + " " + "FluidContainer container-fluid LeagueSelector",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-2918769045" + " " + "container",
+    className: "FluidContainer container-fluid LeagueSelector",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-2918769045" + " " + "TournamentSymbol LeagueSelector__highlighted",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, __jsx("img", {
-    src: "static/lck_image.png",
-    alt: "LCK 2019 Summer Season",
-    className: "jsx-2918769045" + " " + "TournamentSymbol__image",
+  }, __jsx("div", {
+    className: "TournamentSymbol LeagueSelector__highlighted",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }), __jsx("span", {
-    className: "jsx-2918769045" + " " + "TournamentSymbol__label Gilroy",
+  }, __jsx("img", {
+    className: "TournamentSymbol__image",
+    src: "static/lck_image.png",
+    alt: "LCK 2019 Summer Season",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, "LCK 2019 Summer")))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "2918769045",
+  }), __jsx("span", {
+    className: "TournamentSymbol__label Gilroy",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
     __self: this
-  }, ".LeagueSelector{background-color:#27282d;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}.LeagueSelector .container{position:relative;}.TournamentSymbol{padding-bottom:.625rem;border-bottom:2px solid transparent;}.TournamentSymbol__image{height:2.5rem;width:2.5rem;margin-top:.625rem;vertical-align:top;}.TournamentSymbol__badge,.TournamentSymbol__label{margin-left:.625rem;display:inline-block;vertical-align:top;margin-top:.625rem;line-height:2.5rem;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcTGVhZ3VlU2VsZWN0b3IuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYStCLEFBRzhDLEFBS2QsQUFPTyxBQUdLLEFBSVQsQUFNTSxXQW5CRCxHQWNOLElBUGpCLEVBYXlCLEdBVmUsRUFmckIsRUFvQkksR0FkRCxVQUxELENBeUJFLEtBTEEsRUFkRCxXQVN0QixDQVd1QixLQUx2QixDQWRxQixhQW9CRSxJQW5CdkIsZUFvQkEsMkJBM0JBIiwiZmlsZSI6IkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcTGVhZ3VlU2VsZWN0b3IuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5jb25zdCBMZWFndWVTZWxlY3RvciA9ICgpID0+IHtcclxuICAgIGNvbnNvbGUubG9nKFwiaGlcIilcclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJGbHVpZENvbnRhaW5lciBjb250YWluZXItZmx1aWQgTGVhZ3VlU2VsZWN0b3JcIj5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUb3VybmFtZW50U3ltYm9sIExlYWd1ZVNlbGVjdG9yX19oaWdobGlnaHRlZFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cIlRvdXJuYW1lbnRTeW1ib2xfX2ltYWdlXCIgc3JjPVwic3RhdGljL2xja19pbWFnZS5wbmdcIiBhbHQ9XCJMQ0sgMjAxOSBTdW1tZXIgU2Vhc29uXCIvPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJUb3VybmFtZW50U3ltYm9sX19sYWJlbCBHaWxyb3lcIj5MQ0sgMjAxOSBTdW1tZXI8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxzdHlsZSBnbG9iYWwganN4PntgXHJcbiAgICAgICAgICAgICAgICAuTGVhZ3VlU2VsZWN0b3Ige1xyXG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMyNzI4MmQ7O1xyXG4gICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICB1c2VyLXNlbGVjdDogbm9uZTtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5jb250YWluZXItZmx1aWQge1xyXG4gICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmctcmlnaHQ6IDE1cHg7XHJcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1sZWZ0OiAxNXB4O1xyXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5MZWFndWVTZWxlY3RvciAuY29udGFpbmVyIHtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAuVG91cm5hbWVudFN5bWJvbCB7XHJcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1ib3R0b206IC42MjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIHRyYW5zcGFyZW50O1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLlRvdXJuYW1lbnRTeW1ib2xfX2ltYWdlIHtcclxuICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDIuNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMi41cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi10b3A6IC42MjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgdmVydGljYWwtYWxpZ246IHRvcDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5Ub3VybmFtZW50U3ltYm9sX19iYWRnZSwgLlRvdXJuYW1lbnRTeW1ib2xfX2xhYmVsIHtcclxuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tbGVmdDogLjYyNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgICAgICAgICAgdmVydGljYWwtYWxpZ246IHRvcDtcclxuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiAuNjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAyLjVyZW07XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIGB9XHJcbiAgICAgICAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICApXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IExlYWd1ZVNlbGVjdG9yOyJdfQ== */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\LeagueSelector.js */"));
+  }, "LCK 2019 Summer")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LeagueSelector);
@@ -235,81 +234,81 @@ var LeagueSelector = function LeagueSelector() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _LiveStream_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LiveStream.scss */ "./components/Home/LiveStream.scss");
+/* harmony import */ var _LiveStream_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_LiveStream_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\LiveStream.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var LiveStream = function LiveStream() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    className: "jsx-2880612783" + " " + "FluidContainer container-fluid",
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "FluidContainer container-fluid",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-2880612783" + " " + "container LiveStreams Intro__section",
+    className: "container LiveStreams Intro__section",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }, __jsx("h3", {
-    className: "jsx-2880612783" + " " + "Title Gilroy",
+    className: "Title Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-2880612783" + " " + "Title__squares",
+    className: "Title__squares",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-2880612783" + " " + "Title__square",
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-2880612783" + " " + "Title__square",
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-2880612783" + " " + "Title__square small",
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-2880612783" + " " + "Title__square small",
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
   })), "Live STREAMING"), __jsx("div", {
-    className: "jsx-2880612783" + " " + "LiveStreams__container",
+    className: "LiveStreams__container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-2880612783" + " " + "LiveStreams__streaming",
+    className: "LiveStreams__streaming",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -317,48 +316,44 @@ var LiveStream = function LiveStream() {
     __self: this
   }, __jsx("a", {
     href: "#",
-    className: "jsx-2880612783",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
   }, __jsx("img", {
+    className: "LiveStreams__streaming__thumbnail",
     src: "https://static-cdn.jtvnw.net/previews-ttv/live_user_rush-320x180.jpg",
-    className: "jsx-2880612783" + " " + "LiveStreams__streaming__thumbnail",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-2880612783" + " " + "LiveStreams__streaming_player",
+    className: "LiveStreams__streaming_player",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
   }, __jsx("figure", {
+    className: "PlayerIcon LiveStreams__streaming__playerIcon small",
     style: {
       backgroundImage: "url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/6/60/FOX_Rush_2019_Split_1.png)"
     },
-    className: "jsx-2880612783" + " " + "PlayerIcon LiveStreams__streaming__playerIcon small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-2880612783" + " " + "LiveStreams__streaming__playerName",
+    className: "LiveStreams__streaming__playerName",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }, "FOX Rush"))))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "2880612783",
-    __self: this
-  }, ".LiveStreams__container{margin-right:-.625rem;}.LiveStreams__streaming{display:inline-block;vertical-align:top;margin-bottom:1.25rem;margin-right:.625rem;width:calc(20% - .625rem);}.LiveStreams__streaming__thumbnail{width:100%;height:auto;margin-bottom:.5rem;}.PlayerIcon{width:2.5rem;height:2.5rem;background-size:cover;border-radius:50%;margin:0;}.PlayerIcon.small{width:1.875rem;height:1.875rem;}.LiveStreams__streaming__playerName{display:inline-block;vertical-align:top;position:relative;margin-left:.5rem;top:.2rem;color:#fbfbfb;}.LiveStreams__streaming__playerIcon{display:inline-block;vertical-align:top;border:1px solid #d8d8d8;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcTGl2ZVN0cmVhbS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4QmlCLEFBRytDLEFBR0QsQUFPVixBQUtFLEFBT0UsQUFJTSxBQVFBLFdBdkJULEVBS0UsRUFPRSxNQW5CRyxBQXVCQSxBQVFBLENBbEN2QixDQVd3QixJQUtFLElBTzFCLFNBbkIwQixBQXVCSixBQVFPLEdBdkI3QixNQUtzQixTQVdBLElBdkJHLEdBK0J6QixFQWxCYSxTQUNiLEFBVWMsT0F2QmdCLEdBd0JaLGNBQ2xCLFNBeEJBIiwiZmlsZSI6IkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcTGl2ZVN0cmVhbS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcblxyXG5jb25zdCBMaXZlU3RyZWFtID0gKCkgPT4ge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8PlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkZsdWlkQ29udGFpbmVyIGNvbnRhaW5lci1mbHVpZFwiPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgTGl2ZVN0cmVhbXMgSW50cm9fX3NlY3Rpb25cIj5cclxuICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwiVGl0bGUgR2lscm95XCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGl0bGVfX3NxdWFyZXNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGl0bGVfX3NxdWFyZVwiPjwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRpdGxlX19zcXVhcmUgc21hbGxcIj48L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGl0bGVfX3NxdWFyZSBzbWFsbFwiPjwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgTGl2ZSBTVFJFQU1JTkdcclxuICAgICAgICAgICAgICAgICAgICA8L2gzPlxyXG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiTGl2ZVN0cmVhbXNfX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkxpdmVTdHJlYW1zX19zdHJlYW1pbmdcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCIjXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJMaXZlU3RyZWFtc19fc3RyZWFtaW5nX190aHVtYm5haWxcIiBzcmM9XCJodHRwczovL3N0YXRpYy1jZG4uanR2bncubmV0L3ByZXZpZXdzLXR0di9saXZlX3VzZXJfcnVzaC0zMjB4MTgwLmpwZ1wiLz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkxpdmVTdHJlYW1zX19zdHJlYW1pbmdfcGxheWVyXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxmaWd1cmUgY2xhc3NOYW1lPVwiUGxheWVySWNvbiBMaXZlU3RyZWFtc19fc3RyZWFtaW5nX19wbGF5ZXJJY29uIHNtYWxsXCIgc3R5bGU9e3tiYWNrZ3JvdW5kSW1hZ2U6IFwidXJsKGh0dHBzOi8vZ2FtZXBlZGlhLmN1cnNlY2RuLmNvbS9sb2xlc3BvcnRzX2dhbWVwZWRpYV9lbi82LzYwL0ZPWF9SdXNoXzIwMTlfU3BsaXRfMS5wbmcpXCJ9fT48L2ZpZ3VyZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJMaXZlU3RyZWFtc19fc3RyZWFtaW5nX19wbGF5ZXJOYW1lXCI+Rk9YIFJ1c2g8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxzdHlsZSBnbG9iYWwganN4PlxyXG4gICAgICAgICAgICAgICAge2BcclxuICAgICAgICAgICAgICAgICAgICAuTGl2ZVN0cmVhbXNfX2NvbnRhaW5lciB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogLS42MjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5MaXZlU3RyZWFtc19fc3RyZWFtaW5nIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxLjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IC42MjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiBjYWxjKDIwJSAtIC42MjVyZW0pO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTGl2ZVN0cmVhbXNfX3N0cmVhbWluZ19fdGh1bWJuYWlsIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGhlaWdodDogYXV0bztcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogLjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5QbGF5ZXJJY29uIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDIuNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAyLjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAwO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUGxheWVySWNvbi5zbWFsbCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxLjg3NXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxLjg3NXJlbTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLkxpdmVTdHJlYW1zX19zdHJlYW1pbmdfX3BsYXllck5hbWUge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IC41cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0b3A6IC4ycmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZiZmJmYjtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLkxpdmVTdHJlYW1zX19zdHJlYW1pbmdfX3BsYXllckljb24ge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNkOGQ4ZDg7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgYH1cclxuICAgICAgICAgICAgPC9zdHlsZT5cclxuICAgICAgICA8Lz5cclxuICAgIClcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgTGl2ZVN0cmVhbTsiXX0= */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\LiveStream.js */"));
+  }, "FOX Rush"))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LiveStream);
@@ -374,39 +369,39 @@ var LiveStream = function LiveStream() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/api */ "./api/api.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../api/api */ "./api/api.js");
+/* harmony import */ var _MatchSchedule_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MatchSchedule.scss */ "./components/Home/MatchSchedule.scss");
+/* harmony import */ var _MatchSchedule_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_MatchSchedule_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\MatchSchedule.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 var MatchSchedule = function MatchSchedule() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       pastLCLMatch = _useState[0],
       SetPastLCLmatch = _useState[1];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       pastLJLMatch = _useState2[0],
       SetPastLJLmatch = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       pastLECMatch = _useState3[0],
       SetPastLECmatch = _useState3[1];
 
-  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       pastVCSMatch = _useState4[0],
       SetPastVCSmatch = _useState4[1];
 
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       pastWorldMatch = _useState5[0],
       SetPastWorldMatch = _useState5[1];
 
-  var _useState6 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+  var _useState6 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       isLoding = _useState6[0],
       SetIsLoding = _useState6[1];
 
@@ -442,79 +437,79 @@ var MatchSchedule = function MatchSchedule() {
     }
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    _api_api__WEBPACK_IMPORTED_MODULE_2__["getPastMatch"]().then(function (response) {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    _api_api__WEBPACK_IMPORTED_MODULE_1__["getPastMatch"]().then(function (response) {
       matchFilter(response.data);
       SetIsLoding(true);
     })["catch"](function (error) {
       return console.log(error);
     });
   }, []);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    className: "jsx-3741116430" + " " + "FluidContainer container-fluid",
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "FluidContainer container-fluid",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3741116430" + " " + "container Intro_section",
+    className: "container Intro_section",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
     },
     __self: this
   }, __jsx("h3", {
-    className: "jsx-3741116430" + " " + "Title Gilroy",
+    className: "Title Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
   }, "MATCH SCHEDULE", __jsx("div", {
-    className: "jsx-3741116430" + " " + "Title__squares",
+    className: "Title__squares",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3741116430" + " " + "Title__square",
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3741116430" + " " + "Title__square",
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3741116430" + " " + "Title__square small",
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3741116430" + " " + "Title__square small",
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
   }))), isLoding ? __jsx("ul", {
-    className: "jsx-3741116430" + " " + "RecentMatches",
+    className: "RecentMatches",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3741116430" + " " + "RecentMatches__split Gilroy",
+    className: "RecentMatches__split Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
@@ -523,119 +518,117 @@ var MatchSchedule = function MatchSchedule() {
   }, "Worlds 2019"), pastWorldMatch && pastWorldMatch.map(function (v) {
     console.log(v);
     return __jsx("li", {
-      className: "jsx-3741116430",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 56
       },
       __self: this
     }, __jsx("a", {
+      className: "MatchBar",
       href: "#",
-      className: "jsx-3741116430" + " " + "MatchBar",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
       },
       __self: this
     }, __jsx("div", {
-      className: "jsx-3741116430" + " " + "MatchBar__column date Gilroy finished",
+      className: "MatchBar__column date Gilroy finished",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 58
       },
       __self: this
     }, v.end_at, __jsx("br", {
-      className: "jsx-3741116430",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 60
       },
       __self: this
     })), __jsx("div", {
-      className: "jsx-3741116430" + " " + "MatchBar__column home",
+      className: "MatchBar__column home",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 62
       },
       __self: this
     }, __jsx("span", {
-      className: "jsx-3741116430" + " " + "Gilroy MatchBar__team__line",
+      className: "Gilroy MatchBar__team__line",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 63
       },
       __self: this
     }, v.opponents[0].opponent.acronym), __jsx("figure", {
-      className: "jsx-3741116430" + " " + "TeamSymbol MatchBar__column__symbol hidden-in-phone circleless",
+      className: "TeamSymbol MatchBar__column__symbol hidden-in-phone circleless",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 64
       },
       __self: this
     }, __jsx("div", {
+      className: "TeamSymbol__image",
       style: {
         backgroundImage: "url(".concat(v.opponents[0].opponent.image_url, ")")
       },
-      className: "jsx-3741116430" + " " + "TeamSymbol__image",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 65
       },
       __self: this
     }))), __jsx("div", {
-      className: "jsx-3741116430" + " " + "MatchBar__column board",
+      className: "MatchBar__column board",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 68
       },
       __self: this
     }, __jsx("div", {
-      className: "jsx-3741116430" + " " + "ScoreBoard Gilroy MatchBar__column__score",
+      className: "ScoreBoard Gilroy MatchBar__column__score",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 69
       },
       __self: this
     }, __jsx("div", {
-      className: "jsx-3741116430" + " " + "ScoreBoard__overlay",
+      className: "ScoreBoard__overlay",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 70
       },
       __self: this
     }, "RESULT"), v.results[0].score, " : ", v.results[1].score)), __jsx("div", {
-      className: "jsx-3741116430" + " " + "MatchBar__column away",
+      className: "MatchBar__column away",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 74
       },
       __self: this
     }, __jsx("figure", {
-      className: "jsx-3741116430" + " " + "TeamSymbol MatchBar__column__symbol hidden-in-phone circleless",
+      className: "TeamSymbol MatchBar__column__symbol hidden-in-phone circleless",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 75
       },
       __self: this
     }, __jsx("div", {
+      className: "TeamSymbol__image",
       style: {
         backgroundImage: "url(".concat(v.opponents[1].opponent.image_url)
       },
-      className: "jsx-3741116430" + " " + "TeamSymbol__image",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 76
       },
       __self: this
     })), __jsx("span", {
-      className: "jsx-3741116430" + " " + "Gilroy MatchBar__team__line",
+      className: "Gilroy MatchBar__team__line",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 78
       },
       __self: this
     }, v.opponents[1].opponent.acronym)), __jsx("div", {
-      className: "jsx-3741116430" + " " + "MatchBar__column arrow Gilroy",
+      className: "MatchBar__column arrow Gilroy",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 81
@@ -648,7 +641,6 @@ var MatchSchedule = function MatchSchedule() {
       display: "flex",
       justifyContent: "center"
     },
-    className: "jsx-3741116430",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 89
@@ -660,16 +652,12 @@ var MatchSchedule = function MatchSchedule() {
       height: "50px"
     },
     src: "/static/loading.gif",
-    className: "jsx-3741116430",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 89
     },
     __self: this
-  })))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3741116430",
-    __self: this
-  }, ".RecentMatches{padding:0;margin:-1.5rem 0 0;}.RecentMatches__split{float:right;margin:.625rem;}.RecentMatches li,.RecentMatchesul{margin:0;list-style:none;}.MatchBar{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;height:5rem;background-color:#27282d;width:100%;color:#fbfbfb;margin-bottom:.125rem;position:relative;-webkit-transition:background-color 150ms ease 0ms;transition:background-color 150ms ease 0ms;}.MatchBar:hover{background-color :#33343B;}.MatchBar__column.arrow,.MatchBar__column.date{width:6.25rem;}.MatchBar__column.date{padding-left:1.25rem;}.MatchBar__column.finished{color:#5b5c64;}.MatchBar__column{white-space:nowrap;position:relative;}.MatchBar__column.home{text-align:right;}.MatchBar__column.away,.MatchBar__column.home{width:30%;}.MatchBar__column.board{text-align:center;}.MatchBar__column.away{text-align:left;}.MatchBar__column.away,.MatchBar__column.home{width:30%;}.MatchBar__column{white-space:nowrap;position:relative;}.MatchBar__column.arrow,.MatchBar__column.date{width:6.25rem;}.MatchBar__column.arrow{text-align:right;padding-right:1.25rem;justify-self:right;}.ScoreBoard{position:relative;width:7.5rem;height:2.5rem;line-height:2.5rem;background-color:#1e2025;overflow-y:hidden;cursor:pointer;}.ScoreBoard__overlay{position:absolute;top:0;width:100%;height:100%;-webkit-animation-fill-mode:both;animation-fill-mode:both;background-color:#db0442;-webkit-transition:-webkit-transform 300ms ease-in-out;-webkit-transition:transform 300ms ease-in-out;transition:transform 300ms ease-in-out;}.ScoreBoard__overlay:hover{-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);}.MatchBar__team__line{margin:0 1.5625rem;position:relative;top:-1.3rem;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcTWF0Y2hTY2hlZHVsZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2RmlCLEFBR21DLEFBSUUsQUFJSCxBQUlJLEFBWWEsQUFHWixBQUdPLEFBR1AsQUFHSyxBQUlGLEFBR1AsQUFHUSxBQUdGLEFBR04sQUFHUyxBQUlMLEFBR0csQUFLQyxBQVNBLEFBV3ZCLEFBRXdCLFNBaEZILENBUkcsQUEyQ3ZCLEFBU0EsRUFoRG1CLEVBdUJuQixBQU1BLEFBMEJBLEVBVkEsQ0FUQSxBQXNCMEIsQ0FoQjFCLEFBcUJpQixBQVNQLENBeENZLEFBbUJBLEFBa0NBLEVBM0R0QixHQStDZSxDQXBFZixDQWVBLENBbkJBLEVBSkEsRUFtRWtCLElBVUYsRUF6Q2hCLEFBbUJBLEFBa0NnQixFQTNCTyxNQU1BLEVBVU0sRUFZN0IsU0EzQkEsTUFNNkIsVUExRE4sZUEyREQsT0FldEIsU0FONkIsRUFSVixlQUNuQixRQVEyQyxxQ0FwRVQsd0dBc0VsQyxXQXJFZ0IsWUFDYSx5QkFDZCxXQUNHLGNBQ1Esc0JBQ0osa0JBQ3lCLDhGQUMvQyIsImZpbGUiOiJEOlxcUmVhY3RQcm9qZWN0XFxqYXZhcHJvamVjdFxcbG9kLmdnXFxGb3JudGVuZFxcZS1wb2dfZnJvbnRlbmRcXGNvbXBvbmVudHNcXEhvbWVcXE1hdGNoU2NoZWR1bGUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHt1c2VFZmZlY3QsIHVzZVN0YXRlfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCAqIGFzIGFwaSBmcm9tICcuLi8uLi9hcGkvYXBpJztcclxuXHJcbmNvbnN0IE1hdGNoU2NoZWR1bGUgPSAoKSA9PiB7XHJcbiAgICBjb25zdCBbcGFzdExDTE1hdGNoLCBTZXRQYXN0TENMbWF0Y2hdID0gdXNlU3RhdGUoW10pO1xyXG4gICAgY29uc3QgW3Bhc3RMSkxNYXRjaCwgU2V0UGFzdExKTG1hdGNoXSA9IHVzZVN0YXRlKFtdKTtcclxuICAgIGNvbnN0IFtwYXN0TEVDTWF0Y2gsIFNldFBhc3RMRUNtYXRjaF0gPSB1c2VTdGF0ZShbXSk7XHJcbiAgICBjb25zdCBbcGFzdFZDU01hdGNoLCBTZXRQYXN0VkNTbWF0Y2hdID0gdXNlU3RhdGUoW10pO1xyXG4gICAgY29uc3QgW3Bhc3RXb3JsZE1hdGNoLCBTZXRQYXN0V29ybGRNYXRjaF0gPSB1c2VTdGF0ZShbXSk7XHJcbiAgICBjb25zdCBbaXNMb2RpbmcsIFNldElzTG9kaW5nIF0gPSB1c2VTdGF0ZShmYWxzZSk7XHJcbiAgICBjb25zdCBtYXRjaEZpbHRlciA9IChtYXRjaCkgPT4ge1xyXG4gICAgICAgIGZvcihsZXQgaSA9IDA7IGkgPCBtYXRjaC5sZW5ndGg7IGkrKykge1xyXG4gICAgICAgICAgICBjb25zb2xlLmxvZyhtYXRjaFtpXS5sZWFndWUubmFtZSk7XHJcbiAgICAgICAgICAgIGlmKG1hdGNoW2ldLmxlYWd1ZS5uYW1lID09PSBcIkxDTFwiKSB7XHJcbiAgICAgICAgICAgICAgICBTZXRQYXN0TENMbWF0Y2gocGFzdExDTE1hdGNoID0+IHBhc3RMQ0xNYXRjaC5jb25jYXQobWF0Y2hbaV0pKVxyXG4gICAgICAgICAgICB9IGVsc2UgaWYobWF0Y2hbaV0ubGVhZ3VlLm5hbWUgPT09IFwiTEpMXCIpIHtcclxuICAgICAgICAgICAgICAgIFNldFBhc3RMSkxtYXRjaChwYXN0TEpMTWF0Y2ggPT4gcGFzdExKTE1hdGNoLmNvbmNhdChtYXRjaFtpXSkpXHJcbiAgICAgICAgICAgIH0gZWxzZSBpZihtYXRjaFtpXS5sZWFndWUubmFtZSA9PT0gXCJMRUNcIikge1xyXG4gICAgICAgICAgICAgICAgU2V0UGFzdExFQ21hdGNoKHBhc3RMRUNNYXRjaCA9PiBwYXN0TEVDTWF0Y2guY29uY2F0KG1hdGNoW2ldKSlcclxuICAgICAgICAgICAgfSBlbHNlIGlmKG1hdGNoW2ldLmxlYWd1ZS5uYW1lID09PSBcIlZDU1wiKSB7XHJcbiAgICAgICAgICAgICAgICBTZXRQYXN0VkNTbWF0Y2gocGFzdFZDU01hdGNoID0+IHBhc3RWQ1NNYXRjaC5jb25jYXQobWF0Y2hbaV0pKVxyXG4gICAgICAgICAgICB9IGVsc2UgaWYobWF0Y2hbaV0ubGVhZ3VlLm5hbWUgPT09IFwiV29ybGQgQ2hhbXBpb25zaGlwXCIpIHtcclxuICAgICAgICAgICAgICAgIFNldFBhc3RXb3JsZE1hdGNoKHBhc3RXb3JsZE1hdGNoID0+IHBhc3RXb3JsZE1hdGNoLmNvbmNhdChtYXRjaFtpXSkpXHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcbiAgICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgICAgIGFwaS5nZXRQYXN0TWF0Y2goKVxyXG4gICAgICAgIC50aGVuKHJlc3BvbnNlID0+IHtcclxuICAgICAgICAgICAgbWF0Y2hGaWx0ZXIocmVzcG9uc2UuZGF0YSlcclxuICAgICAgICAgICAgU2V0SXNMb2RpbmcodHJ1ZSlcclxuICAgICAgICB9KVxyXG4gICAgICAgIC5jYXRjaChlcnJvciA9PiBjb25zb2xlLmxvZyhlcnJvcikpXHJcbiAgICB9LFtdKVxyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8PlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkZsdWlkQ29udGFpbmVyIGNvbnRhaW5lci1mbHVpZFwiPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgSW50cm9fc2VjdGlvblwiPlxyXG4gICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJUaXRsZSBHaWxyb3lcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgTUFUQ0ggU0NIRURVTEVcclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlc1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRpdGxlX19zcXVhcmVcIj48L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGl0bGVfX3NxdWFyZSBzbWFsbFwiPjwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlIHNtYWxsXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvaDM+XHJcbiAgICAgICAgICAgICAgICAgICAge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBpc0xvZGluZyA/XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICg8dWwgY2xhc3NOYW1lPVwiUmVjZW50TWF0Y2hlc1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJSZWNlbnRNYXRjaGVzX19zcGxpdCBHaWxyb3lcIj5Xb3JsZHMgMjAxOTwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhc3RXb3JsZE1hdGNoICYmIHBhc3RXb3JsZE1hdGNoLm1hcCh2ID0+IHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29uc29sZS5sb2codilcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIChcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBjbGFzc05hbWU9XCJNYXRjaEJhclwiIGhyZWY9XCIjXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiTWF0Y2hCYXJfX2NvbHVtbiBkYXRlIEdpbHJveSBmaW5pc2hlZFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3YuZW5kX2F0fVxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJyLz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiTWF0Y2hCYXJfX2NvbHVtbiBob21lXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJHaWxyb3kgTWF0Y2hCYXJfX3RlYW1fX2xpbmVcIj57di5vcHBvbmVudHNbMF0ub3Bwb25lbnQuYWNyb255bX08L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2wgTWF0Y2hCYXJfX2NvbHVtbl9fc3ltYm9sIGhpZGRlbi1pbi1waG9uZSBjaXJjbGVsZXNzXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19pbWFnZVwiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBgdXJsKCR7di5vcHBvbmVudHNbMF0ub3Bwb25lbnQuaW1hZ2VfdXJsfSlgfX0+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2ZpZ3VyZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiTWF0Y2hCYXJfX2NvbHVtbiBib2FyZFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJTY29yZUJvYXJkIEdpbHJveSBNYXRjaEJhcl9fY29sdW1uX19zY29yZVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiU2NvcmVCb2FyZF9fb3ZlcmxheVwiPlJFU1VMVDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHt2LnJlc3VsdHNbMF0uc2NvcmV9IDoge3YucmVzdWx0c1sxXS5zY29yZX1cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJNYXRjaEJhcl9fY29sdW1uIGF3YXlcIj4gICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2wgTWF0Y2hCYXJfX2NvbHVtbl9fc3ltYm9sIGhpZGRlbi1pbi1waG9uZSBjaXJjbGVsZXNzXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGVhbVN5bWJvbF9faW1hZ2VcIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogYHVybCgke3Yub3Bwb25lbnRzWzFdLm9wcG9uZW50LmltYWdlX3VybH1gfX0+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9maWd1cmU+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiR2lscm95IE1hdGNoQmFyX190ZWFtX19saW5lXCI+e3Yub3Bwb25lbnRzWzFdLm9wcG9uZW50LmFjcm9ueW19PC9zcGFuPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIk1hdGNoQmFyX19jb2x1bW4gYXJyb3cgR2lscm95XCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBERVRBSUxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKVxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0pXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9ICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvdWw+KSA6IDxkaXYgc3R5bGU9e3sgd2lkdGg6IFwiMTEyMHB4XCIsIGRpc3BsYXk6XCJmbGV4XCIsIGp1c3RpZnlDb250ZW50OiBcImNlbnRlclwifX0+PGltZyBzdHlsZT17e3dpZHRoOiBcIjUwcHhcIiwgaGVpZ2h0OiBcIjUwcHhcIn19c3JjPVwiL3N0YXRpYy9sb2FkaW5nLmdpZlwiLz48L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxzdHlsZSBnbG9iYWwganN4PlxyXG4gICAgICAgICAgICAgICAge2BcclxuICAgICAgICAgICAgICAgICAgICAuUmVjZW50TWF0Y2hlcyB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbjogLTEuNXJlbSAwIDA7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5SZWNlbnRNYXRjaGVzX19zcGxpdCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGZsb2F0OiByaWdodDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAuNjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUmVjZW50TWF0Y2hlcyBsaSwgLlJlY2VudE1hdGNoZXN1bCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbjogMDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMyNzI4MmQ7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZiZmJmYjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogLjEyNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIDE1MG1zIGVhc2UgMG1zO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTWF0Y2hCYXI6aG92ZXIge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yIDogIzMzMzQzQjtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyX19jb2x1bW4uYXJyb3csIC5NYXRjaEJhcl9fY29sdW1uLmRhdGUge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogNi4yNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyX19jb2x1bW4uZGF0ZSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctbGVmdDogMS4yNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyX19jb2x1bW4uZmluaXNoZWQge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogIzViNWM2NDtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyX19jb2x1bW4ge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5NYXRjaEJhcl9fY29sdW1uLmhvbWUge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyX19jb2x1bW4uYXdheSwgLk1hdGNoQmFyX19jb2x1bW4uaG9tZSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMCU7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5NYXRjaEJhcl9fY29sdW1uLmJvYXJkIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTWF0Y2hCYXJfX2NvbHVtbi5hd2F5IHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyX19jb2x1bW4uYXdheSwgLk1hdGNoQmFyX19jb2x1bW4uaG9tZSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMCU7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5NYXRjaEJhcl9fY29sdW1uIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTWF0Y2hCYXJfX2NvbHVtbi5hcnJvdywgLk1hdGNoQmFyX19jb2x1bW4uZGF0ZSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiA2LjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTWF0Y2hCYXJfX2NvbHVtbi5hcnJvdyB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLXJpZ2h0OiAxLjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBqdXN0aWZ5LXNlbGY6IHJpZ2h0O1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuU2NvcmVCb2FyZCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDcuNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAyLjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAyLjVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMxZTIwMjU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG92ZXJmbG93LXk6IGhpZGRlbjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuU2NvcmVCb2FyZF9fb3ZlcmxheSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdG9wOiAwO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBhbmltYXRpb24tZmlsbC1tb2RlOiBib3RoO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGIwNDQyO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMzAwbXMgZWFzZS1pbi1vdXQ7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuU2NvcmVCb2FyZF9fb3ZlcmxheTpob3ZlciB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHRyYW5zZm9ybTp0cmFuc2xhdGVZKC0xMDAlKSBcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLk1hdGNoQmFyX190ZWFtX19saW5lIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAwIDEuNTYyNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0b3A6IC0xLjNyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgYH1cclxuICAgICAgICAgICAgPC9zdHlsZT5cclxuICAgICAgICA8Lz5cclxuICAgIClcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgTWF0Y2hTY2hlZHVsZTsiXX0= */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\MatchSchedule.js */"));
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MatchSchedule);
@@ -685,417 +673,414 @@ var MatchSchedule = function MatchSchedule() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _TeamIntro_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamIntro.scss */ "./components/Home/TeamIntro.scss");
+/* harmony import */ var _TeamIntro_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_TeamIntro_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\TeamIntro.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var TeamIntro = function TeamIntro() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    className: "jsx-3733778277" + " " + "Intro",
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "Intro",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3733778277" + " " + "FluidContainer container-fluid",
+    className: "FluidContainer container-fluid",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3733778277" + " " + "container",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
   }, __jsx("h3", {
-    className: "jsx-3733778277" + " " + "Title Gilroy",
+    className: "Title Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3733778277" + " " + "Title__squares",
+    className: "Title__squares",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3733778277" + " " + "Title__square",
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3733778277" + " " + "Title__square",
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3733778277" + " " + "Title__square small",
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3733778277" + " " + "Title__square small",
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
   })), "LEAGUE OF LEGENDS CHAMPIONS KOREA TEAMS"), __jsx("div", {
-    className: "jsx-3733778277" + " " + "LeagueTeams",
+    className: "LeagueTeams",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3733778277" + " " + "LeagueTeams__teams",
+    className: "LeagueTeams__teams",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
   }, __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/AF.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
   }, "AF"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/DWG.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
   }, "DWG"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/GEN.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
     },
     __self: this
   }, "GEN"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/GRF.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: this
   }, "GRF"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/HLE.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
     },
     __self: this
   }, "HLE"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/SKT.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     },
     __self: this
   }, "SKT"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 56
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/JAG.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     },
     __self: this
   }, "JAG"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 63
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/KT.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
     },
     __self: this
   }, "KT"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/KZ.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 71
     },
     __self: this
   }, "KZ"))), __jsx("a", {
+    className: "LeagueTeams__link",
     href: "#",
-    className: "jsx-3733778277" + " " + "LeagueTeams__link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 74
     },
     __self: this
   }, __jsx("figure", {
-    className: "jsx-3733778277" + " " + "TeamSymbol LeagueTeams__team large",
+    className: "TeamSymbol LeagueTeams__team large",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 75
     },
     __self: this
   }, __jsx("div", {
+    className: "TeamSymbol__image",
     style: {
       backgroundImage: "url(https://qwer.gg/images/logos/SB.png)"
     },
-    className: "jsx-3733778277" + " " + "TeamSymbol__image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
     },
     __self: this
   }), __jsx("span", {
-    className: "jsx-3733778277" + " " + "TeamSymbol__acronym Gilroy",
+    className: "TeamSymbol__acronym Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 77
     },
     __self: this
-  }, "SB")))))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3733778277",
-    __self: this
-  }, ".Intro{background-color:#1e2025;padding-top:2.5rem;padding-bottom:2.5rem;}.Title{font-size:1.875px;font-size:1.875rem;position:relative;padding-top:1rem;color:#fbfbfb;text-transform:uppercase;}.Title__squares{font-size:0;position:absolute;top:0;}.Title__square{display:inline-block;vertical-align:top;width:10px;height:8px;margin-right:2px;background-color:#db0442;}.Title__square.small{width:8px;}.LeagueTeams{text-align:center;margin-bottom:3rem;}.LeagueTeams__link{margin-bottom:1.25rem;display:inline-block;}.LeagueSelector .container{position:relative;}.LeagueTeams__link:not(:last-child){margin-right:1.25rem;}.TeamSymbol.large{width:5rem;height:5rem;}.LeagueTeams__team{text-align:center;background-color:#fff;width:4.6875rem!important;height:4.6875rem!important;}.LeagueTeams__team:hover{-webkit-animation:team 0.3s ease 1;-webkit-animation-fill-mode:both;}@-webkit-keyframes team{0%{-webkit-transform:scale(1.0,1.0);}100%{-webkit-transform:scale(1.1,1.1);}}.TeamSymbol{display:inline-block;width:3.75rem;height:3.75rem;position:relative;margin:0;}.TeamSymbol:not(.circleless){border:1px solid #d8d8d8;border-radius:50%;background-color:#fbfbfb;}.TeamSymbol__image{width:100%;height:100%;-webkit-transform:scale(.7);-webkit-transform:scale(.7);-ms-transform:scale(.7);transform:scale(.7);background-size:contain;background-repeat:no-repeat;background-position:50%;}.TeamSymbol__acronym{margin-top:.625rem;display:inline-block;color:#5b5c64;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcVGVhbUludHJvLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNGaUIsQUFHa0QsQUFLUCxBQVFOLEFBS1MsQUFRWCxBQUdRLEFBSUksQUFJSixBQUdHLEFBR1YsQUFJTyxBQU9rQixBQU1yQyxBQUdBLEFBR3NCLEFBT0ksQUFLZCxBQVVRLFVBN0R2QixDQWlCZ0IsQUFtQ0EsQ0FqRU0sTUFSQyxBQXdCQSxBQVF2QixBQVUwQixDQXlDRCxFQXRFRixBQXNCdkIsQUEwQmtCLENBakNPLENBV3pCLEFBbUNnQyxFQS9FVCxBQXlFRCxLQTNEWixHQTZDTixBQUdBLEVBUEwsQUFZb0IsQ0FwRG5CLENBVHNCLEFBd0J0QixHQVhlLEFBNkJlLEFBeUNaLEdBdkRsQixBQXdDNkIsQ0F6RUgsTUFtRUosQ0FoRFAsQUE0RFMsR0FVeEIsQ0FuRnFCLE9BY0EsSUFuQnJCLEFBK0MrQixFQU0vQixBQWNhLEFBTWIsSUFuRWtCLEtBOERsQixFQWhENkIsT0FiQSxPQTBDN0IsV0E1QkEsT0FiQSxZQXVFNEIsd0JBQ0ksNEJBQ0osd0JBRTVCIiwiZmlsZSI6IkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcVGVhbUludHJvLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuXHJcbmNvbnN0IFRlYW1JbnRybyA9ICgpID0+IHtcclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPD5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJJbnRyb1wiPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJGbHVpZENvbnRhaW5lciBjb250YWluZXItZmx1aWRcIj5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwiVGl0bGUgR2lscm95XCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRpdGxlX19zcXVhcmVzXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlIHNtYWxsXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlIHNtYWxsXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIExFQUdVRSBPRiBMRUdFTkRTIENIQU1QSU9OUyBLT1JFQSBURUFNU1xyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2gzPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkxlYWd1ZVRlYW1zXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkxlYWd1ZVRlYW1zX190ZWFtc1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cIkxlYWd1ZVRlYW1zX19saW5rXCIgaHJlZj1cIiNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGZpZ3VyZSBjbGFzc05hbWU9XCJUZWFtU3ltYm9sIExlYWd1ZVRlYW1zX190ZWFtIGxhcmdlXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRlYW1TeW1ib2xfX2ltYWdlXCIgc3R5bGU9e3tiYWNrZ3JvdW5kSW1hZ2U6IFwidXJsKGh0dHBzOi8vcXdlci5nZy9pbWFnZXMvbG9nb3MvQUYucG5nKVwifX0+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19hY3JvbnltIEdpbHJveVwiPkFGPC9zcGFuPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2ZpZ3VyZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgY2xhc3NOYW1lPVwiTGVhZ3VlVGVhbXNfX2xpbmtcIiBocmVmPVwiI1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2wgTGVhZ3VlVGVhbXNfX3RlYW0gbGFyZ2VcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGVhbVN5bWJvbF9faW1hZ2VcIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9EV0cucG5nKVwifX0+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19hY3JvbnltIEdpbHJveVwiPkRXRzwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9maWd1cmU+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cIkxlYWd1ZVRlYW1zX19saW5rXCIgaHJlZj1cIiNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGZpZ3VyZSBjbGFzc05hbWU9XCJUZWFtU3ltYm9sIExlYWd1ZVRlYW1zX190ZWFtIGxhcmdlXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRlYW1TeW1ib2xfX2ltYWdlXCIgc3R5bGU9e3tiYWNrZ3JvdW5kSW1hZ2U6IFwidXJsKGh0dHBzOi8vcXdlci5nZy9pbWFnZXMvbG9nb3MvR0VOLnBuZylcIn19PjwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiVGVhbVN5bWJvbF9fYWNyb255bSBHaWxyb3lcIj5HRU48L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZmlndXJlPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBjbGFzc05hbWU9XCJMZWFndWVUZWFtc19fbGlua1wiIGhyZWY9XCIjXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxmaWd1cmUgY2xhc3NOYW1lPVwiVGVhbVN5bWJvbCBMZWFndWVUZWFtc19fdGVhbSBsYXJnZVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19pbWFnZVwiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBcInVybChodHRwczovL3F3ZXIuZ2cvaW1hZ2VzL2xvZ29zL0dSRi5wbmcpXCJ9fT48L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2xfX2Fjcm9ueW0gR2lscm95XCI+R1JGPC9zcGFuPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2ZpZ3VyZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgY2xhc3NOYW1lPVwiTGVhZ3VlVGVhbXNfX2xpbmtcIiBocmVmPVwiI1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2wgTGVhZ3VlVGVhbXNfX3RlYW0gbGFyZ2VcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGVhbVN5bWJvbF9faW1hZ2VcIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9ITEUucG5nKVwifX0+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19hY3JvbnltIEdpbHJveVwiPkhMRTwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9maWd1cmU+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cIkxlYWd1ZVRlYW1zX19saW5rXCIgaHJlZj1cIiNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGZpZ3VyZSBjbGFzc05hbWU9XCJUZWFtU3ltYm9sIExlYWd1ZVRlYW1zX190ZWFtIGxhcmdlXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRlYW1TeW1ib2xfX2ltYWdlXCIgc3R5bGU9e3tiYWNrZ3JvdW5kSW1hZ2U6IFwidXJsKGh0dHBzOi8vcXdlci5nZy9pbWFnZXMvbG9nb3MvU0tULnBuZylcIn19PjwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiVGVhbVN5bWJvbF9fYWNyb255bSBHaWxyb3lcIj5TS1Q8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZmlndXJlPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBjbGFzc05hbWU9XCJMZWFndWVUZWFtc19fbGlua1wiIGhyZWY9XCIjXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxmaWd1cmUgY2xhc3NOYW1lPVwiVGVhbVN5bWJvbCBMZWFndWVUZWFtc19fdGVhbSBsYXJnZVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19pbWFnZVwiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBcInVybChodHRwczovL3F3ZXIuZ2cvaW1hZ2VzL2xvZ29zL0pBRy5wbmcpXCJ9fT48L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2xfX2Fjcm9ueW0gR2lscm95XCI+SkFHPC9zcGFuPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2ZpZ3VyZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgY2xhc3NOYW1lPVwiTGVhZ3VlVGVhbXNfX2xpbmtcIiBocmVmPVwiI1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2wgTGVhZ3VlVGVhbXNfX3RlYW0gbGFyZ2VcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGVhbVN5bWJvbF9faW1hZ2VcIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9LVC5wbmcpXCJ9fT48L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cIlRlYW1TeW1ib2xfX2Fjcm9ueW0gR2lscm95XCI+S1Q8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZmlndXJlPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBjbGFzc05hbWU9XCJMZWFndWVUZWFtc19fbGlua1wiIGhyZWY9XCIjXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxmaWd1cmUgY2xhc3NOYW1lPVwiVGVhbVN5bWJvbCBMZWFndWVUZWFtc19fdGVhbSBsYXJnZVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19pbWFnZVwiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBcInVybChodHRwczovL3F3ZXIuZ2cvaW1hZ2VzL2xvZ29zL0taLnBuZylcIn19PjwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiVGVhbVN5bWJvbF9fYWNyb255bSBHaWxyb3lcIj5LWjwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9maWd1cmU+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cIkxlYWd1ZVRlYW1zX19saW5rXCIgaHJlZj1cIiNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGZpZ3VyZSBjbGFzc05hbWU9XCJUZWFtU3ltYm9sIExlYWd1ZVRlYW1zX190ZWFtIGxhcmdlXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRlYW1TeW1ib2xfX2ltYWdlXCIgc3R5bGU9e3tiYWNrZ3JvdW5kSW1hZ2U6IFwidXJsKGh0dHBzOi8vcXdlci5nZy9pbWFnZXMvbG9nb3MvU0IucG5nKVwifX0+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJUZWFtU3ltYm9sX19hY3JvbnltIEdpbHJveVwiPlNCPC9zcGFuPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2ZpZ3VyZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8c3R5bGUgZ2xvYmFsIGpzeD5cclxuICAgICAgICAgICAgICAgIHtgXHJcbiAgICAgICAgICAgICAgICAgICAgLkludHJvIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzFlMjAyNTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy10b3A6IDIuNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1ib3R0b206IDIuNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlRpdGxlIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAxLjg3NXB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDEuODc1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctdG9wOiAxcmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZiZmJmYjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlRpdGxlX19zcXVhcmVzIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAwO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHRvcDogMDtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlRpdGxlX19zcXVhcmUge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDhweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAycHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNkYjA0NDI7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5UaXRsZV9fc3F1YXJlLnNtYWxsIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDhweDtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLkxlYWd1ZVRlYW1zIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAzcmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTGVhZ3VlVGVhbXNfX2xpbmsge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxLjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5MZWFndWVTZWxlY3RvciAuY29udGFpbmVyIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTGVhZ3VlVGVhbXNfX2xpbms6bm90KDpsYXN0LWNoaWxkKSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMS4yNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlRlYW1TeW1ib2wubGFyZ2Uge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTGVhZ3VlVGVhbXNfX3RlYW0ge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiA0LjY4NzVyZW0haW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDQuNjg3NXJlbSFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuTGVhZ3VlVGVhbXNfX3RlYW06aG92ZXIge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAtd2Via2l0LWFuaW1hdGlvbjp0ZWFtICAgMC4zcyBlYXNlIDE7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIC13ZWJraXQtYW5pbWF0aW9uLWZpbGwtbW9kZTpib3RoXHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIEAtd2Via2l0LWtleWZyYW1lcyB0ZWFte1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAwJXtcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgxLjAsIDEuMClcclxuICAgICAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICAxMDAle1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKDEuMSwgMS4xKVxyXG4gICAgICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5UZWFtU3ltYm9sIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogMy43NXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAzLjc1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbjogMDtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlRlYW1TeW1ib2w6bm90KC5jaXJjbGVsZXNzKSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNkOGQ4ZDg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZiZmJmYjtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlRlYW1TeW1ib2xfX2ltYWdlIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKC43KTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZSguNyk7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogNTAlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlRlYW1TeW1ib2xfX2Fjcm9ueW0ge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiAuNjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjNWI1YzY0O1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIGB9XHJcbiAgICAgICAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC8+XHJcbiAgICApXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFRlYW1JbnRybzsiXX0= */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\TeamIntro.js */"));
+  }, "SB")))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TeamIntro);
@@ -1111,904 +1096,831 @@ var TeamIntro = function TeamIntro() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/api */ "./api/api.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../api/api */ "./api/api.js");
+/* harmony import */ var _TeamRank_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TeamRank.scss */ "./components/Home/TeamRank.scss");
+/* harmony import */ var _TeamRank_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_TeamRank_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\TeamRank.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 var TeamRank = function TeamRank() {
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    _api_api__WEBPACK_IMPORTED_MODULE_2__["getTournanments"](2392).then(function (response) {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    _api_api__WEBPACK_IMPORTED_MODULE_1__["getTournanments"](2392).then(function (response) {
       return console.log(response);
     })["catch"](function (error) {
       return console.log(error);
     });
   });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    className: "jsx-3253343590" + " " + "FluidContainer container-fluid",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "jsx-3253343590" + " " + "container Intro_section",
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "FluidContainer container-fluid",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, __jsx("h3", {
-    className: "jsx-3253343590" + " " + "Title Gilroy",
+  }, __jsx("div", {
+    className: "container Intro_section",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }, __jsx("div", {
-    className: "jsx-3253343590" + " " + "Title__squares",
+  }, __jsx("h3", {
+    className: "Title Gilroy",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3253343590" + " " + "Title__square",
+    className: "Title__squares",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
-  }), __jsx("div", {
-    className: "jsx-3253343590" + " " + "Title__square",
+  }, __jsx("div", {
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3253343590" + " " + "Title__square small",
+    className: "Title__square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3253343590" + " " + "Title__square small",
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  })), "LCK 2019 Summer \uC21C\uC704"), __jsx("div", {
-    className: "jsx-3253343590" + " " + "Ranks",
+  }), __jsx("div", {
+    className: "Title__square small",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 19
     },
     __self: this
-  }, __jsx("table", {
-    className: "jsx-3253343590" + " " + "RankTable Gilroy Ranks--desktop",
+  })), "LCK 2019 Summer \uC21C\uC704"), __jsx("div", {
+    className: "Ranks",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }, __jsx("thead", {
-    className: "jsx-3253343590",
+  }, __jsx("table", {
+    className: "RankTable Gilroy Ranks--desktop",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: this
-  }, __jsx("tr", {
-    className: "jsx-3253343590",
+  }, __jsx("thead", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }, __jsx("th", {
-    colspan: "3",
-    className: "jsx-3253343590",
+  }, __jsx("tr", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }), __jsx("th", {
-    scope: "col",
-    colspan: "2",
-    className: "jsx-3253343590",
+  }, __jsx("th", {
+    colspan: "3",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590",
+  }), __jsx("th", {
+    scope: "col",
+    colspan: "2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
     },
     __self: this
   }, "\uC2B9-\uD328")), __jsx("th", {
     colspan: "2",
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
   }, __jsx("span", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
   }, "\uC138\uD2B8")), __jsx("th", {
     scope: "col",
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, __jsx("span", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, "\uB4DD\uC2E4\uCC28")))), __jsx("tbody", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row RankTable__lead",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/GRF.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, __jsx("tr", {
+    className: "RankTable__row RankTable__lead",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/GRF.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
     },
     __self: this
-  }, "1"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "1"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37
     },
     __self: this
-  }, "Griffin")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
+    },
+    __self: this
+  }, "Griffin")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
     },
     __self: this
   }, "13W\xA05L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, "72.2%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: this
-  }, "29W\xA013L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "72.2%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
-  }, "69.0%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "29W\xA013L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
-  }, "16")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "69.0%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/DWG.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "16")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/DWG.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
     },
     __self: this
-  }, "2"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "2"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, "DAMWON Gaming")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 52
+    },
+    __self: this
+  }, "DAMWON Gaming")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
     },
     __self: this
   }, "13W\xA05L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: this
-  }, "72.2%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: this
-  }, "28W\xA016L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "72.2%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
     },
     __self: this
-  }, "63.6%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "28W\xA016L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     },
     __self: this
-  }, "12")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "63.6%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 60
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/SB.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "12")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/SB.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 63
     },
     __self: this
-  }, "3"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "3"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
     },
     __self: this
-  }, "SANDBOX Gaming")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
+    },
+    __self: this
+  }, "SANDBOX Gaming")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
     },
     __self: this
   }, "12W\xA06L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, "66.7%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 71
     },
     __self: this
-  }, "27W\xA018L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "66.7%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
     },
     __self: this
-  }, "60.0%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "27W\xA018L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
     },
     __self: this
-  }, "9")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "60.0%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 74
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/SKT.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "9")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/SKT.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 77
     },
     __self: this
-  }, "4"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 78
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "4"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79
     },
     __self: this
-  }, "SKT T1")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 80
+    },
+    __self: this
+  }, "SKT T1")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
     },
     __self: this
   }, "11W\xA07L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: this
-  }, "61.1%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 85
     },
     __self: this
-  }, "26W\xA017L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "61.1%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 86
     },
     __self: this
-  }, "60.5%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "26W\xA017L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 87
     },
     __self: this
-  }, "9")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "60.5%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 88
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/AF.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "9")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 90
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/AF.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
     },
     __self: this
-  }, "5"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 92
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "5"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 93
     },
     __self: this
-  }, "Afreeca Freecs")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 94
+    },
+    __self: this
+  }, "Afreeca Freecs")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96
     },
     __self: this
   }, "11W\xA07L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98
-    },
-    __self: this
-  }, "61.1%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 99
     },
     __self: this
-  }, "26W\xA020L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "61.1%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 100
     },
     __self: this
-  }, "56.5%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "26W\xA020L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 101
     },
     __self: this
-  }, "6")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "56.5%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 102
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/GEN.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "6")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 104
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/GEN.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 105
     },
     __self: this
-  }, "6"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 106
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "6"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 107
     },
     __self: this
-  }, "GEN.G")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 108
+    },
+    __self: this
+  }, "GEN.G")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
     },
     __self: this
   }, "10W\xA08L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112
-    },
-    __self: this
-  }, "55.6%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 113
     },
     __self: this
-  }, "24W\xA020L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "55.6%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 114
     },
     __self: this
-  }, "54.5%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "24W\xA020L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 115
     },
     __self: this
-  }, "4")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "54.5%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 116
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/KZ.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "4")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 118
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/KZ.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 119
     },
     __self: this
-  }, "7"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 120
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "7"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 121
     },
     __self: this
-  }, "Kingzone DragonX")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 122
+    },
+    __self: this
+  }, "Kingzone DragonX")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
     },
     __self: this
   }, "11W\xA07L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126
-    },
-    __self: this
-  }, "61.1%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 127
     },
     __self: this
-  }, "23W\xA023L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "61.1%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 128
     },
     __self: this
-  }, "50.0%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "23W\xA023L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 129
     },
     __self: this
-  }, "0")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "50.0%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 130
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/KT.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "0")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 132
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/KT.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 133
     },
     __self: this
-  }, "8"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "8"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 135
     },
     __self: this
-  }, "KT Rolster")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 136
+    },
+    __self: this
+  }, "KT Rolster")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
     },
     __self: this
   }, "6W\xA012L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 140
-    },
-    __self: this
-  }, "33.3%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 141
     },
     __self: this
-  }, "16W\xA028L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "33.3%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 142
     },
     __self: this
-  }, "36.4%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "16W\xA028L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 143
     },
     __self: this
-  }, "-12")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "36.4%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 144
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/HLE.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "-12")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 146
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/HLE.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 147
     },
     __self: this
-  }, "9"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 148
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "9"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 149
     },
     __self: this
-  }, "Hanwha life")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 150
+    },
+    __self: this
+  }, "Hanwha life")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152
     },
     __self: this
   }, "5W\xA013L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 154
-    },
-    __self: this
-  }, "27.8%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 155
     },
     __self: this
-  }, "15W\xA027L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "27.8%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 156
     },
     __self: this
-  }, "35.7%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "15W\xA027L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 157
     },
     __self: this
-  }, "-12")), __jsx("tr", {
-    className: "jsx-3253343590" + " " + "RankTable__row",
+  }, "35.7%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 158
     },
     __self: this
-  }, __jsx("td", {
-    style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/JAG.png)"
-    },
-    className: "jsx-3253343590" + " " + "RankTabe__row__logo",
+  }, "-12")), __jsx("tr", {
+    className: "RankTable__row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 160
     },
     __self: this
-  }), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("td", {
+    className: "RankTabe__row__logo",
+    style: {
+      backgroundImage: "url(https://qwer.gg/images/logos/JAG.png)"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 161
     },
     __self: this
-  }, "10"), __jsx("td", {
-    className: "jsx-3253343590" + " " + "RankTable__name",
+  }), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 162
     },
     __self: this
-  }, __jsx("span", {
-    className: "jsx-3253343590" + " " + "hidden-in-mobile",
+  }, "10"), __jsx("td", {
+    className: "RankTable__name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 163
     },
     __self: this
-  }, "Jin Air Green Wings")), __jsx("td", {
-    className: "jsx-3253343590",
+  }, __jsx("span", {
+    className: "hidden-in-mobile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 164
+    },
+    __self: this
+  }, "Jin Air Green Wings")), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 166
     },
     __self: this
   }, "0W\xA018L"), __jsx("td", {
-    className: "jsx-3253343590",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 168
-    },
-    __self: this
-  }, "0.0%"), __jsx("td", {
-    className: "jsx-3253343590",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 169
     },
     __self: this
-  }, "4W\xA036L"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "0.0%"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 170
     },
     __self: this
-  }, "10.0%"), __jsx("td", {
-    className: "jsx-3253343590",
+  }, "4W\xA036L"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 171
     },
     __self: this
-  }, "-32"))))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3253343590",
+  }, "10.0%"), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 172
+    },
     __self: this
-  }, ".Ranks table{width:100%;}.RankTable{cursor:pointer;border-collapse:inital;border-spacing:0 1rem;width:100%;}thead{display:table-header-group;vertical-align:middle;border-color:inherit;}.RankTable thead th:first-child{font-size:1.875px;font-size:1.875rem;}.RankTable thead th{height:3.125rem;text-transform:uppercase;}th{text-align:inherit;}.RankTable thead th{height:3.125rem;text-transform:uppercase;}tbody{display:table-row-group;vertical-align:middle;border-color:inherit;}.RankTable tbody td:first-child{width:5rem;position:relative;background-color:#fbfbfb;background-size:60%;background-position:.625rem;background-repeat:no-repeat;}.RankTable tbody td{height:3.75rem;background-color:#5b5c64;-webkit-transition:opacity 150ms ease 0ms;transition:opacity 150ms ease 0ms;}.RankTable tbody tr:hover td{opacity:0.6;}.RankTable tbody tr.RankTable__lead td:not(:first-child){background-color:#db0442;}.RankTable tbody td:nth-child(2){font-size:1.5px;font-size:1.5rem;text-align:center;width:3rem;}.RankTable tbody td:nth-child(4){width:6rem;}.RankTable tbody td:last-child{width:5rem;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcSG9tZVxcVGVhbVJhbmsuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0xpQixBQUdvQyxBQUdJLEFBTVksQUFLVCxBQUlGLEFBSUcsQUFHSCxBQUlRLEFBTWIsQUFRSSxBQUtKLEFBR2MsQUFHVCxBQU1MLEFBR0EsV0E5RGYsQUFtQ3NCLEFBeUJ0QixBQUdBLENBZkEsR0E3QzJCLEFBd0NFLENBekJBLEFBT0EsQUE2QlIsRUF4Q0UsQ0FRdkIsS0FPMEIsQ0FzQjFCLEVBMUMwQixFQTJCRyxJQW1CUCxJQXhDdEIsQ0FYMEIsRUF3Q1ksQ0F6QnRDLEFBT0EsS0FJeUIsR0FwQkEsRUE4Q1YsR0FuQlMsTUFoQ1QsRUFvRGYsS0F6QkEsR0FyQkEsQ0FMQSxHQWdDZ0MsNEJBQ0EsY0FNaEMsY0FMQSIsImZpbGUiOiJEOlxcUmVhY3RQcm9qZWN0XFxqYXZhcHJvamVjdFxcbG9kLmdnXFxGb3JudGVuZFxcZS1wb2dfZnJvbnRlbmRcXGNvbXBvbmVudHNcXEhvbWVcXFRlYW1SYW5rLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7dXNlRWZmZWN0LCB1c2VTdGF0ZX0gZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgKiBhcyBhcGkgZnJvbSAnLi4vLi4vYXBpL2FwaSc7XHJcbmNvbnN0IFRlYW1SYW5rID0gKCkgPT4ge1xyXG4gICAgdXNlRWZmZWN0KCgpID0+IHtcclxuICAgICAgICBhcGkuZ2V0VG91cm5hbm1lbnRzKDIzOTIpXHJcbiAgICAgICAgLnRoZW4ocmVzcG9uc2UgPT4gY29uc29sZS5sb2cocmVzcG9uc2UpKVxyXG4gICAgICAgIC5jYXRjaChlcnJvciA9PiBjb25zb2xlLmxvZyhlcnJvcikpXHJcbiAgICB9KVxyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8PlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkZsdWlkQ29udGFpbmVyIGNvbnRhaW5lci1mbHVpZFwiPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgSW50cm9fc2VjdGlvblwiPlxyXG4gICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJUaXRsZSBHaWxyb3lcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlc1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlRpdGxlX19zcXVhcmVcIj48L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiVGl0bGVfX3NxdWFyZSBzbWFsbFwiPjwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJUaXRsZV9fc3F1YXJlIHNtYWxsXCI+PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICBMQ0sgMjAxOSBTdW1tZXIg7Iic7JyEXHJcbiAgICAgICAgICAgICAgICAgICAgPC9oMz5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIlJhbmtzXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDx0YWJsZSBjbGFzc05hbWU9XCJSYW5rVGFibGUgR2lscm95IFJhbmtzLS1kZXNrdG9wXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGhlYWQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGggY29sc3Bhbj1cIjNcIj48L3RoPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGggc2NvcGU9XCJjb2xcIiBjb2xzcGFuPVwiMlwiPjxzcGFuPuyKuS3tjKg8L3NwYW4+PC90aD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRoIGNvbHNwYW49XCIyXCI+PHNwYW4+7IS47Yq4PC9zcGFuPjwvdGg+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0aCBzY29wZT1cImNvbFwiPjxzcGFuPuuTneyLpOywqDwvc3Bhbj48L3RoPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdHI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RoZWFkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRib2R5PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzc05hbWU9XCJSYW5rVGFibGVfX3JvdyBSYW5rVGFibGVfX2xlYWRcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT1cIlJhbmtUYWJlX19yb3dfX2xvZ29cIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9HUkYucG5nKVwifX0+PC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjE8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19uYW1lXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJoaWRkZW4taW4tbW9iaWxlXCI+R3JpZmZpbjwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTNXJm5ic3A7NUxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjcyLjIlPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjI5VyZuYnNwOzEzTDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD42OS4wJTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4xNjwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90cj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dHIgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19yb3dcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT1cIlJhbmtUYWJlX19yb3dfX2xvZ29cIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9EV0cucG5nKVwifX0+PC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjI8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19uYW1lXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJoaWRkZW4taW4tbW9iaWxlXCI+REFNV09OIEdhbWluZzwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTNXJm5ic3A7NUxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjcyLjIlPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjI4VyZuYnNwOzE2TDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD42My42JTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4xMjwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90cj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dHIgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19yb3dcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT1cIlJhbmtUYWJlX19yb3dfX2xvZ29cIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9TQi5wbmcpXCJ9fT48L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+MzwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzc05hbWU9XCJSYW5rVGFibGVfX25hbWVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImhpZGRlbi1pbi1tb2JpbGVcIj5TQU5EQk9YIEdhbWluZzwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTJXJm5ic3A7NkxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjY2LjclPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjI3VyZuYnNwOzE4TDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD42MC4wJTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD45PC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzc05hbWU9XCJSYW5rVGFibGVfX3Jvd1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmVfX3Jvd19fbG9nb1wiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBcInVybChodHRwczovL3F3ZXIuZ2cvaW1hZ2VzL2xvZ29zL1NLVC5wbmcpXCJ9fT48L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+NDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzc05hbWU9XCJSYW5rVGFibGVfX25hbWVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImhpZGRlbi1pbi1tb2JpbGVcIj5TS1QgVDE8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDExVyZuYnNwOzdMXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD42MS4xJTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4yNlcmbmJzcDsxN0w8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+NjAuNSU8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+OTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90cj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dHIgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19yb3dcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT1cIlJhbmtUYWJlX19yb3dfX2xvZ29cIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9BRi5wbmcpXCJ9fT48L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+NTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzc05hbWU9XCJSYW5rVGFibGVfX25hbWVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImhpZGRlbi1pbi1tb2JpbGVcIj5BZnJlZWNhIEZyZWVjczwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTFXJm5ic3A7N0xcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjYxLjElPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjI2VyZuYnNwOzIwTDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD41Ni41JTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD42PC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzc05hbWU9XCJSYW5rVGFibGVfX3Jvd1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmVfX3Jvd19fbG9nb1wiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBcInVybChodHRwczovL3F3ZXIuZ2cvaW1hZ2VzL2xvZ29zL0dFTi5wbmcpXCJ9fT48L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+NjwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzc05hbWU9XCJSYW5rVGFibGVfX25hbWVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImhpZGRlbi1pbi1tb2JpbGVcIj5HRU4uRzwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTBXJm5ic3A7OExcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjU1LjYlPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjI0VyZuYnNwOzIwTDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD41NC41JTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD40PC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzc05hbWU9XCJSYW5rVGFibGVfX3Jvd1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmVfX3Jvd19fbG9nb1wiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBcInVybChodHRwczovL3F3ZXIuZ2cvaW1hZ2VzL2xvZ29zL0taLnBuZylcIn19PjwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD43PC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT1cIlJhbmtUYWJsZV9fbmFtZVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiaGlkZGVuLWluLW1vYmlsZVwiPktpbmd6b25lIERyYWdvblg8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDExVyZuYnNwOzdMXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD42MS4xJTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4yM1cmbmJzcDsyM0w8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+NTAuMCU8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+MDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90cj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dHIgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19yb3dcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT1cIlJhbmtUYWJlX19yb3dfX2xvZ29cIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9LVC5wbmcpXCJ9fT48L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+ODwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBjbGFzc05hbWU9XCJSYW5rVGFibGVfX25hbWVcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImhpZGRlbi1pbi1tb2JpbGVcIj5LVCBSb2xzdGVyPC9zcGFuPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2VyZuYnNwOzEyTFxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+MzMuMyU8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+MTZXJm5ic3A7MjhMPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjM2LjQlPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPi0xMjwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90cj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dHIgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19yb3dcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT1cIlJhbmtUYWJlX19yb3dfX2xvZ29cIiBzdHlsZT17e2JhY2tncm91bmRJbWFnZTogXCJ1cmwoaHR0cHM6Ly9xd2VyLmdnL2ltYWdlcy9sb2dvcy9ITEUucG5nKVwifX0+PC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjk8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19uYW1lXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJoaWRkZW4taW4tbW9iaWxlXCI+SGFud2hhIGxpZmU8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDVXJm5ic3A7MTNMXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4yNy44JTwvdGQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZD4xNVcmbmJzcDsyN0w8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+MzUuNyU8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+LTEyPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzc05hbWU9XCJSYW5rVGFibGVfX3Jvd1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmVfX3Jvd19fbG9nb1wiIHN0eWxlPXt7YmFja2dyb3VuZEltYWdlOiBcInVybChodHRwczovL3F3ZXIuZ2cvaW1hZ2VzL2xvZ29zL0pBRy5wbmcpXCJ9fT48L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+MTA8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwiUmFua1RhYmxlX19uYW1lXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJoaWRkZW4taW4tbW9iaWxlXCI+SmluIEFpciBHcmVlbiBXaW5nczwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMFcmbmJzcDsxOExcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkPjAuMCU8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+NFcmbmJzcDszNkw8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+MTAuMCU8L3RkPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQ+LTMyPC90ZD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90Ym9keT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC90YWJsZT5cclxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPHN0eWxlIGdsb2JhbCBqc3g+XHJcbiAgICAgICAgICAgICAgICB7YFxyXG4gICAgICAgICAgICAgICAgICAgIC5SYW5rcyB0YWJsZSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUmFua1RhYmxlIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItY29sbGFwc2U6IGluaXRhbDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXNwYWNpbmc6IDAgMXJlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIHRoZWFkIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogdGFibGUtaGVhZGVyLWdyb3VwO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItY29sb3I6IGluaGVyaXQ7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5SYW5rVGFibGUgdGhlYWQgdGg6Zmlyc3QtY2hpbGQge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDEuODc1cHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMS44NzVyZW07XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5SYW5rVGFibGUgdGhlYWQgdGgge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDMuMTI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICB0aCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQtYWxpZ246IGluaGVyaXQ7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5SYW5rVGFibGUgdGhlYWQgdGgge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDMuMTI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICB0Ym9keSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IHRhYmxlLXJvdy1ncm91cDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWNvbG9yOiBpbmhlcml0O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlJhbmtUYWJsZSB0Ym9keSB0ZDpmaXJzdC1jaGlsZCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiA1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmYmZiZmI7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtc2l6ZTogNjAlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAuNjI1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUmFua1RhYmxlIHRib2R5IHRkIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAzLjc1cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNWI1YzY0O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0cmFuc2l0aW9uOiBvcGFjaXR5IDE1MG1zIGVhc2UgMG1zO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUmFua1RhYmxlIHRib2R5IHRyOmhvdmVyIHRke1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBvcGFjaXR5OjAuNjtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLlJhbmtUYWJsZSB0Ym9keSB0ci5SYW5rVGFibGVfX2xlYWQgdGQ6bm90KDpmaXJzdC1jaGlsZCkge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGIwNDQyO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUmFua1RhYmxlIHRib2R5IHRkOm50aC1jaGlsZCgyKSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMS41cHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMS41cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzcmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUmFua1RhYmxlIHRib2R5IHRkOm50aC1jaGlsZCg0KSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiA2cmVtO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuUmFua1RhYmxlIHRib2R5IHRkOmxhc3QtY2hpbGQge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogNXJlbTtcclxuICAgICAgICAgICAgICAgICAgICB9ICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgIGB9XHJcbiAgICAgICAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC8+XHJcbiAgICApXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFRlYW1SYW5rOyJdfQ== */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\Home\\TeamRank.js */"));
+  }, "-32"))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TeamRank);
@@ -10296,537 +10208,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/node-libs-browser/node_modules/punycode/punycode.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/node-libs-browser/node_modules/punycode/punycode.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
-;(function(root) {
-
-	/** Detect free variables */
-	var freeExports =  true && exports &&
-		!exports.nodeType && exports;
-	var freeModule =  true && module &&
-		!module.nodeType && module;
-	var freeGlobal = typeof global == 'object' && global;
-	if (
-		freeGlobal.global === freeGlobal ||
-		freeGlobal.window === freeGlobal ||
-		freeGlobal.self === freeGlobal
-	) {
-		root = freeGlobal;
-	}
-
-	/**
-	 * The `punycode` object.
-	 * @name punycode
-	 * @type Object
-	 */
-	var punycode,
-
-	/** Highest positive signed 32-bit float value */
-	maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
-
-	/** Bootstring parameters */
-	base = 36,
-	tMin = 1,
-	tMax = 26,
-	skew = 38,
-	damp = 700,
-	initialBias = 72,
-	initialN = 128, // 0x80
-	delimiter = '-', // '\x2D'
-
-	/** Regular expressions */
-	regexPunycode = /^xn--/,
-	regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
-	regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
-
-	/** Error messages */
-	errors = {
-		'overflow': 'Overflow: input needs wider integers to process',
-		'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
-		'invalid-input': 'Invalid input'
-	},
-
-	/** Convenience shortcuts */
-	baseMinusTMin = base - tMin,
-	floor = Math.floor,
-	stringFromCharCode = String.fromCharCode,
-
-	/** Temporary variable */
-	key;
-
-	/*--------------------------------------------------------------------------*/
-
-	/**
-	 * A generic error utility function.
-	 * @private
-	 * @param {String} type The error type.
-	 * @returns {Error} Throws a `RangeError` with the applicable error message.
-	 */
-	function error(type) {
-		throw new RangeError(errors[type]);
-	}
-
-	/**
-	 * A generic `Array#map` utility function.
-	 * @private
-	 * @param {Array} array The array to iterate over.
-	 * @param {Function} callback The function that gets called for every array
-	 * item.
-	 * @returns {Array} A new array of values returned by the callback function.
-	 */
-	function map(array, fn) {
-		var length = array.length;
-		var result = [];
-		while (length--) {
-			result[length] = fn(array[length]);
-		}
-		return result;
-	}
-
-	/**
-	 * A simple `Array#map`-like wrapper to work with domain name strings or email
-	 * addresses.
-	 * @private
-	 * @param {String} domain The domain name or email address.
-	 * @param {Function} callback The function that gets called for every
-	 * character.
-	 * @returns {Array} A new string of characters returned by the callback
-	 * function.
-	 */
-	function mapDomain(string, fn) {
-		var parts = string.split('@');
-		var result = '';
-		if (parts.length > 1) {
-			// In email addresses, only the domain name should be punycoded. Leave
-			// the local part (i.e. everything up to `@`) intact.
-			result = parts[0] + '@';
-			string = parts[1];
-		}
-		// Avoid `split(regex)` for IE8 compatibility. See #17.
-		string = string.replace(regexSeparators, '\x2E');
-		var labels = string.split('.');
-		var encoded = map(labels, fn).join('.');
-		return result + encoded;
-	}
-
-	/**
-	 * Creates an array containing the numeric code points of each Unicode
-	 * character in the string. While JavaScript uses UCS-2 internally,
-	 * this function will convert a pair of surrogate halves (each of which
-	 * UCS-2 exposes as separate characters) into a single code point,
-	 * matching UTF-16.
-	 * @see `punycode.ucs2.encode`
-	 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-	 * @memberOf punycode.ucs2
-	 * @name decode
-	 * @param {String} string The Unicode input string (UCS-2).
-	 * @returns {Array} The new array of code points.
-	 */
-	function ucs2decode(string) {
-		var output = [],
-		    counter = 0,
-		    length = string.length,
-		    value,
-		    extra;
-		while (counter < length) {
-			value = string.charCodeAt(counter++);
-			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
-				// high surrogate, and there is a next character
-				extra = string.charCodeAt(counter++);
-				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
-					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
-				} else {
-					// unmatched surrogate; only append this code unit, in case the next
-					// code unit is the high surrogate of a surrogate pair
-					output.push(value);
-					counter--;
-				}
-			} else {
-				output.push(value);
-			}
-		}
-		return output;
-	}
-
-	/**
-	 * Creates a string based on an array of numeric code points.
-	 * @see `punycode.ucs2.decode`
-	 * @memberOf punycode.ucs2
-	 * @name encode
-	 * @param {Array} codePoints The array of numeric code points.
-	 * @returns {String} The new Unicode string (UCS-2).
-	 */
-	function ucs2encode(array) {
-		return map(array, function(value) {
-			var output = '';
-			if (value > 0xFFFF) {
-				value -= 0x10000;
-				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
-				value = 0xDC00 | value & 0x3FF;
-			}
-			output += stringFromCharCode(value);
-			return output;
-		}).join('');
-	}
-
-	/**
-	 * Converts a basic code point into a digit/integer.
-	 * @see `digitToBasic()`
-	 * @private
-	 * @param {Number} codePoint The basic numeric code point value.
-	 * @returns {Number} The numeric value of a basic code point (for use in
-	 * representing integers) in the range `0` to `base - 1`, or `base` if
-	 * the code point does not represent a value.
-	 */
-	function basicToDigit(codePoint) {
-		if (codePoint - 48 < 10) {
-			return codePoint - 22;
-		}
-		if (codePoint - 65 < 26) {
-			return codePoint - 65;
-		}
-		if (codePoint - 97 < 26) {
-			return codePoint - 97;
-		}
-		return base;
-	}
-
-	/**
-	 * Converts a digit/integer into a basic code point.
-	 * @see `basicToDigit()`
-	 * @private
-	 * @param {Number} digit The numeric value of a basic code point.
-	 * @returns {Number} The basic code point whose value (when used for
-	 * representing integers) is `digit`, which needs to be in the range
-	 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
-	 * used; else, the lowercase form is used. The behavior is undefined
-	 * if `flag` is non-zero and `digit` has no uppercase form.
-	 */
-	function digitToBasic(digit, flag) {
-		//  0..25 map to ASCII a..z or A..Z
-		// 26..35 map to ASCII 0..9
-		return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
-	}
-
-	/**
-	 * Bias adaptation function as per section 3.4 of RFC 3492.
-	 * https://tools.ietf.org/html/rfc3492#section-3.4
-	 * @private
-	 */
-	function adapt(delta, numPoints, firstTime) {
-		var k = 0;
-		delta = firstTime ? floor(delta / damp) : delta >> 1;
-		delta += floor(delta / numPoints);
-		for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
-			delta = floor(delta / baseMinusTMin);
-		}
-		return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
-	}
-
-	/**
-	 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
-	 * symbols.
-	 * @memberOf punycode
-	 * @param {String} input The Punycode string of ASCII-only symbols.
-	 * @returns {String} The resulting string of Unicode symbols.
-	 */
-	function decode(input) {
-		// Don't use UCS-2
-		var output = [],
-		    inputLength = input.length,
-		    out,
-		    i = 0,
-		    n = initialN,
-		    bias = initialBias,
-		    basic,
-		    j,
-		    index,
-		    oldi,
-		    w,
-		    k,
-		    digit,
-		    t,
-		    /** Cached calculation results */
-		    baseMinusT;
-
-		// Handle the basic code points: let `basic` be the number of input code
-		// points before the last delimiter, or `0` if there is none, then copy
-		// the first basic code points to the output.
-
-		basic = input.lastIndexOf(delimiter);
-		if (basic < 0) {
-			basic = 0;
-		}
-
-		for (j = 0; j < basic; ++j) {
-			// if it's not a basic code point
-			if (input.charCodeAt(j) >= 0x80) {
-				error('not-basic');
-			}
-			output.push(input.charCodeAt(j));
-		}
-
-		// Main decoding loop: start just after the last delimiter if any basic code
-		// points were copied; start at the beginning otherwise.
-
-		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
-
-			// `index` is the index of the next character to be consumed.
-			// Decode a generalized variable-length integer into `delta`,
-			// which gets added to `i`. The overflow checking is easier
-			// if we increase `i` as we go, then subtract off its starting
-			// value at the end to obtain `delta`.
-			for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
-
-				if (index >= inputLength) {
-					error('invalid-input');
-				}
-
-				digit = basicToDigit(input.charCodeAt(index++));
-
-				if (digit >= base || digit > floor((maxInt - i) / w)) {
-					error('overflow');
-				}
-
-				i += digit * w;
-				t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-
-				if (digit < t) {
-					break;
-				}
-
-				baseMinusT = base - t;
-				if (w > floor(maxInt / baseMinusT)) {
-					error('overflow');
-				}
-
-				w *= baseMinusT;
-
-			}
-
-			out = output.length + 1;
-			bias = adapt(i - oldi, out, oldi == 0);
-
-			// `i` was supposed to wrap around from `out` to `0`,
-			// incrementing `n` each time, so we'll fix that now:
-			if (floor(i / out) > maxInt - n) {
-				error('overflow');
-			}
-
-			n += floor(i / out);
-			i %= out;
-
-			// Insert `n` at position `i` of the output
-			output.splice(i++, 0, n);
-
-		}
-
-		return ucs2encode(output);
-	}
-
-	/**
-	 * Converts a string of Unicode symbols (e.g. a domain name label) to a
-	 * Punycode string of ASCII-only symbols.
-	 * @memberOf punycode
-	 * @param {String} input The string of Unicode symbols.
-	 * @returns {String} The resulting Punycode string of ASCII-only symbols.
-	 */
-	function encode(input) {
-		var n,
-		    delta,
-		    handledCPCount,
-		    basicLength,
-		    bias,
-		    j,
-		    m,
-		    q,
-		    k,
-		    t,
-		    currentValue,
-		    output = [],
-		    /** `inputLength` will hold the number of code points in `input`. */
-		    inputLength,
-		    /** Cached calculation results */
-		    handledCPCountPlusOne,
-		    baseMinusT,
-		    qMinusT;
-
-		// Convert the input in UCS-2 to Unicode
-		input = ucs2decode(input);
-
-		// Cache the length
-		inputLength = input.length;
-
-		// Initialize the state
-		n = initialN;
-		delta = 0;
-		bias = initialBias;
-
-		// Handle the basic code points
-		for (j = 0; j < inputLength; ++j) {
-			currentValue = input[j];
-			if (currentValue < 0x80) {
-				output.push(stringFromCharCode(currentValue));
-			}
-		}
-
-		handledCPCount = basicLength = output.length;
-
-		// `handledCPCount` is the number of code points that have been handled;
-		// `basicLength` is the number of basic code points.
-
-		// Finish the basic string - if it is not empty - with a delimiter
-		if (basicLength) {
-			output.push(delimiter);
-		}
-
-		// Main encoding loop:
-		while (handledCPCount < inputLength) {
-
-			// All non-basic code points < n have been handled already. Find the next
-			// larger one:
-			for (m = maxInt, j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-				if (currentValue >= n && currentValue < m) {
-					m = currentValue;
-				}
-			}
-
-			// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
-			// but guard against overflow
-			handledCPCountPlusOne = handledCPCount + 1;
-			if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
-				error('overflow');
-			}
-
-			delta += (m - n) * handledCPCountPlusOne;
-			n = m;
-
-			for (j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-
-				if (currentValue < n && ++delta > maxInt) {
-					error('overflow');
-				}
-
-				if (currentValue == n) {
-					// Represent delta as a generalized variable-length integer
-					for (q = delta, k = base; /* no condition */; k += base) {
-						t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-						if (q < t) {
-							break;
-						}
-						qMinusT = q - t;
-						baseMinusT = base - t;
-						output.push(
-							stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
-						);
-						q = floor(qMinusT / baseMinusT);
-					}
-
-					output.push(stringFromCharCode(digitToBasic(q, 0)));
-					bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
-					delta = 0;
-					++handledCPCount;
-				}
-			}
-
-			++delta;
-			++n;
-
-		}
-		return output.join('');
-	}
-
-	/**
-	 * Converts a Punycode string representing a domain name or an email address
-	 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
-	 * it doesn't matter if you call it on a string that has already been
-	 * converted to Unicode.
-	 * @memberOf punycode
-	 * @param {String} input The Punycoded domain name or email address to
-	 * convert to Unicode.
-	 * @returns {String} The Unicode representation of the given Punycode
-	 * string.
-	 */
-	function toUnicode(input) {
-		return mapDomain(input, function(string) {
-			return regexPunycode.test(string)
-				? decode(string.slice(4).toLowerCase())
-				: string;
-		});
-	}
-
-	/**
-	 * Converts a Unicode string representing a domain name or an email address to
-	 * Punycode. Only the non-ASCII parts of the domain name will be converted,
-	 * i.e. it doesn't matter if you call it with a domain that's already in
-	 * ASCII.
-	 * @memberOf punycode
-	 * @param {String} input The domain name or email address to convert, as a
-	 * Unicode string.
-	 * @returns {String} The Punycode representation of the given domain name or
-	 * email address.
-	 */
-	function toASCII(input) {
-		return mapDomain(input, function(string) {
-			return regexNonASCII.test(string)
-				? 'xn--' + encode(string)
-				: string;
-		});
-	}
-
-	/*--------------------------------------------------------------------------*/
-
-	/** Define the public API */
-	punycode = {
-		/**
-		 * A string representing the current Punycode.js version number.
-		 * @memberOf punycode
-		 * @type String
-		 */
-		'version': '1.4.1',
-		/**
-		 * An object of methods to convert from JavaScript's internal character
-		 * representation (UCS-2) to Unicode code points, and back.
-		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-		 * @memberOf punycode
-		 * @type Object
-		 */
-		'ucs2': {
-			'decode': ucs2decode,
-			'encode': ucs2encode
-		},
-		'decode': decode,
-		'encode': encode,
-		'toASCII': toASCII,
-		'toUnicode': toUnicode
-	};
-
-	/** Expose `punycode` */
-	// Some AMD build optimizers, like r.js, check for specific condition patterns
-	// like the following:
-	if (
-		true
-	) {
-		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
-			return punycode;
-		}).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-
-}(this));
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
   !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_13346faca0e924a89b24 ***!
@@ -12148,6 +11529,537 @@ if (true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(/*! dll-reference dll_13346faca0e924a89b24 */ "dll-reference dll_13346faca0e924a89b24"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+
+/***/ }),
+
+/***/ "./node_modules/punycode/punycode.js":
+/*!*******************************************!*\
+  !*** ./node_modules/punycode/punycode.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
+;(function(root) {
+
+	/** Detect free variables */
+	var freeExports =  true && exports &&
+		!exports.nodeType && exports;
+	var freeModule =  true && module &&
+		!module.nodeType && module;
+	var freeGlobal = typeof global == 'object' && global;
+	if (
+		freeGlobal.global === freeGlobal ||
+		freeGlobal.window === freeGlobal ||
+		freeGlobal.self === freeGlobal
+	) {
+		root = freeGlobal;
+	}
+
+	/**
+	 * The `punycode` object.
+	 * @name punycode
+	 * @type Object
+	 */
+	var punycode,
+
+	/** Highest positive signed 32-bit float value */
+	maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
+
+	/** Bootstring parameters */
+	base = 36,
+	tMin = 1,
+	tMax = 26,
+	skew = 38,
+	damp = 700,
+	initialBias = 72,
+	initialN = 128, // 0x80
+	delimiter = '-', // '\x2D'
+
+	/** Regular expressions */
+	regexPunycode = /^xn--/,
+	regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
+	regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
+
+	/** Error messages */
+	errors = {
+		'overflow': 'Overflow: input needs wider integers to process',
+		'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
+		'invalid-input': 'Invalid input'
+	},
+
+	/** Convenience shortcuts */
+	baseMinusTMin = base - tMin,
+	floor = Math.floor,
+	stringFromCharCode = String.fromCharCode,
+
+	/** Temporary variable */
+	key;
+
+	/*--------------------------------------------------------------------------*/
+
+	/**
+	 * A generic error utility function.
+	 * @private
+	 * @param {String} type The error type.
+	 * @returns {Error} Throws a `RangeError` with the applicable error message.
+	 */
+	function error(type) {
+		throw new RangeError(errors[type]);
+	}
+
+	/**
+	 * A generic `Array#map` utility function.
+	 * @private
+	 * @param {Array} array The array to iterate over.
+	 * @param {Function} callback The function that gets called for every array
+	 * item.
+	 * @returns {Array} A new array of values returned by the callback function.
+	 */
+	function map(array, fn) {
+		var length = array.length;
+		var result = [];
+		while (length--) {
+			result[length] = fn(array[length]);
+		}
+		return result;
+	}
+
+	/**
+	 * A simple `Array#map`-like wrapper to work with domain name strings or email
+	 * addresses.
+	 * @private
+	 * @param {String} domain The domain name or email address.
+	 * @param {Function} callback The function that gets called for every
+	 * character.
+	 * @returns {Array} A new string of characters returned by the callback
+	 * function.
+	 */
+	function mapDomain(string, fn) {
+		var parts = string.split('@');
+		var result = '';
+		if (parts.length > 1) {
+			// In email addresses, only the domain name should be punycoded. Leave
+			// the local part (i.e. everything up to `@`) intact.
+			result = parts[0] + '@';
+			string = parts[1];
+		}
+		// Avoid `split(regex)` for IE8 compatibility. See #17.
+		string = string.replace(regexSeparators, '\x2E');
+		var labels = string.split('.');
+		var encoded = map(labels, fn).join('.');
+		return result + encoded;
+	}
+
+	/**
+	 * Creates an array containing the numeric code points of each Unicode
+	 * character in the string. While JavaScript uses UCS-2 internally,
+	 * this function will convert a pair of surrogate halves (each of which
+	 * UCS-2 exposes as separate characters) into a single code point,
+	 * matching UTF-16.
+	 * @see `punycode.ucs2.encode`
+	 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+	 * @memberOf punycode.ucs2
+	 * @name decode
+	 * @param {String} string The Unicode input string (UCS-2).
+	 * @returns {Array} The new array of code points.
+	 */
+	function ucs2decode(string) {
+		var output = [],
+		    counter = 0,
+		    length = string.length,
+		    value,
+		    extra;
+		while (counter < length) {
+			value = string.charCodeAt(counter++);
+			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
+				// high surrogate, and there is a next character
+				extra = string.charCodeAt(counter++);
+				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
+					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
+				} else {
+					// unmatched surrogate; only append this code unit, in case the next
+					// code unit is the high surrogate of a surrogate pair
+					output.push(value);
+					counter--;
+				}
+			} else {
+				output.push(value);
+			}
+		}
+		return output;
+	}
+
+	/**
+	 * Creates a string based on an array of numeric code points.
+	 * @see `punycode.ucs2.decode`
+	 * @memberOf punycode.ucs2
+	 * @name encode
+	 * @param {Array} codePoints The array of numeric code points.
+	 * @returns {String} The new Unicode string (UCS-2).
+	 */
+	function ucs2encode(array) {
+		return map(array, function(value) {
+			var output = '';
+			if (value > 0xFFFF) {
+				value -= 0x10000;
+				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
+				value = 0xDC00 | value & 0x3FF;
+			}
+			output += stringFromCharCode(value);
+			return output;
+		}).join('');
+	}
+
+	/**
+	 * Converts a basic code point into a digit/integer.
+	 * @see `digitToBasic()`
+	 * @private
+	 * @param {Number} codePoint The basic numeric code point value.
+	 * @returns {Number} The numeric value of a basic code point (for use in
+	 * representing integers) in the range `0` to `base - 1`, or `base` if
+	 * the code point does not represent a value.
+	 */
+	function basicToDigit(codePoint) {
+		if (codePoint - 48 < 10) {
+			return codePoint - 22;
+		}
+		if (codePoint - 65 < 26) {
+			return codePoint - 65;
+		}
+		if (codePoint - 97 < 26) {
+			return codePoint - 97;
+		}
+		return base;
+	}
+
+	/**
+	 * Converts a digit/integer into a basic code point.
+	 * @see `basicToDigit()`
+	 * @private
+	 * @param {Number} digit The numeric value of a basic code point.
+	 * @returns {Number} The basic code point whose value (when used for
+	 * representing integers) is `digit`, which needs to be in the range
+	 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
+	 * used; else, the lowercase form is used. The behavior is undefined
+	 * if `flag` is non-zero and `digit` has no uppercase form.
+	 */
+	function digitToBasic(digit, flag) {
+		//  0..25 map to ASCII a..z or A..Z
+		// 26..35 map to ASCII 0..9
+		return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
+	}
+
+	/**
+	 * Bias adaptation function as per section 3.4 of RFC 3492.
+	 * https://tools.ietf.org/html/rfc3492#section-3.4
+	 * @private
+	 */
+	function adapt(delta, numPoints, firstTime) {
+		var k = 0;
+		delta = firstTime ? floor(delta / damp) : delta >> 1;
+		delta += floor(delta / numPoints);
+		for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
+			delta = floor(delta / baseMinusTMin);
+		}
+		return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
+	}
+
+	/**
+	 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
+	 * symbols.
+	 * @memberOf punycode
+	 * @param {String} input The Punycode string of ASCII-only symbols.
+	 * @returns {String} The resulting string of Unicode symbols.
+	 */
+	function decode(input) {
+		// Don't use UCS-2
+		var output = [],
+		    inputLength = input.length,
+		    out,
+		    i = 0,
+		    n = initialN,
+		    bias = initialBias,
+		    basic,
+		    j,
+		    index,
+		    oldi,
+		    w,
+		    k,
+		    digit,
+		    t,
+		    /** Cached calculation results */
+		    baseMinusT;
+
+		// Handle the basic code points: let `basic` be the number of input code
+		// points before the last delimiter, or `0` if there is none, then copy
+		// the first basic code points to the output.
+
+		basic = input.lastIndexOf(delimiter);
+		if (basic < 0) {
+			basic = 0;
+		}
+
+		for (j = 0; j < basic; ++j) {
+			// if it's not a basic code point
+			if (input.charCodeAt(j) >= 0x80) {
+				error('not-basic');
+			}
+			output.push(input.charCodeAt(j));
+		}
+
+		// Main decoding loop: start just after the last delimiter if any basic code
+		// points were copied; start at the beginning otherwise.
+
+		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
+
+			// `index` is the index of the next character to be consumed.
+			// Decode a generalized variable-length integer into `delta`,
+			// which gets added to `i`. The overflow checking is easier
+			// if we increase `i` as we go, then subtract off its starting
+			// value at the end to obtain `delta`.
+			for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
+
+				if (index >= inputLength) {
+					error('invalid-input');
+				}
+
+				digit = basicToDigit(input.charCodeAt(index++));
+
+				if (digit >= base || digit > floor((maxInt - i) / w)) {
+					error('overflow');
+				}
+
+				i += digit * w;
+				t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+
+				if (digit < t) {
+					break;
+				}
+
+				baseMinusT = base - t;
+				if (w > floor(maxInt / baseMinusT)) {
+					error('overflow');
+				}
+
+				w *= baseMinusT;
+
+			}
+
+			out = output.length + 1;
+			bias = adapt(i - oldi, out, oldi == 0);
+
+			// `i` was supposed to wrap around from `out` to `0`,
+			// incrementing `n` each time, so we'll fix that now:
+			if (floor(i / out) > maxInt - n) {
+				error('overflow');
+			}
+
+			n += floor(i / out);
+			i %= out;
+
+			// Insert `n` at position `i` of the output
+			output.splice(i++, 0, n);
+
+		}
+
+		return ucs2encode(output);
+	}
+
+	/**
+	 * Converts a string of Unicode symbols (e.g. a domain name label) to a
+	 * Punycode string of ASCII-only symbols.
+	 * @memberOf punycode
+	 * @param {String} input The string of Unicode symbols.
+	 * @returns {String} The resulting Punycode string of ASCII-only symbols.
+	 */
+	function encode(input) {
+		var n,
+		    delta,
+		    handledCPCount,
+		    basicLength,
+		    bias,
+		    j,
+		    m,
+		    q,
+		    k,
+		    t,
+		    currentValue,
+		    output = [],
+		    /** `inputLength` will hold the number of code points in `input`. */
+		    inputLength,
+		    /** Cached calculation results */
+		    handledCPCountPlusOne,
+		    baseMinusT,
+		    qMinusT;
+
+		// Convert the input in UCS-2 to Unicode
+		input = ucs2decode(input);
+
+		// Cache the length
+		inputLength = input.length;
+
+		// Initialize the state
+		n = initialN;
+		delta = 0;
+		bias = initialBias;
+
+		// Handle the basic code points
+		for (j = 0; j < inputLength; ++j) {
+			currentValue = input[j];
+			if (currentValue < 0x80) {
+				output.push(stringFromCharCode(currentValue));
+			}
+		}
+
+		handledCPCount = basicLength = output.length;
+
+		// `handledCPCount` is the number of code points that have been handled;
+		// `basicLength` is the number of basic code points.
+
+		// Finish the basic string - if it is not empty - with a delimiter
+		if (basicLength) {
+			output.push(delimiter);
+		}
+
+		// Main encoding loop:
+		while (handledCPCount < inputLength) {
+
+			// All non-basic code points < n have been handled already. Find the next
+			// larger one:
+			for (m = maxInt, j = 0; j < inputLength; ++j) {
+				currentValue = input[j];
+				if (currentValue >= n && currentValue < m) {
+					m = currentValue;
+				}
+			}
+
+			// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
+			// but guard against overflow
+			handledCPCountPlusOne = handledCPCount + 1;
+			if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
+				error('overflow');
+			}
+
+			delta += (m - n) * handledCPCountPlusOne;
+			n = m;
+
+			for (j = 0; j < inputLength; ++j) {
+				currentValue = input[j];
+
+				if (currentValue < n && ++delta > maxInt) {
+					error('overflow');
+				}
+
+				if (currentValue == n) {
+					// Represent delta as a generalized variable-length integer
+					for (q = delta, k = base; /* no condition */; k += base) {
+						t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+						if (q < t) {
+							break;
+						}
+						qMinusT = q - t;
+						baseMinusT = base - t;
+						output.push(
+							stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
+						);
+						q = floor(qMinusT / baseMinusT);
+					}
+
+					output.push(stringFromCharCode(digitToBasic(q, 0)));
+					bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
+					delta = 0;
+					++handledCPCount;
+				}
+			}
+
+			++delta;
+			++n;
+
+		}
+		return output.join('');
+	}
+
+	/**
+	 * Converts a Punycode string representing a domain name or an email address
+	 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
+	 * it doesn't matter if you call it on a string that has already been
+	 * converted to Unicode.
+	 * @memberOf punycode
+	 * @param {String} input The Punycoded domain name or email address to
+	 * convert to Unicode.
+	 * @returns {String} The Unicode representation of the given Punycode
+	 * string.
+	 */
+	function toUnicode(input) {
+		return mapDomain(input, function(string) {
+			return regexPunycode.test(string)
+				? decode(string.slice(4).toLowerCase())
+				: string;
+		});
+	}
+
+	/**
+	 * Converts a Unicode string representing a domain name or an email address to
+	 * Punycode. Only the non-ASCII parts of the domain name will be converted,
+	 * i.e. it doesn't matter if you call it with a domain that's already in
+	 * ASCII.
+	 * @memberOf punycode
+	 * @param {String} input The domain name or email address to convert, as a
+	 * Unicode string.
+	 * @returns {String} The Punycode representation of the given domain name or
+	 * email address.
+	 */
+	function toASCII(input) {
+		return mapDomain(input, function(string) {
+			return regexNonASCII.test(string)
+				? 'xn--' + encode(string)
+				: string;
+		});
+	}
+
+	/*--------------------------------------------------------------------------*/
+
+	/** Define the public API */
+	punycode = {
+		/**
+		 * A string representing the current Punycode.js version number.
+		 * @memberOf punycode
+		 * @type String
+		 */
+		'version': '1.4.1',
+		/**
+		 * An object of methods to convert from JavaScript's internal character
+		 * representation (UCS-2) to Unicode code points, and back.
+		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+		 * @memberOf punycode
+		 * @type Object
+		 */
+		'ucs2': {
+			'decode': ucs2decode,
+			'encode': ucs2encode
+		},
+		'decode': decode,
+		'encode': encode,
+		'toASCII': toASCII,
+		'toUnicode': toUnicode
+	};
+
+	/** Expose `punycode` */
+	// Some AMD build optimizers, like r.js, check for specific condition patterns
+	// like the following:
+	if (
+		true
+	) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+			return punycode;
+		}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+
+}(this));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -14152,7 +14064,7 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 
 
-var punycode = __webpack_require__(/*! punycode */ "./node_modules/node-libs-browser/node_modules/punycode/punycode.js");
+var punycode = __webpack_require__(/*! punycode */ "./node_modules/punycode/punycode.js");
 var util = __webpack_require__(/*! ./util */ "./node_modules/url/util.js");
 
 exports.parse = urlParse;
@@ -15022,7 +14934,7 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 5:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5CReactProject%5Cjavaproject%5Clod.gg%5CForntend%5Ce-pog_frontend%5Cpages%5Cindex.js ***!
   \**********************************************************************************************************************************************************/
@@ -15045,5 +14957,5 @@ module.exports = dll_13346faca0e924a89b24;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
