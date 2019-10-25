@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -381,6 +381,136 @@ const Highlight = ({
 
 /***/ }),
 
+/***/ "./components/highlight/Selector.js":
+/*!******************************************!*\
+  !*** ./components/highlight/Selector.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Selector_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Selector.scss */ "./components/highlight/Selector.scss");
+/* harmony import */ var _Selector_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Selector_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\highlight\\Selector.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Selector = () => {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "Selector_container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "Selector_top",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "upload-button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, "\uB4F1\uB85D\uD558\uAE30"))), __jsx("div", {
+    className: "Selector_underline",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "Selector_bottom",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "categori",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, "\uC804\uCCB4")), __jsx("div", {
+    className: "categori",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, "\uAC8C\uC784")), __jsx("div", {
+    className: "categori",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, "\uC720\uBA38")), __jsx("div", {
+    className: "categori",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, "\uC74C\uC545")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Selector);
+
+/***/ }),
+
+/***/ "./components/highlight/Selector.scss":
+/*!********************************************!*\
+  !*** ./components/highlight/Selector.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./pages/highlights.js":
 /*!*****************************!*\
   !*** ./pages/highlights.js ***!
@@ -393,45 +523,63 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_highlight_Highlight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/highlight/Highlight */ "./components/highlight/Highlight.js");
-/* harmony import */ var _highlights_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./highlights.scss */ "./pages/highlights.scss");
-/* harmony import */ var _highlights_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_highlights_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_highlight_Selector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/highlight/Selector */ "./components/highlight/Selector.js");
+/* harmony import */ var _highlights_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./highlights.scss */ "./pages/highlights.scss");
+/* harmony import */ var _highlights_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_highlights_scss__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\pages\\highlights.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const Home = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+
+const HighlightPage = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
   className: "Home",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "container",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
-}, __jsx(_components_highlight_Highlight__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  youtubeLink: "https://www.youtube.com/watch?v=iUpqKAf8x3g&feature=youtu.be",
+}, __jsx("div", {
+  className: "container",
+  style: {
+    marginBottom: "20px"
+  },
   __source: {
     fileName: _jsxFileName,
     lineNumber: 8
   },
   __self: undefined
-}), __jsx(_components_highlight_Highlight__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  youtubeLink: "https://www.youtube.com/watch?v=goVHnE-pdZM",
+}, __jsx(_components_highlight_Selector__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9
   },
   __self: undefined
+})), __jsx("div", {
+  className: "container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, __jsx(_components_highlight_Highlight__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  youtubeLink: "https://www.youtube.com/watch?v=i1IKnWDecwA",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}), __jsx(_components_highlight_Highlight__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  youtubeLink: "https://www.youtube.com/watch?v=duLLjVcyOx8",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: undefined
 }))));
 
-/* harmony default export */ __webpack_exports__["default"] = (Home);
+/* harmony default export */ __webpack_exports__["default"] = (HighlightPage);
 
 /***/ }),
 
@@ -446,7 +594,7 @@ const Home = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, 
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!***********************************!*\
   !*** multi ./pages/highlights.js ***!
   \***********************************/

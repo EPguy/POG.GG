@@ -16,11 +16,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/community": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/summoner": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

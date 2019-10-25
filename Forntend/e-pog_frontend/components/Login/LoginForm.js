@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
+import axios from 'axios';
 import './LoginForm.scss';
 const LoginForm = () => {
-    const [username, SetUsername] = useState('');
+    const [Username, SetUsername] = useState('');
     const [Email, SetEmail] = useState('');
     const [Password, SetPassword] = useState('');
     const [Disabled, SetDisabled] = useState(true);
     const [isLogin, SetIsLogin] = useState(true);
+    const onClick = () => {
+        console.log(Email, Password, Username)
+        axios.post("http://192.168.137.1:8080/joinRequest", {
+            userid: Email,
+            password: Password,
+            username: Username
+        }).then(response => console.log(response))
+        .catch(error => console.log(error))
+    }
     useEffect(() => {
         if(Email === '' || Password === '') {
             SetDisabled(true);
@@ -30,14 +40,14 @@ const LoginForm = () => {
                                     <div className="member-input__state">
                                         <input class="member-input__box"  onChange={(e) => SetPassword(e.target.value)} type="text" placeholder="Password"/>
                                     </div>
-                                    <button type="submit" class="member-button login__btn" disabled={Disabled}>
+                                    <button type="button" class="member-button login__btn" disabled={Disabled}>
                                         LOGIN
                                     </button>
                                 </div>
                             </form>
                             <div className="login__l-sign-up">
                                 Don’t have an account?
-                                <div className="login__sign-up-link" onClick={() => SetIsLogin(false)}>Sign Up</div>
+                                <div className="login__sign-up-link"  onClick={() => SetIsLogin(false)}>Sign Up</div>
                             </div>
                         </div>
                     </div>
@@ -58,8 +68,8 @@ const LoginForm = () => {
                                     <div className="member-input__state">
                                         <input class="member-input__box"  onChange={(e) => SetPassword(e.target.value)} type="text" placeholder="Password"/>
                                     </div>
-                                    <button type="submit" class="member-button login__btn" disabled={Disabled}>
-                                        LOGIN
+                                    <button onClick={() => onClick()} type="button" class="member-button login__btn" disabled={Disabled}>
+                                        SignUp
                                     </button>
                                 </div>
                             </form>

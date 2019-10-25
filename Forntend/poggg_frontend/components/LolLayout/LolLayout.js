@@ -41,7 +41,7 @@ const AppLayout = ({ children }) => {
                         <ul>
                             <li><a href="/">홈</a></li>
                             <li><a href="http://localhost:3001/">e스포츠</a></li>
-                            <li><a href="#">프로관전</a></li>
+                            <li><a href="/community">팁 게시판</a></li>
                         </ul>
                     </div>
                 </div>
