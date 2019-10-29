@@ -18,8 +18,8 @@ const AppLayout = ({ children }) => {
                 <div class="header-items">
                     <div class="site-item">
                         <ul>
-                            <li>
-                                <a href="#">
+                            <li style={{backgroundColor:"#313641"}}>
+                                <a style={{margin: "0 auto"}} href="#">
                                     <img src="https://poro.gg/images/family/ico_lol.png"/>
                                     <span>리그오브레전드</span>
                                 </a>
@@ -49,7 +49,7 @@ const AppLayout = ({ children }) => {
             <div class="notice">
                 <div class="notice_item">
                     <i className="fas fa-exclamation-circle" style={{paddingRight: "5px"}}></i>
-                    안녕하세요 lod.gg에 오신것을 환영합니다!
+                    안녕하세요 pog.gg에 오신것을 환영합니다!
                 </div>
             </div>
             <style jsx global>
