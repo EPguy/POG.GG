@@ -5,17 +5,34 @@ import moment from 'moment';
 import { white } from 'ansi-colors';
 import './Highlight.scss';
 
-const Highlight = ({youtubeLink}) => {
-    console.log(youtubeLink)
+const Highlight = ({freeid}) => {
+    console.log(freeid)
+    const [videoInfo, SetVideoInfo] = useState({
+        link: "https://www.youtube.com/watch?v=pS93UANDS-8&list=PLKmnCtJnxa9NIoeHbfucgl_97WUiaNEer&index=26",
+        commentCount: 0,
+        voteCount: 0
+    });
     const [showPreview, SetShowPreview] = useState('none');
     const [showComment, SetShowComment] = useState('none');
+    const [commentInput, SetCommentInput] = useState('none');
     const [videoTitle, SetVideoTitle] = useState('');
    
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
-    var matchs = youtubeLink.match(regExp);
+    var matchs = videoInfo.link.match(regExp);
     useEffect(() => {
         axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${matchs[7]}&key=AIzaSyCHeNSQ55mXUVr5NgyOWWBTKhw2XjFT8tw&fields=items(snippet(title))&part=snippet`)
         .then(response => SetVideoTitle(response.data.items[0].snippet.title))
+        //게시글 정보 불러오기
+        axios.get("http://192.168.137.1:8080/postInfo", {
+            params: {
+                freeid: freeid,
+                postType: 3
+            }
+        })
+        .then(response => {
+            SetVideoInfo(resposne.data)
+        })
+        .catch(error => console.log(error))
     }, []);
     const onClick = () => {
         if(showPreview === "none") {
@@ -31,27 +48,59 @@ const Highlight = ({youtubeLink}) => {
             SetShowComment('none');
         }
     }
+    const onLikeButton = () => {
+        axios.post("http://192.168.137.1:8080/voteRequest", {
+            freeid: freeid,
+            voteCount: 1,
+            postType: 3
+        })
+        .then(response => {
+            alert("추천 완료!")
+        })
+        .catch(error => {
+            alert("에러!")
+        })
+    }
+    const onDisLikeButton = () => {
+        axios.post("http://192.168.137.1:8080/voteRequest", {
+            freeid: freeid,
+            voteCount: -1,
+            postType: 3
+        })
+        .then(response => {
+            alert("비추천 완료!")
+        })
+        .catch(error => {
+            alert("에러!")
+        })
+    } 
+    const postComment = () => {
+        axios.post("http://192.168.137.1:8080/makeComment", {
+            postType: 3,
+            content: commentInput
+        })
+    }
     return (
-        <>
+        <> 
             <div className="highlight">
                 <div className="article-list thumbnail" onClick={() => onClick()}>
                     <img src={`http://img.youtube.com/vi/${matchs[7]}/0.jpg`}/>
                 </div>
                 <div className="article-list content">
                     <div className="article__title">
-                        <a href={youtubeLink}>
+                        <a href={videoInfo.link}>
                             <span>{videoTitle}</span>
                         </a>
                     </div>
                     <div className="article__comment">
-                        <span onClick={() => onCommentClick()}>댓글 (16개)</span>
+                        <span onClick={() => onCommentClick()}>댓글 ({videoInfo.commentCount}개)</span>
                         <span>삭제</span>
                     </div>
                 </div>
                 <div className="article-list raiting">
-                    <img style={{marginBottom: "5px"}}src="/static/up.svg"/>
-                    <div className="vote">78</div>
-                    <img src="/static/down.svg"/>
+                    <img style={{marginBottom: "5px"}} onClick={()=>onLikeButton()} src="/static/up.svg"/>
+                    <div className="vote">{videoInfo.voteCount}</div>
+                    <img onClick={()=>onDisLikeButton()} src="/static/down.svg"/>
                 </div>
             </div>
             <div className="preview" style={{display: showPreview}}>
@@ -64,7 +113,8 @@ const Highlight = ({youtubeLink}) => {
                     <Input.Search
                         placeholder="댓글을 입력해 주세요."
                         enterButton="입력"
-                        onSearch={value => console.log(value)}
+                        onChange={e => SetCommentInput(e.target.value)}
+                        onSearch={() => postComment()}
                     />
                     <Comment
                         author={<a style={{color: "#77D"}}>샌즈TV</a>}
