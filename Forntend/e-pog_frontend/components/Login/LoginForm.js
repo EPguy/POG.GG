@@ -8,13 +8,26 @@ const LoginForm = () => {
     const [Password, SetPassword] = useState('');
     const [Disabled, SetDisabled] = useState(true);
     const [isLogin, SetIsLogin] = useState(true);
-    const onClick = () => {
+    const onJoinClick = () => {
         console.log(Email, Password, Username)
         axios.post("http://192.168.137.1:8080/joinRequest", {
             userid: Email,
             password: Password,
             username: Username
-        }).then(response => console.log(response))
+        }).then(response => {
+            console.log(response)
+        })
+        .catch(error => console.log(error))
+    }
+    const onSignInClick = () => {
+        console.log(Email, Password)
+        axios.post("http://192.168.137.1:8080/loginRequest", {
+            userid: Email,
+            password: Password,
+        }).then(response => {
+            localStorage.setItem('token', response.data.token);
+            location.href = "/";
+        })
         .catch(error => console.log(error))
     }
     useEffect(() => {
@@ -35,12 +48,12 @@ const LoginForm = () => {
                             <form>
                                 <div className="member-input">
                                     <div className="member-input__state">
-                                        <input class="member-input__box" onChange={(e) => SetEmail(e.target.value)} type="text" placeholder="Email"/>
+                                        <input class="member-input__box" onChange={(e) => SetEmail(e.target.value)} value={Email} type="text" placeholder="Email"/>
                                     </div>
                                     <div className="member-input__state">
-                                        <input class="member-input__box"  onChange={(e) => SetPassword(e.target.value)} type="text" placeholder="Password"/>
+                                        <input class="member-input__box"  id="password-input" onChange={(e) => SetPassword(e.target.value)} value={Password} type="tel" placeholder="Password"/>
                                     </div>
-                                    <button type="button" class="member-button login__btn" disabled={Disabled}>
+                                    <button onClick={() => onSignInClick()} type="button" class="member-button login__btn" disabled={Disabled}>
                                         LOGIN
                                     </button>
                                 </div>
@@ -60,15 +73,15 @@ const LoginForm = () => {
                             <form>
                                 <div className="member-input">
                                     <div className="member-input__state">
-                                        <input class="member-input__box" onChange={(e) => SetUsername(e.target.value)} type="text" placeholder="Username"/>
+                                        <input class="member-input__box" onChange={(e) => SetUsername(e.target.value)} value={Username} type="text" placeholder="Username"/>
                                     </div>
                                     <div className="member-input__state">
-                                        <input class="member-input__box" onChange={(e) => SetEmail(e.target.value)} type="text" placeholder="Email"/>
+                                        <input class="member-input__box" onChange={(e) => SetEmail(e.target.value)} value={Email} type="text" placeholder="Email"/>
                                     </div>
                                     <div className="member-input__state">
-                                        <input class="member-input__box"  onChange={(e) => SetPassword(e.target.value)} type="text" placeholder="Password"/>
+                                        <input class="member-input__box"  id="password-input" onChange={(e) => SetPassword(e.target.value)} value={Password} type="password" placeholder="Password"/>
                                     </div>
-                                    <button onClick={() => onClick()} type="button" class="member-button login__btn" disabled={Disabled}>
+                                    <button onClick={() => onJoinClick()} type="button" class="member-button login__btn" disabled={Disabled}>
                                         SignUp
                                     </button>
                                 </div>

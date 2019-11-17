@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Icon, Avatar, Comment, Tooltip, Button, Input } from 'antd';
+import { Modal, Icon, Avatar, Comment, Tooltip, Button, Input } from 'antd';
 import axios from 'axios';
 import moment from 'moment';
 import { white } from 'ansi-colors';
@@ -10,6 +10,7 @@ const Highlight = ({youtubeLink}) => {
     const [showPreview, SetShowPreview] = useState('none');
     const [showComment, SetShowComment] = useState('none');
     const [videoTitle, SetVideoTitle] = useState('');
+   
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var matchs = youtubeLink.match(regExp);
     useEffect(() => {

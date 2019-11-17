@@ -11,7 +11,7 @@ import java.util.Map;
 @CrossOrigin(origins = "*")
 @RestController
 public class RestRunner {
-    String api_key = "RGAPI-43bade9e-7354-4b2b-a1c0-0de3721cce0b";
+    String api_key = "RGAPI-333d8d12-7a39-40ee-baa4-f3b5fcd526e2";
     String pandaApi_key = "PSUfNuHCvA21YK-sRwiOKPQ1fK8JqFfZkzcjgcInP3yZ8dasKls";
     @Autowired
     RestTemplateBuilder restTemplateBuilder;

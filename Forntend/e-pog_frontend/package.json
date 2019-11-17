@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^15.0.0",
+    "@ckeditor/ckeditor5-react": "^1.1.3",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "antd": "^3.23.6",
@@ -21,7 +23,7 @@
     "next-images": "^1.2.0",
     "node-sass": "^4.12.0",
     "path": "^0.12.7",
-    "react": "^16.10.2",
+    "react": "^16.11.0",
     "react-dom": "^16.10.2"
   }
 }

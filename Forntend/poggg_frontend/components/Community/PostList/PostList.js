@@ -112,6 +112,7 @@ const PostList = () => {
                         color: #333;
                         font-family: Dotum,'돋움';
                     }
+                    
                     .post {
                         height: 37px;
                     }

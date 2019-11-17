@@ -30,3 +30,14 @@
     margin-top: .625rem;
     line-height: 2.5rem;
 }
+.LeagueSelector__more {
+    color: #fbfbfb;
+    transition: color .15s;
+    margin-top: .625rem;
+    line-height: 2.5rem;
+    float: right;
+    transition: color 150ms ease 0ms;
+}
+.LeagueSelector__more:hover {
+        color: #adb5bd;
+}

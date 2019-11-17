@@ -1,6 +1,25 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import TeamIntro from '../components/Home/TeamIntro';
+import Link from 'next/link';
+import axios from 'axios';
 const Community = () => {
+    useEffect(() => {
+        axios.get("http://192.168.137.1:8080/freeboard?pageNum=1&way=freeId")
+        .then(response => {
+            console.log(response.data)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+        axios.get("http://192.168.137.1:8080/freeBoardInfo?freeid=2")
+        .then(response => {
+            console.log(response.data)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
+    },[])
     return (
         <>
             <div className="LeagueTeams" style={{marginTop: "100px"}}>
@@ -65,7 +84,6 @@ const Community = () => {
                             <span className="TeamSymbol__acronym Gilroy">SB</span>
                         </figure>
                     </a>
-                        
                 </div>
             </div>
             <div className="Post_top">
@@ -115,15 +133,17 @@ const Community = () => {
                                 <td className="post_count post_item">512312</td>
                                 <td className="post_recommend post_item">122</td>
                             </tr>
-                            
                         </tbody>
                     </table>
             </div>
             <div className="Post_fotter">
-                <button type="button" className="tab_button">글쓰기</button>
+                <Link href="/editor"><div className="tab_button">글쓰기</div></Link>
             </div>
             <style jsx global>
                 {`
+                    .tip_list td {
+                        border-top: 1px solid #ced4da;
+                    }
                     .Post_top {
                         width: 1140px;
                         margin: 0 auto;
@@ -133,7 +153,9 @@ const Community = () => {
                         margin: 0 auto;
                         margin-top: 20px;
                     }
-                    .Post_fotter button {
+                    .Post_fotter  div{
+                        text-align: center;
+                        line-height: 30px;
                         background-color: #69db7c;
                         float: right;
                     }

@@ -136,8 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _AppLayout_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AppLayout.scss */ "./components/AppLayout/AppLayout.scss");
-/* harmony import */ var _AppLayout_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_AppLayout_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _AppLayout_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AppLayout.scss */ "./components/AppLayout/AppLayout.scss");
+/* harmony import */ var _AppLayout_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_AppLayout_scss__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\AppLayout\\AppLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -145,118 +147,159 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 const AppLayout = ({
   children
 }) => {
+  const {
+    0: userInfo,
+    1: setUserInfo
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({});
+  const {
+    0: isLogin,
+    1: setIsLogin
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+
+  const LogOut = () => {
+    localStorage.removeItem('token');
+    location.href = "/";
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    if (localStorage.getItem('token')) {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("http://192.168.137.1:8080/tokenRequest", {
+        token: localStorage.getItem('token')
+      }).then(response => {
+        setUserInfo({
+          password: response.data.password,
+          userid: response.data.userid,
+          username: response.data.username
+        });
+        setIsLogin(true);
+        console.log(userInfo);
+      }).catch(error => {
+        setIsLogin(false);
+        console.log(error);
+      });
+    }
+  }, []);
   return __jsx("div", {
     className: "jsx-3197201476",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx("div", {
     className: "jsx-3197201476" + " " + "LeagueBackground",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 34
     },
     __self: undefined
   }), __jsx("nav", {
     className: "jsx-3197201476" + " " + "Navigation",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 35
     },
     __self: undefined
   }, __jsx("div", {
     className: "jsx-3197201476" + " " + "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 36
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 37
     },
     __self: undefined
   }, __jsx("a", {
     className: "jsx-3197201476" + " " + "Menus__link Gilroy brand",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 37
     },
     __self: undefined
   }, "E-Pog.GG")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/highlights",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 38
     },
     __self: undefined
   }, __jsx("a", {
     className: "jsx-3197201476" + " " + "Menus__link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 38
     },
     __self: undefined
   }, "\uD558\uC774\uB77C\uC774\uD2B8")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/community",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx("a", {
     className: "jsx-3197201476" + " " + "Menus__link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 39
     },
     __self: undefined
-  }, "\uCEE4\uBBA4\uB2C8\uD2F0")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "\uD300 \uAC8C\uC2DC\uD310")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "http://localhost:3000",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx("a", {
     className: "jsx-3197201476" + " " + "Menus__link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 40
     },
     __self: undefined
-  }, "\uC804\uC801\uAC80\uC0C9")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "\uC804\uC801\uAC80\uC0C9")), isLogin ? __jsx("div", {
+    onClick: () => LogOut(),
+    className: "jsx-3197201476" + " " + "Menus__login float-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }, userInfo.username) : __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx("a", {
     className: "jsx-3197201476" + " " + "Menus__login float-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx("span", {
     className: "jsx-3197201476",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 45
     },
     __self: undefined
   }, "\uB85C\uADF8\uC778"))))), children, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "3197201476",
     __self: undefined
-  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcQXBwTGF5b3V0XFxBcHBMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JpQiIsImZpbGUiOiJEOlxcUmVhY3RQcm9qZWN0XFxqYXZhcHJvamVjdFxcbG9kLmdnXFxGb3JudGVuZFxcZS1wb2dfZnJvbnRlbmRcXGNvbXBvbmVudHNcXEFwcExheW91dFxcQXBwTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcclxuaW1wb3J0ICcuL0FwcExheW91dC5zY3NzJztcclxuY29uc3QgQXBwTGF5b3V0ID0gKHtjaGlsZHJlbn0pID0+IHtcclxuICAgIHJldHVybihcclxuICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIkxlYWd1ZUJhY2tncm91bmRcIj48L2Rpdj5cclxuICAgICAgICAgICAgPG5hdiBjbGFzc05hbWU9XCJOYXZpZ2F0aW9uXCI+XHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvXCI+PGEgY2xhc3NOYW1lPVwiTWVudXNfX2xpbmsgR2lscm95IGJyYW5kXCIgPkUtUG9nLkdHPC9hPjwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPVwiL2hpZ2hsaWdodHNcIj48YSBjbGFzc05hbWU9XCJNZW51c19fbGlua1wiID7tlZjsnbTrnbzsnbTtirg8L2E+PC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvY29tbXVuaXR5XCI+PGEgY2xhc3NOYW1lPVwiTWVudXNfX2xpbmtcIj7su6TrrqTri4jti7A8L2E+PC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCJodHRwOi8vbG9jYWxob3N0OjMwMDBcIj48YSBjbGFzc05hbWU9XCJNZW51c19fbGlua1wiPuyghOyggeqygOyDiTwvYT48L0xpbms+XHJcbiAgICAgICAgICAgICAgICAgICAgPExpbmsgIGhyZWY9XCIvbG9naW5cIj48YSBjbGFzc05hbWU9XCJNZW51c19fbG9naW4gZmxvYXQtcmlnaHRcIj48c3Bhbj7roZzqt7jsnbg8L3NwYW4+PC9hPjwvTGluaz5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L25hdj5cclxuICAgICAgICAgICAge2NoaWxkcmVufVxyXG4gICAgICAgICAgICA8c3R5bGUgZ2xvYmFsIGpzeD5cclxuICAgICAgICAgICAgICAgIHtgXHJcbiAgICAgICAgICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICBgfVxyXG4gICAgICAgICAgICA8L3N0eWxlPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBBcHBMYXlvdXQ7Il19 */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\AppLayout\\AppLayout.js */"));
+  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxSZWFjdFByb2plY3RcXGphdmFwcm9qZWN0XFxsb2QuZ2dcXEZvcm50ZW5kXFxlLXBvZ19mcm9udGVuZFxcY29tcG9uZW50c1xcQXBwTGF5b3V0XFxBcHBMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0RpQiIsImZpbGUiOiJEOlxcUmVhY3RQcm9qZWN0XFxqYXZhcHJvamVjdFxcbG9kLmdnXFxGb3JudGVuZFxcZS1wb2dfZnJvbnRlbmRcXGNvbXBvbmVudHNcXEFwcExheW91dFxcQXBwTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7dXNlU3RhdGUsIHVzZUVmZmVjdH0gZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xyXG5pbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xyXG5pbXBvcnQgJy4vQXBwTGF5b3V0LnNjc3MnO1xyXG5jb25zdCBBcHBMYXlvdXQgPSAoe2NoaWxkcmVufSkgPT4ge1xyXG4gICAgY29uc3QgW3VzZXJJbmZvLCBzZXRVc2VySW5mb10gPSB1c2VTdGF0ZSh7fSk7XHJcbiAgICBjb25zdCBbaXNMb2dpbiwgc2V0SXNMb2dpbl0gPSB1c2VTdGF0ZShmYWxzZSk7XHJcbiAgICBjb25zdCBMb2dPdXQgPSAoKSA9PiB7XHJcbiAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3Rva2VuJyk7XHJcbiAgICAgICAgbG9jYXRpb24uaHJlZiA9IFwiL1wiO1xyXG4gICAgfVxyXG4gICAgdXNlRWZmZWN0KCgpID0+IHtcclxuICAgICAgICBpZihsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKSkge1xyXG4gICAgICAgICAgICBheGlvcy5wb3N0KFwiaHR0cDovLzE5Mi4xNjguMTM3LjE6ODA4MC90b2tlblJlcXVlc3RcIiwge1xyXG4gICAgICAgICAgICAgICAgdG9rZW46IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd0b2tlbicpXHJcbiAgICAgICAgICAgIH0pXHJcbiAgICAgICAgICAgIC50aGVuKHJlc3BvbnNlID0+IHtcclxuICAgICAgICAgICAgICAgIHNldFVzZXJJbmZvKHtcclxuICAgICAgICAgICAgICAgICAgICBwYXNzd29yZDogcmVzcG9uc2UuZGF0YS5wYXNzd29yZCxcclxuICAgICAgICAgICAgICAgICAgICB1c2VyaWQ6IHJlc3BvbnNlLmRhdGEudXNlcmlkLFxyXG4gICAgICAgICAgICAgICAgICAgIHVzZXJuYW1lOiByZXNwb25zZS5kYXRhLnVzZXJuYW1lXHJcbiAgICAgICAgICAgICAgICB9KVxyXG4gICAgICAgICAgICAgICAgc2V0SXNMb2dpbih0cnVlKVxyXG4gICAgICAgICAgICAgICAgY29uc29sZS5sb2codXNlckluZm8pXHJcbiAgICAgICAgICAgIH0pXHJcbiAgICAgICAgICAgIC5jYXRjaChlcnJvciA9PiB7XHJcbiAgICAgICAgICAgICAgICBzZXRJc0xvZ2luKGZhbHNlKVxyXG4gICAgICAgICAgICAgICAgY29uc29sZS5sb2coZXJyb3IpXHJcbiAgICAgICAgICB9KVxyXG4gICAgICAgIH0gXHJcbiAgICB9LFtdKVxyXG4gICAgcmV0dXJuKFxyXG4gICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiTGVhZ3VlQmFja2dyb3VuZFwiPjwvZGl2PlxyXG4gICAgICAgICAgICA8bmF2IGNsYXNzTmFtZT1cIk5hdmlnYXRpb25cIj5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9cIj48YSBjbGFzc05hbWU9XCJNZW51c19fbGluayBHaWxyb3kgYnJhbmRcIiA+RS1Qb2cuR0c8L2E+PC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvaGlnaGxpZ2h0c1wiPjxhIGNsYXNzTmFtZT1cIk1lbnVzX19saW5rXCIgPu2VmOydtOudvOydtO2KuDwvYT48L0xpbms+XHJcbiAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9jb21tdW5pdHlcIj48YSBjbGFzc05hbWU9XCJNZW51c19fbGlua1wiPu2MgCDqsozsi5ztjJA8L2E+PC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCJodHRwOi8vbG9jYWxob3N0OjMwMDBcIj48YSBjbGFzc05hbWU9XCJNZW51c19fbGlua1wiPuyghOyggeqygOyDiTwvYT48L0xpbms+XHJcbiAgICAgICAgICAgICAgICAgICAge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBpc0xvZ2luID8gKFxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBvbkNsaWNrPXsoKSA9PiBMb2dPdXQoKX0gY2xhc3NOYW1lPVwiTWVudXNfX2xvZ2luIGZsb2F0LXJpZ2h0XCI+e3VzZXJJbmZvLnVzZXJuYW1lfTwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICApIDogKFxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPExpbmsgIGhyZWY9XCIvbG9naW5cIj48YSBjbGFzc05hbWU9XCJNZW51c19fbG9naW4gZmxvYXQtcmlnaHRcIj48c3Bhbj7roZzqt7jsnbg8L3NwYW4+PC9hPjwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgKVxyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L25hdj5cclxuICAgICAgICAgICAge2NoaWxkcmVufVxyXG4gICAgICAgICAgICA8c3R5bGUgZ2xvYmFsIGpzeD5cclxuICAgICAgICAgICAgICAgIHtgXHJcbiAgICAgICAgICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICBgfVxyXG4gICAgICAgICAgICA8L3N0eWxlPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBBcHBMYXlvdXQ7Il19 */\n/*@ sourceURL=D:\\ReactProject\\javaproject\\lod.gg\\Forntend\\e-pog_frontend\\components\\AppLayout\\AppLayout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AppLayout);
@@ -323,7 +366,7 @@ const LeagueSelector = () => {
     __self: undefined
   }, __jsx("img", {
     className: "TournamentSymbol__image",
-    src: "static/lck_image.png",
+    src: "https://qwer.gg/images/logos/LCK@gray.png",
     alt: "LCK 2019 Summer Season",
     __source: {
       fileName: _jsxFileName,
@@ -337,7 +380,47 @@ const LeagueSelector = () => {
       lineNumber: 11
     },
     __self: undefined
-  }, "LCK 2019 Summer")))));
+  }, "LCK 2019 Summer"), __jsx("div", {
+    className: "LeagueSelector__more",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, "\uB354 \uB9CE\uC740 \uB9AC\uADF8 \uBCF4\uAE30"), __jsx("svg", {
+    style: {
+      "width": ".625rem",
+      "height": "1rem",
+      "margin-left": ".625rem"
+    },
+    "aria-hidden": "true",
+    focusable: "false",
+    "data-prefix": "fas",
+    "data-icon": "angle-down",
+    class: "fa-angle-down fa-w-10 Icon svg-inline--fa LeagueSelector__more__icon",
+    role: "img",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 320 512",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, __jsx("path", {
+    fill: "currentColor",
+    d: "M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  })))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LeagueSelector);
@@ -483,7 +566,99 @@ const LiveStream = () => {
       lineNumber: 23
     },
     __self: undefined
-  }, "FOX Rush"))))))));
+  }, "FOX Rush")))), __jsx("div", {
+    className: "LiveStreams__streaming",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "https://www.twitch.tv/gengrich1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }, __jsx("img", {
+    className: "LiveStreams__streaming__thumbnail",
+    src: "https://static-cdn.jtvnw.net/previews-ttv/live_user_gengrich1-320x180.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "LiveStreams__streaming_player",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, __jsx("figure", {
+    className: "PlayerIcon LiveStreams__streaming__playerIcon small",
+    style: {
+      backgroundImage: "url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/4/40/GEN_Rich_2019_Split_2.png)"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "LiveStreams__streaming__playerName",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: undefined
+  }, "Gen Rich")))), __jsx("div", {
+    className: "LiveStreams__streaming",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "https://www.twitch.tv/c9sneaky",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, __jsx("img", {
+    className: "LiveStreams__streaming__thumbnail",
+    src: "https://static-cdn.jtvnw.net/previews-ttv/live_user_c9sneaky-320x180.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "LiveStreams__streaming_player",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, __jsx("figure", {
+    className: "PlayerIcon LiveStreams__streaming__playerIcon small",
+    style: {
+      backgroundImage: "url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/8/89/C9_Sneaky_2019_Split_1.png)"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "LiveStreams__streaming__playerName",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }, "C9 Sneaky"))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LiveStream);
@@ -883,7 +1058,7 @@ const TeamIntro = () => {
       lineNumber: 14
     },
     __self: undefined
-  })), "LEAGUE OF LEGENDS CHAMPIONS KOREA TEAMS"), __jsx("div", {
+  })), "2020 LCK TEAMS"), __jsx("div", {
     className: "LeagueTeams",
     __source: {
       fileName: _jsxFileName,
@@ -1107,7 +1282,7 @@ const TeamIntro = () => {
   }, __jsx("div", {
     className: "TeamSymbol__image",
     style: {
-      backgroundImage: "url(https://qwer.gg/images/logos/JAG.png)"
+      backgroundImage: "url(https://qwer.gg/images/logos/APK.png)"
     },
     __source: {
       fileName: _jsxFileName,
@@ -1121,7 +1296,7 @@ const TeamIntro = () => {
       lineNumber: 59
     },
     __self: undefined
-  }, "JAG"))), __jsx("a", {
+  }, "APK"))), __jsx("a", {
     className: "LeagueTeams__link",
     href: "#",
     __source: {

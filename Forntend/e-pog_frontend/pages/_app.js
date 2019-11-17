@@ -15,9 +15,6 @@ const EPogg = ({ Component }) => {
             </AppLayout>
             <style jsx global>
                 {`
-                    td {
-                        border-top: 1px solid #ced4da;
-                    }
                 `}
             </style>
         </>

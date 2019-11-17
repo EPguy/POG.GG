@@ -13,7 +13,7 @@ const TeamIntro = () => {
                                 <div className="Title__square small"></div>
                                 <div className="Title__square small"></div>
                             </div>
-                            LEAGUE OF LEGENDS CHAMPIONS KOREA TEAMS
+                            2020 LCK TEAMS
                         </h3>
                         <div className="LeagueTeams">
                             <div className="LeagueTeams__teams">
@@ -55,8 +55,8 @@ const TeamIntro = () => {
                                 </a>
                                 <a className="LeagueTeams__link" href="#">
                                     <figure className="TeamSymbol LeagueTeams__team large">
-                                        <div className="TeamSymbol__image" style={{backgroundImage: "url(https://qwer.gg/images/logos/JAG.png)"}}></div>
-                                        <span className="TeamSymbol__acronym Gilroy">JAG</span>
+                                        <div className="TeamSymbol__image" style={{backgroundImage: "url(https://qwer.gg/images/logos/APK.png)"}}></div>
+                                        <span className="TeamSymbol__acronym Gilroy">APK</span>
                                     </figure>
                                 </a>
                                 <a className="LeagueTeams__link" href="#">
