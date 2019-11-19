@@ -3,16 +3,15 @@ import Highlight from '../components/highlight/Highlight';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import Selector from '../components/highlight/Selector';
+import queryString from 'query-string';
 import './highlights.scss';
 const HighlightPage = () => {
-    const [highlightInfo, SetHighlightInfo] = useState([{
-        link: "https://www.youtube.com/watch?v=mwlJGfgOc78&list=PLKmnCtJnxa9NIoeHbfucgl_97WUiaNEer&index=24",
-        freeid: 1
-    }]);
+    const [highlightInfo, SetHighlightInfo] = useState([]);
     const router = useRouter();
-    const {category} = router.query;
     useEffect(() => {
-        axios.get("http://192.168.137.1:8080/tipboard", {
+        let {category} = router.query;
+        if(category === undefined) {category = 0;}
+        axios.get("http://192.168.137.1:8080/highlightboard", {
             params: {
                 pageNum: 1,
                 way: "voteCount",
@@ -25,7 +24,7 @@ const HighlightPage = () => {
         .catch(error => {
             console.log(error)
         })
-    })
+    },[router])
     const [modal2Visible,SetModal2Visible] = useState(false);
         return (
         <>
@@ -37,7 +36,7 @@ const HighlightPage = () => {
                     {
                         highlightInfo.map((v,i) => {
                             return (
-                                <Highlight freeid={v.freeid}/>
+                                <Highlight key={i}  videoInfo={v} freeid={v.freeid}/>
                             )
                         })
                     }

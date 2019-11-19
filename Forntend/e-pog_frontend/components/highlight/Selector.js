@@ -21,10 +21,10 @@ const Selector = ({modal2Visible, SetModal2Visible}) => {
                 </div>
                 <div className="Selector_underline"></div>
                 <div className="Selector_bottom">
-                    <div className="categori"><span><Link href="?category=0">전체</Link></span></div>
-                    <div className="categori"><span><Link href="?category=1">게임</Link></span></div>
-                    <div className="categori"><span><Link href="?category=2">유머</Link></span></div>
-                    <div className="categori"><span><Link href="?category=3">음악</Link></span></div>
+                    <div className="categori"><span><Link href={{ pathname: 'highlights', query: { category: 0 }}}><a>전체</a></Link></span></div>
+                    <div className="categori"><span><Link href={{ pathname: 'highlights', query: { category: 1 }}}><a>게임</a></Link></span></div>
+                    <div className="categori"><span><Link href={{ pathname: 'highlights', query: { category: 2 }}}><a>유머</a></Link></span></div>
+                    <div className="categori"><span><Link href={{ pathname: 'highlights', query: { category: 3 }}}><a>음악</a></Link></span></div>
                 </div>
             </div>
             <Modal
@@ -32,11 +32,13 @@ const Selector = ({modal2Visible, SetModal2Visible}) => {
                 centered
                 visible={modal2Visible}
                 onOk={() => {
-                    console.log(youtubeLink, category)
                     axios.post("http://192.168.137.1:8080/highlightboardWriteRequest", {
                         link: youtubeLink,
                         category: category,
-                        writer: userInfo.username
+                    }, {
+                        headers: {
+                            token: localStorage.getItem('token')
+                        }
                     })
                     SetModal2Visible(false)
                 }}
@@ -58,7 +60,7 @@ const Selector = ({modal2Visible, SetModal2Visible}) => {
                 >
                     <Option value="1">게임</Option>
                     <Option value="2">유머</Option>
-                    <Option value="music">음악</Option>
+                    <Option value="3">음악</Option>
                 </Select>
                 <p style={{"fontSize": "18px"}}>유튜브 링크</p>
                 <Input onChange={e => SetYoutubeLink(e.target.value)}/>

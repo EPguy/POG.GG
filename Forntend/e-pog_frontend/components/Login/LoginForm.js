@@ -17,7 +17,9 @@ const LoginForm = () => {
         }).then(response => {
             console.log(response)
         })
-        .catch(error => console.log(error))
+        .catch(error => {
+            alert(error)
+        })
     }
     const onSignInClick = () => {
         console.log(Email, Password)
@@ -28,7 +30,9 @@ const LoginForm = () => {
             localStorage.setItem('token', response.data.token);
             location.href = "/";
         })
-        .catch(error => console.log(error))
+        .catch(error => {
+            alert(error)
+        })
     }
     useEffect(() => {
         if(Email === '' || Password === '') {

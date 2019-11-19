@@ -11,8 +11,10 @@ const AppLayout = ({children}) => {
     }
     useEffect(() => {
         if(localStorage.getItem('token')) {
-            axios.post("http://192.168.137.1:8080/tokenRequest", {
-                token: localStorage.getItem('token')
+            axios.post("http://192.168.137.1:8080/tokenRequest", {}, {
+                headers: {
+                    token: localStorage.getItem('token')
+                }
             })
             .then(response => {
                 setUserInfo({

@@ -5,13 +5,8 @@ import moment from 'moment';
 import { white } from 'ansi-colors';
 import './Highlight.scss';
 
-const Highlight = ({freeid}) => {
+const Highlight = ({videoInfo, freeid}) => {
     console.log(freeid)
-    const [videoInfo, SetVideoInfo] = useState({
-        link: "https://www.youtube.com/watch?v=pS93UANDS-8&list=PLKmnCtJnxa9NIoeHbfucgl_97WUiaNEer&index=26",
-        commentCount: 0,
-        voteCount: 0
-    });
     const [showPreview, SetShowPreview] = useState('none');
     const [showComment, SetShowComment] = useState('none');
     const [commentInput, SetCommentInput] = useState('none');
@@ -21,19 +16,10 @@ const Highlight = ({freeid}) => {
     var matchs = videoInfo.link.match(regExp);
     useEffect(() => {
         axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${matchs[7]}&key=AIzaSyCHeNSQ55mXUVr5NgyOWWBTKhw2XjFT8tw&fields=items(snippet(title))&part=snippet`)
-        .then(response => SetVideoTitle(response.data.items[0].snippet.title))
+        .then(response => {SetVideoTitle(response.data.items[0].snippet.title)})
         //게시글 정보 불러오기
-        axios.get("http://192.168.137.1:8080/postInfo", {
-            params: {
-                freeid: freeid,
-                postType: 3
-            }
-        })
-        .then(response => {
-            SetVideoInfo(resposne.data)
-        })
-        .catch(error => console.log(error))
-    }, []);
+
+    }, [videoInfo]);
     const onClick = () => {
         if(showPreview === "none") {
             SetShowPreview('block');
@@ -78,6 +64,10 @@ const Highlight = ({freeid}) => {
         axios.post("http://192.168.137.1:8080/makeComment", {
             postType: 3,
             content: commentInput
+        }, {
+            headers: {
+                token: localStorage.getItem('token')
+            }
         })
     }
     return (
