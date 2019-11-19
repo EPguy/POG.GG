@@ -6,10 +6,11 @@ import { white } from 'ansi-colors';
 import './Highlight.scss';
 
 const Highlight = ({videoInfo, freeid}) => {
-    console.log(freeid)
+    console.log(videoInfo)
+    const [comment, SetComment] = useState([]);
     const [showPreview, SetShowPreview] = useState('none');
     const [showComment, SetShowComment] = useState('none');
-    const [commentInput, SetCommentInput] = useState('none');
+    const [commentInput, SetCommentInput] = useState('');
     const [videoTitle, SetVideoTitle] = useState('');
    
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
@@ -18,7 +19,6 @@ const Highlight = ({videoInfo, freeid}) => {
         axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${matchs[7]}&key=AIzaSyCHeNSQ55mXUVr5NgyOWWBTKhw2XjFT8tw&fields=items(snippet(title))&part=snippet`)
         .then(response => {SetVideoTitle(response.data.items[0].snippet.title)})
         //게시글 정보 불러오기
-
     }, [videoInfo]);
     const onClick = () => {
         if(showPreview === "none") {
@@ -28,6 +28,17 @@ const Highlight = ({videoInfo, freeid}) => {
         }
     }
     const onCommentClick = () => {
+        axios.get("http://192.168.137.1:8080/showByComment_id", {
+            params: {
+                freeId: videoInfo.freeId,
+                postType: 3
+            }
+        })
+        .then(response => {
+            console.log(response.data)
+            SetComment(response.data)
+        })
+
         if(showComment === "none") {
             SetShowComment('block');
         } else if(showComment === "block") {
@@ -35,12 +46,15 @@ const Highlight = ({videoInfo, freeid}) => {
         }
     }
     const onLikeButton = () => {
-        axios.post("http://192.168.137.1:8080/voteRequest", {
-            freeid: freeid,
-            voteCount: 1,
-            postType: 3
+        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+            params: {
+                freeId: videoInfo.freeId,
+                voteCount: 1,
+                postType: 3
+            }
         })
         .then(response => {
+            this.forceUpdate();
             alert("추천 완료!")
         })
         .catch(error => {
@@ -48,12 +62,15 @@ const Highlight = ({videoInfo, freeid}) => {
         })
     }
     const onDisLikeButton = () => {
-        axios.post("http://192.168.137.1:8080/voteRequest", {
-            freeid: freeid,
-            voteCount: -1,
-            postType: 3
+        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+            params: {
+                freeId: videoInfo.freeId,
+                voteCount: -1,
+                postType: 3
+            }
         })
         .then(response => {
+            
             alert("비추천 완료!")
         })
         .catch(error => {
@@ -62,12 +79,17 @@ const Highlight = ({videoInfo, freeid}) => {
     } 
     const postComment = () => {
         axios.post("http://192.168.137.1:8080/makeComment", {
+            freeId: videoInfo.freeId,
             postType: 3,
             content: commentInput
         }, {
             headers: {
                 token: localStorage.getItem('token')
             }
+        })
+        .then(response => {
+            SetCommentInput('')
+            SetComment(comment.concat(response.data))
         })
     }
     return (
@@ -79,7 +101,7 @@ const Highlight = ({videoInfo, freeid}) => {
                 <div className="article-list content">
                     <div className="article__title">
                         <a href={videoInfo.link}>
-                            <span>{videoTitle}</span>
+                            <span style={{"textAlign": "center"}}>{videoTitle}</span>
                         </a>
                     </div>
                     <div className="article__comment">
@@ -101,24 +123,32 @@ const Highlight = ({videoInfo, freeid}) => {
             <div className="comment" style={{display: showComment}}>
                 <div className="comment_inner">
                     <Input.Search
+                        value={commentInput}
                         placeholder="댓글을 입력해 주세요."
                         enterButton="입력"
                         onChange={e => SetCommentInput(e.target.value)}
                         onSearch={() => postComment()}
                     />
-                    <Comment
-                        author={<a style={{color: "#77D"}}>샌즈TV</a>}
-                        content={
-                        <p>
-                            샌즈보고싶다.
-                        </p>
-                        }
-                        datetime={
-                        <Tooltip title={moment().format('YYYY-MM-DD HH:mm:ss')}>
-                            <span>{moment().fromNow()}</span>
-                        </Tooltip>
-                        }
-                    />
+                    {
+                        comment && comment.map((v,i) => {
+                            return(
+                                <Comment
+                                    author={<a style={{color: "#77D"}}>{v.writer}</a>}
+                                    content={
+                                    <p>
+                                        {v.content}
+                                    </p>
+                                    }
+                                    datetime={
+                                    <Tooltip title={moment().format('YYYY-MM-DD HH:mm:ss')}>
+                                        <span>{v.reg_date}</span>
+                                    </Tooltip>
+                                    }
+                                />
+                            )
+                        })
+                    }
+                    
                 </div>
             </div>
             <style jsx>

@@ -40,6 +40,10 @@ const Selector = ({modal2Visible, SetModal2Visible}) => {
                             token: localStorage.getItem('token')
                         }
                     })
+                    .then(response => {
+                        alert("등록 완료!")
+                        location.href = "/highlights";
+                    })
                     SetModal2Visible(false)
                 }}
                 onCancel={() => SetModal2Visible(false)}
