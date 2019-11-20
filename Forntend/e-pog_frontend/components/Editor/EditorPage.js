@@ -1,31 +1,36 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
-class Editor extends React.Component {
-    state = { loading: true };
+import 'codemirror/lib/codemirror.css';
+import 'tui-editor/dist/tui-editor.min.css';
+import 'tui-editor/dist/tui-editor-contents.min.css';
+import { Editor } from '@toast-ui/react-editor'
 
-    componentDidMount() {
-        this.CKEditor = require("@ckeditor/ckeditor5-react");
-        this.ClassicEditor = require("@ckeditor/ckeditor5-build-classic");
-        this.setState({ loading: false });
-    }
-
-    render() {
-        return this.CKEditor ? (
-        <this.CKEditor
-            editor={this.ClassicEditor}
-            data="<p>Hello from CKEditor 5!</p>"
-            onInit={editor => {
-            console.log("Editor is ready to use!", editor);
-            }}
-            onChange={(event, editor) => {
-            const data = editor.getData();
-            console.log({ event, editor, data });
-            }}
-        />
-        ) : (
-        <div>Editor loading</div>
-        );
-    }
+const EditorPage = () => {
+    return (
+        <>
+            <Editor
+                initialValue="hello react editor world!"
+                previewStyle="vertical"
+                height="600px"
+                initialEditType="markdown"
+                useCommandShortcut={true}
+                exts={[
+                {
+                    name: 'chart',
+                    minWidth: 100,
+                    maxWidth: 600,
+                    minHeight: 100,
+                    maxHeight: 300
+                },
+                'scrollSync',
+                'colorSyntax',
+                'uml',
+                'mark',
+                'table'
+                ]}
+            />
+        </>
+    )
 }
 
-export default Editor;
+export default EditorPage;

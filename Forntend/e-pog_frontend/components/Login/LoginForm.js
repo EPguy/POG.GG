@@ -15,6 +15,7 @@ const LoginForm = () => {
             password: Password,
             username: Username
         }).then(response => {
+            alert('회원가입 완료')
             console.log(response)
         })
         .catch(error => {

@@ -9,6 +9,10 @@ const EPogg = ({ Component }) => {
             <Head>
                 <title>e-pog.gg</title>
                 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/antd/3.23.6/antd.css' />
+                <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet"/>
+                <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"/>
+                <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ko.js"/>
+
             </Head>
             <AppLayout>
                 <Component/>
