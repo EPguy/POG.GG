@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 import AppLayout from '../Component/AppLayout/AppLayout';    
 import Header from '../Component/Summoner/Header';
 import Tier from '../Component/Summoner/Tier';
 import Leagues from '../Component/Summoner/Leagues';
 import * as api from '../api/api';
+import loading_img from '../static/loading_img.gif';
 import './Summoner.css';
 import queryString from 'query-string';
 
 const Summoner = ({location}) => {
-    
     const [userinfo, setUserinfo] = useState('');
     const [leagueEntriesInfo, setLeagueEntriesfirst] = useState('');
     const [matchlist, setMatchlist] = useState('');
@@ -16,6 +16,7 @@ const Summoner = ({location}) => {
     const [loading, SetLoading] = useState(false);
     const query = queryString.parse(location.search);
     const {name} = query;
+
     useEffect(() => {
         const fetchUserinfo = async () => {
             const result = await api.getInfo(name)
@@ -51,7 +52,7 @@ const Summoner = ({location}) => {
         }
         fetchUserinfo();
         esportsMatch();
-    },[name])
+    },[name]);
     return (
         <div>   
             <AppLayout/>
@@ -67,7 +68,7 @@ const Summoner = ({location}) => {
                         </div>
                     </div>
                 </div>
-            </> : <div className="loading"><img alt="loading" src="./loading_img.gif"/></div>}
+            </> : <div className="loading"><img alt="loading" src={loading_img}/></div>}
         </div>
     );
 }

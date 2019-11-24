@@ -1,0 +1,71 @@
+
+.article {
+    border: 1px solid white;
+    width: 1140px;
+    margin: 100px auto 0px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.article-header {
+    padding: 24px 16px;
+    border-bottom: 1px solid #ebeef1;
+}
+.article-header .article__title {
+    line-height: 36px;
+    font-size: 24px;
+    color: #1e2022;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.article-header .article-meta {
+    margin-top: 9px;
+    line-height: 17px;
+    font-size: 14px;
+    color: #7b858e;
+}
+.article-meta {
+    line-height: 17px;
+    font-size: 14px;
+    color: #7b858e;
+}
+.article-meta .article-meta-list {
+    display: inline-block;
+}
+.article-meta .article-list-item-meta__item {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 14px;
+    color: #98a0a7;
+    padding-left: 8px;
+}
+.article-meta .article-list-item-meta__item > a > img {
+    width: 20px;
+    height: 20px;
+}
+.article-meta__item {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 8px;
+    padding-left: 9px;
+}
+.article-meta__item:first-child {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.article-meta__item--name span {
+    color: #c5cbd0;
+}
+.article-meta-list--right {
+    float: right;
+}
+.article-content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #1e2022;
+    word-wrap: break-word;
+    word-break: break-word;
+}
