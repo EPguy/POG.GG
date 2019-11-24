@@ -52,7 +52,7 @@ const TeamPost = ({location}) => {
         .catch(error  => console.log(error))
     })
     const onCommentLikeButton = (commentId) => {
-        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+        axios.patch("http://192.168.137.1:8080/ddabbong", {}, {
             params: {
                 comment_id: commentId
             }
@@ -65,7 +65,7 @@ const TeamPost = ({location}) => {
         })
     }
     const onCommentDisLikeButton = () => {
-        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+        axios.patch("http://192.168.137.1:8080/ddabbong", {}, {
             params: {
                 freeId: freeid,
                 voteCount: -1,
@@ -79,6 +79,36 @@ const TeamPost = ({location}) => {
             alert("에러!")
         })
     } 
+    const onPostLikeButton = () => {
+        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+            params: {
+                freeId: freeid,
+                voteCount: 1,
+                postType: 2 
+            }
+        })
+        .then(response => {
+            alert("추천 완료!")
+        })
+        .catch(error => {
+            alert("에러!")
+        })
+    }
+    const onPostDisLikeButton = () => {
+        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+            params: {
+                freeId: freeid,
+                voteCount: -1,
+                postType: 2
+            }
+        })
+        .then(response => {
+            alert("추천 완료!")
+        })
+        .catch(error => {
+            alert("에러!")
+        })
+    }
     return(
         <>
             <AppLayout/>
@@ -115,9 +145,9 @@ const TeamPost = ({location}) => {
                 <div className="postVote">
                     <div className="article-vote">
                         <button className="article-vote__button button">
-                            <span className="article-vote__up-arrow">추천</span>
+                            <span className="article-vote__up-arrow" onClick={() => onPostLikeButton()}>추천</span>
                             <span className="article-vote__count">{postInfo.voteCount}</span>
-                            <span className="article-vote__down-arrow">비추천</span>
+                            <span className="article-vote__down-arrow" onClick={() => onPostDisLikeButton()}>비추천</span>
                         </button>
                     </div>
                 </div>
