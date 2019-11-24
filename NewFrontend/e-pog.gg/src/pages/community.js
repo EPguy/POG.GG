@@ -102,8 +102,7 @@ const Community = ({location}) => {
             </div>
             <div className="Post_top">
                 <div className="array_tab">
-                    <button type="button" className="tab_button on">전체글</button>
-                    <button type="button" className="tab_button">인기글</button>
+                    <button type="button" className="tab_button on">인기글</button>
                 </div>
             </div>
             <div className="Post_bottom">

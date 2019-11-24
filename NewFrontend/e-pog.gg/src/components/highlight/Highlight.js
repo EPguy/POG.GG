@@ -4,7 +4,8 @@ import axios from 'axios';
 import moment from 'moment';
 import { white } from 'ansi-colors';
 import './Highlight.css';
-
+import upImg from '../../static/up.svg';
+import downImg from '../../static/down.svg';
 const Highlight = ({videoInfo, freeid}) => {
     console.log(videoInfo)
     const [comment, SetComment] = useState([]);
@@ -110,9 +111,9 @@ const Highlight = ({videoInfo, freeid}) => {
                     </div>
                 </div>
                 <div className="article-list raiting">
-                    <img style={{marginBottom: "5px"}} onClick={()=>onLikeButton()} src="/static/up.svg"/>
+                    <img style={{marginBottom: "5px"}} onClick={()=>onLikeButton()} src={upImg}/>
                     <div className="vote">{videoInfo.voteCount}</div>
-                    <img onClick={()=>onDisLikeButton()} src="/static/down.svg"/>
+                    <img onClick={()=>onDisLikeButton()} src={downImg}/>
                 </div>
             </div>
             <div className="preview" style={{display: showPreview}}>

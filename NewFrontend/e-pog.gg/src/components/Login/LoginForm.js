@@ -57,7 +57,7 @@ const LoginForm = () => {
                                         <input class="member-input__box" onChange={(e) => SetEmail(e.target.value)} value={Email} type="text" placeholder="Email"/>
                                     </div>
                                     <div className="member-input__state">
-                                        <input class="member-input__box"  id="password-input" onChange={(e) => SetPassword(e.target.value)} value={Password} type="tel" placeholder="Password"/>
+                                        <input class="member-input__box"  id="password-input" onChange={(e) => SetPassword(e.target.value)} value={Password} type="password" placeholder="Password"/>
                                     </div>
                                     <button onClick={() => onSignInClick()} type="button" class="member-button login__btn" disabled={Disabled}>
                                         LOGIN
