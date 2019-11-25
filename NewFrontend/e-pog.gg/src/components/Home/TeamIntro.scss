@@ -48,23 +48,19 @@
 .LeagueTeams__team {
     text-align: center;
     background-color: #fff;
-    width: 4.6875rem!important;
-    height: 4.6875rem!important;
-    &:hover {
-        width:6rem;
-        height:6rem;
-    }
+    width: 4.6875rem;
+    height: 4.6875rem;
+    transition: transform 0.5s;
 }
 .LeagueTeams__team:hover {
-    -webkit-animation:team   0.3s ease 1;
-    -webkit-animation-fill-mode:both
+    transform: scale(1.2, 1.2);
 }
 @-webkit-keyframes team{
     0%{
         -webkit-transform: scale(1.0, 1.0)
     }
     100%{
-        -webkit-transform: scale(1.1, 1.1)
+        -webkit-transform: scale(1.2, 1.2)
     }
 }
 .TeamSymbol {

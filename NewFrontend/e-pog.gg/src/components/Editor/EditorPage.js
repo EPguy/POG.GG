@@ -22,6 +22,8 @@ const EditorPage = () => {
             }
         })
         .then(response => {
+            alert('작성완료!')
+            window.location = "/community";
             console.log(response)
         })
     }
@@ -55,17 +57,17 @@ const EditorPage = () => {
     return (
         <>
             <div class="editor_tools">
-                <Select className="editor_select" defaultValue="skt" onChange={setEditorTeam}>
-                    <Option value="af"><img class="option_img" src="https://qwer.gg/images/logos/AF.png"/></Option>
-                    <Option value="dwg"><img class="option_img" src="https://qwer.gg/images/logos/DWG.png"/></Option>
-                    <Option value="gen"><img class="option_img" src="https://qwer.gg/images/logos/GEN.png"/></Option>
-                    <Option value="grf"><img class="option_img" src="https://qwer.gg/images/logos/GRF.png"/></Option>
-                    <Option value="hle"><img class="option_img" src="https://qwer.gg/images/logos/HLE.png"/></Option>
-                    <Option value="skt"><img class="option_img" src="https://qwer.gg/images/logos/SKT.png"/></Option>
-                    <Option value="apk"><img class="option_img" src="https://qwer.gg/images/logos/APK.png"/></Option>
-                    <Option value="kt"><img class="option_img" src="https://qwer.gg/images/logos/KT.png"/></Option>
-                    <Option value="kz"><img class="option_img" src="https://qwer.gg/images/logos/KZ.png"/></Option>
-                    <Option value="sb"><img class="option_img" src="https://qwer.gg/images/logos/SB.png"/></Option>
+                <Select className="editor_select" defaultValue="SKT" onChange={setEditorTeam}>
+                    <Option value="AF"><img class="option_img" src="https://qwer.gg/images/logos/AF.png"/></Option>
+                    <Option value="DWG"><img class="option_img" src="https://qwer.gg/images/logos/DWG.png"/></Option>
+                    <Option value="GEN"><img class="option_img" src="https://qwer.gg/images/logos/GEN.png"/></Option>
+                    <Option value="GRF"><img class="option_img" src="https://qwer.gg/images/logos/GRF.png"/></Option>
+                    <Option value="HLE"><img class="option_img" src="https://qwer.gg/images/logos/HLE.png"/></Option>
+                    <Option value="SKT"><img class="option_img" src="https://qwer.gg/images/logos/SKT.png"/></Option>
+                    <Option value="APK"><img class="option_img" src="https://qwer.gg/images/logos/APK.png"/></Option>
+                    <Option value="KT"><img class="option_img" src="https://qwer.gg/images/logos/KT.png"/></Option>
+                    <Option value="KZ"><img class="option_img" src="https://qwer.gg/images/logos/KZ.png"/></Option>
+                    <Option value="SB"><img class="option_img" src="https://qwer.gg/images/logos/SB.png"/></Option>
                 </Select>
                 <Button onClick={() => onClick()} type="primary" size="large">
                     글쓰기

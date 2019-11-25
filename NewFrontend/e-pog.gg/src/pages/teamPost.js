@@ -10,47 +10,59 @@ const { Title } = Typography;
 const TeamPost = ({location}) => {
     const query = queryString.parse(location.search);
     let {freeid} = query;
+    const [userInfo, setUserInfo] = useState({});
     const [postInfo, setPostInfo] = useState({});
     const [postComment, setPostComment] = useState('');
-    const [commentArray, setCommentArray] = useState([
-        {
-            recomended: 1,
-            regData: "7시간 전",
-            content: "hi",
-            writer: "노농좋아"
-        }
-    ]);
+    const [commentArray, setCommentArray] = useState([]);
     const onCommentChange = useCallback((e) => {
         setPostComment(e.target.value);
     },[])
-    const commentPost = () => {
-        axios.post("http://192.168.137.1:8080/makeComment", {
-            postType: 2,
-            content: postComment
-        }, {
-            headers: localStorage.getItem('token')
-        })
-        .then(response => setCommentArray(commentArray.concat(response.data)))
-        .catch(error => console.log(error))
-    }
     useEffect(() => {
-        axios.get("http://192.168.137.1:8080/showByRecommended", {
-            params: {
-                freeId: freeid,
-                postType: 2
-            }
-        })
-        .then(response => setCommentArray(response.data))
-        .catch(error => console.log(error))
         axios.get("http://192.168.137.1:8080/postInfo", {
             params: {
                 freeId: freeid,
                 postType: 2
             }
         })
-        .then(response => setPostInfo(response.data))
+        .then(response => {
+            console.log(response.data.board)
+            setPostInfo(response.data.board)
+        })
         .catch(error  => console.log(error))
-    })
+        axios.get("http://192.168.137.1:8080/showByComment_id", {
+            params: {
+                freeId: freeid,
+                postType: 2
+            }
+        })
+        .then(response => {
+            setCommentArray(response.data)
+        })
+        .catch(error => console.log(error))
+        axios.get("http://192.168.137.1:8080/tokenRequest", {
+            params: {
+                freeId: freeid,
+                postType: 2
+            }
+        })
+    },[])
+    const commentPost = () => {
+        axios.post("http://192.168.137.1:8080/makeComment", {
+            freeId: freeid,
+            postType: 2,
+            content: postComment
+        }, {
+            headers: {
+                token: localStorage.getItem('token')
+            }
+        })
+        .then(response => {
+            console.log(response.data)
+            setCommentArray(commentArray.concat(response.data))
+        })
+        .catch(error => console.log(error))
+        setPostComment('');
+    }
     const onCommentLikeButton = (commentId) => {
         axios.patch("http://192.168.137.1:8080/ddabbong", {}, {
             params: {
@@ -163,7 +175,7 @@ const TeamPost = ({location}) => {
                     </div>
                     <div className="comment-write">
                         <div className="comment-write-inner">
-                            <div className="comment-write__name">노농좋아</div>
+                            <div className="comment-write__name">{postInfo.writer}</div>
                             <div className="comment-write__content">
                                 <textarea value={postComment} onChange={(e) => onCommentChange(e)}/>
                             </div>
@@ -189,13 +201,14 @@ const TeamPost = ({location}) => {
                         </div>
                         <div className="comment-list">
                             {
-                                commentArray.map((v,i) => {
+                                commentArray && commentArray.map((v,i) => {
+                                    console.log(v)
                                     return (
-                                        <div className="comment-l">
+                                        <div key={i} className="comment-l">
                                             <div className="comment_body">
                                                 <div className="comment-vote">
                                                     <button className="comment-vote__up" onClick={() => onCommentLikeButton(v.commentId)}></button>
-                                                    <div className="comment-vote__count">{v.recomended}</div>
+                                                    <div className="comment-vote__count">{v.recommended}</div>
                                                     <button className="comment-vote__down" onClick={() => onCommentDisLikeButton(v.commentId)}></button>
                                                 </div>
                                                 <div className="comment-meta">

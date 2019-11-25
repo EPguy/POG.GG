@@ -58,6 +58,9 @@
     font-family: Dotum,'돋움';
 }
 .post {
+    background-color: #ced4da;
+    color: black; 
+    cursor: pointer;
     height: 37px;
 }
 .post_item {
@@ -68,4 +71,7 @@
     margin: 0 auto;
     width: 30px;
     height: 30px;
+}
+.post:nth-child(2n-1) {
+    background-color: #e9ecef;
 }

@@ -15,6 +15,14 @@ const Community = ({location}) => {
         LocalDateTime: "13323123",
         viewCount: 10,
         voteCount: 20
+    },{
+        teamName: "AF",
+        freeId: 1,
+        title: "안녕2",
+        writer: "작성자",
+        LocalDateTime: "13323123",
+        viewCount: 10,
+        voteCount: 20
     }]);
     useEffect(() => {
         const query = queryString.parse(location.search);
@@ -130,8 +138,8 @@ const Community = ({location}) => {
                         <tbody style={{fontSize: "13px"}}>
                             {
                                 postList.map((v,i) => (
-                                    <tr className="post" onClick={() => document.location.href=`/teamPost?freeid=${v.freeId}`} style={{backgroundColor: "#dee2e6", color: "black", cursor: "pointer"}} key={i}>
-                                            <td className="post_champ post_item">{v.teamName}</td>
+                                    <tr className="post" onClick={() => document.location.href=`/teamPost?freeid=${v.freeId}`} style={{}} key={i}>
+                                            <td className="post_champ post_item"><img src={`https://qwer.gg/images/logos/{v.teamName}.png`}/></td>
                                             <td className="post_num post_item">{v.freeId}</td>
                                             <td style={{textAlign: "center"}}className="post_title">{v.title}</td>
                                             <td className="post_writer post_item">{v.writer}</td>
