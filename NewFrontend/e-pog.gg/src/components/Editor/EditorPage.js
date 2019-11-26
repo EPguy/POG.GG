@@ -12,8 +12,13 @@ const EditorPage = () => {
     const [editorTitle, setEditorTtitle] = useState('');
     const [editorTeam, setEditorTeam] = useState('skt');
     const onClick = () => {
+        console.log(editorInput)
         axios.post(`http://192.168.137.1:8080/teamboardWriteRequest`,{
-            content: editorInput,
+            blob: new Blob([editorInput],{
+                type: 'text/html',
+                endings: 'native'
+            }),
+            content: '',
             title: editorTitle,
             teamName: editorTeam
         },{    

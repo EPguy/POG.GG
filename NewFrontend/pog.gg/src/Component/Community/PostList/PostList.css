@@ -8,7 +8,7 @@
     margin-top: 20px;
 }
 .Post_fotter button {
-    background-color: #69db7c;
+    background-color: #14a52c;
     float: right;
 }
 .array_tab {
@@ -53,6 +53,7 @@
 }
 
 .post {
+    cursor: pointer;
     height: 37px;
 }
 .post_item {

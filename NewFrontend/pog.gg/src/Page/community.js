@@ -2,12 +2,12 @@ import React from 'react';
 import AppLayout from '../Component/AppLayout/AppLayout';
 import CharBox from '../Component/Community/CharBox/CharBox';
 import PostList from '../Component/Community/PostList/PostList';
-const Community = () => {
+const Community = ({location}) => {
     return (
         <>
             <AppLayout/>
             <CharBox/>
-            <PostList/>
+            <PostList location={location}/>
         </>
     );
 }

@@ -1,11 +1,9 @@
 import React, {useEffect, useCallback, useState} from 'react';
-import AppLayout from '../components/AppLayout/AppLayout';
+import AppLayout from '../Component/AppLayout/AppLayout';
 import { Typography } from 'antd';
 import queryString from 'query-string';
 import axios from 'axios';
-import $ from 'jquery';
 import './teamPost.css';
-window.jQuery = window.$ = $;
 const { Title } = Typography;
 
 const TeamPost = ({location}) => {
@@ -22,7 +20,7 @@ const TeamPost = ({location}) => {
         axios.get("http://192.168.137.1:8080/postInfo", {
             params: {
                 freeId: freeid,
-                postType: 2
+                postType: 1
             }
         })
         .then(response => {
@@ -33,7 +31,7 @@ const TeamPost = ({location}) => {
         axios.get("http://192.168.137.1:8080/showByRecommended", {
             params: {
                 freeId: freeid,
-                postType: 2
+                postType: 1
             }
         })
         .then(response => {
@@ -43,14 +41,14 @@ const TeamPost = ({location}) => {
         axios.get("http://192.168.137.1:8080/tokenRequest", {
             params: {
                 freeId: freeid,
-                postType: 2
+                postType: 1
             }
         })
     },[])
     const commentPost = () => {
         axios.post("http://192.168.137.1:8080/makeComment", {
             freeId: freeid,
-            postType: 2,
+            postType: 1,
             content: postComment
         }, {
             headers: {
@@ -98,7 +96,7 @@ const TeamPost = ({location}) => {
             params: {
                 freeId: freeid,
                 voteCount: 1,
-                postType: 2 
+                postType: 1 
             }
         })
         .then(response => {
@@ -114,7 +112,7 @@ const TeamPost = ({location}) => {
             params: {
                 freeId: freeid,
                 voteCount: -1,
-                postType: 2
+                postType: 1
             }
         })
         .then(response => {
@@ -177,7 +175,7 @@ const TeamPost = ({location}) => {
                     <div className="article-meta">
                         <div className="article-meta-list">
                             <div className="article-list-item-meta__item">
-                                <a href="#"><img src={`https://qwer.gg/images/logos/${postInfo.teamName}.png`}/></a>
+                                <a href="#"><img src={`https://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/${postInfo.champion}.png`}/></a>
                             </div>
                             <div className="article-meta__item">
                                 <span>{getTimestamp(postInfo.date)}</span>
@@ -246,7 +244,7 @@ const TeamPost = ({location}) => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="comment-list">
+                        <div className="comment-list" style={{marginBottom: "30px"}}>
                             {
                                 commentArray && commentArray.map((v,i) => {
                                     return (

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './AppLayout.css';
+import { white } from 'ansi-colors';
 
 const AppLayout = ({ children }) => {
     const [username, setUsername] = useState('');
@@ -22,7 +23,7 @@ const AppLayout = ({ children }) => {
                             <li style={{backgroundColor:"#313641"}}>
                                 <a style={{margin: "0 auto"}} href="#">
                                     <img src="https://poro.gg/images/family/ico_lol.png"/>
-                                    <span>리그오브레전드</span>
+                                    <span style={{fontSize: "12px"}}>리그오브레전드</span>
                                 </a>
                             </li>
                         </ul>
@@ -31,7 +32,7 @@ const AppLayout = ({ children }) => {
             </header>
             <div class="sub-items">
                 <div class="sub-items-top">
-                        <div class="sub-items-top-logo"><h1>POG.GG</h1></div>
+                        <div class="sub-items-top-logo"><h1 style={{color: "#fff"}}>POG.GG</h1></div>
                         <div class="sub-items-top-input">
                             <input value={username} onKeyPress={onEnterClick} onChange={(e) => setUsername(e.target.value)} placeholder="챔피언, 소환사명 검색"/>
                             <button onClick={(e) => onClick(e)}><i className="fas fa-search"></i></button>

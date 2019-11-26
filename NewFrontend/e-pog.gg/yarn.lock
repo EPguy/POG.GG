@@ -6084,6 +6084,11 @@ jest@24.9.0:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
 
+jquery@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
+
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
@@ -10032,6 +10037,11 @@ stylehacks@^4.0.0:
     browserslist "^4.0.0"
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
+
+suneditor@^2.21.2:
+  version "2.21.2"
+  resolved "https://registry.yarnpkg.com/suneditor/-/suneditor-2.21.2.tgz#dd56a7b08a16008610915680c8a46eb2b2fa4b60"
+  integrity sha512-yioh+VgG7+2zMrGBw6a2K5Yzh1t4w45sNm8cIByJMz1IR89+jDJLpDlDITuErnRS20cTDjchZ7TXs5dN3OG5iw==
 
 supports-color@^2.0.0:
   version "2.0.0"
