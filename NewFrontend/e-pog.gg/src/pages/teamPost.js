@@ -40,11 +40,14 @@ const TeamPost = ({location}) => {
             setCommentArray(response.data)
         })
         .catch(error => console.log(error))
-        axios.get("http://192.168.137.1:8080/tokenRequest", {
-            params: {
-                freeId: freeid,
-                postType: 2
+        axios.post("http://192.168.137.1:8080/tokenRequest",{}, {
+            headers: {
+                token: localStorage.getItem('token')
             }
+        })
+        .then(response => {
+            console.log(response.data)
+            setUserInfo(response.data)
         })
     },[])
     const commentPost = () => {
@@ -58,7 +61,7 @@ const TeamPost = ({location}) => {
             }
         })
         .then(response => {
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
         })
         .catch(error => console.log(error))
         setPostComment('');
@@ -72,7 +75,7 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
@@ -87,7 +90,7 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("비추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `http://192.168.137.221:300/1teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
@@ -103,7 +106,7 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
@@ -119,7 +122,7 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
@@ -222,7 +225,7 @@ const TeamPost = ({location}) => {
                     </div>
                     <div className="comment-write">
                         <div className="comment-write-inner">
-                            <div className="comment-write__name">{postInfo.writer}</div>
+                            <div className="comment-write__name">{userInfo.username}</div>
                             <div className="comment-write__content">
                                 <textarea value={postComment} onChange={(e) => onCommentChange(e)}/>
                             </div>

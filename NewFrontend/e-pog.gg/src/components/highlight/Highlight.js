@@ -20,7 +20,7 @@ const Highlight = ({videoInfo, freeid}) => {
         axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${matchs[7]}&key=AIzaSyCHeNSQ55mXUVr5NgyOWWBTKhw2XjFT8tw&fields=items(snippet(title))&part=snippet`)
         .then(response => {SetVideoTitle(response.data.items[0].snippet.title)})
         //게시글 정보 불러오기
-    }, [videoInfo]);
+    }, []);
     const onClick = () => {
         if(showPreview === "none") {
             SetShowPreview('block');
@@ -55,7 +55,6 @@ const Highlight = ({videoInfo, freeid}) => {
             }
         })
         .then(response => {
-            this.forceUpdate();
             alert("추천 완료!")
         })
         .catch(error => {
@@ -90,8 +89,49 @@ const Highlight = ({videoInfo, freeid}) => {
         })
         .then(response => {
             SetCommentInput('')
-            SetComment(comment.concat(response.data))
+            SetComment([response.data, ...comment])
+            //comment.concat(response.data)
         })
+    }
+    const getTimestamp = (ts) => {
+        let returnData = "";
+        var writeDay = new Date(ts);
+        var nowtimestamp = new Date().getTime();
+        var now = new Date(nowtimestamp);
+
+        var minus;
+        if(now.getFullYear() > writeDay.getFullYear()){
+            minus= now.getFullYear()-writeDay.getFullYear();
+            returnData = minus+"년 전";
+        }else if(now.getMonth() > writeDay.getMonth()){
+            minus= now.getMonth()-writeDay.getMonth();
+            returnData =minus+"달 전";
+        }else if(now.getDate() > writeDay.getDate()){
+            minus= now.getDate()-writeDay.getDate();
+            returnData = minus+"일 전";
+        }else if(now.getDate() == writeDay.getDate()){
+            var nowTime = now.getTime();
+            var writeTime = writeDay.getTime();
+
+            if(nowTime>writeTime){
+                let sec = parseInt(nowTime - writeTime) / 1000;
+                let day  = parseInt(sec/60/60/24);
+                sec = (sec - (day * 60 * 60 * 24));
+                let hour = parseInt(sec/60/60);
+                sec = (sec - (hour*60*60));
+                let min = parseInt(sec/60);
+                sec = parseInt(sec-(min*60));
+
+                if(hour>0){
+                    returnData = hour+"시간 전";
+                }else if(min>0){
+                    returnData = min+"분 전";
+                }else if(sec>0){
+                    returnData = sec+"초 전";
+                }
+            }
+        }
+        return returnData;
     }
     return (
         <> 
@@ -142,14 +182,13 @@ const Highlight = ({videoInfo, freeid}) => {
                                     }
                                     datetime={
                                     <Tooltip title={moment().format('YYYY-MM-DD HH:mm:ss')}>
-                                        <span>{v.reg_date}</span>
+                                        <span>{getTimestamp(v.reg_date)}</span>
                                     </Tooltip>
                                     }
                                 />
                             )
                         })
                     }
-                    
                 </div>
             </div>
             <style jsx>

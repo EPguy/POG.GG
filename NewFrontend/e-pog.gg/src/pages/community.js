@@ -7,23 +7,7 @@ import axios from 'axios';
 import './community.css';
 
 const Community = ({location}) => {
-    const [postList, setPostList] = useState([{
-        teamName: "AF",
-        freeId: 1,
-        title: "안녕",
-        writer: "작성자",
-        LocalDateTime: "13323123",
-        viewCount: 10,
-        voteCount: 20
-    },{
-        teamName: "AF",
-        freeId: 1,
-        title: "안녕2",
-        writer: "작성자",
-        LocalDateTime: "13323123",
-        viewCount: 10,
-        voteCount: 20
-    }]);
+    const [postList, setPostList] = useState([]);
     useEffect(() => {
         const query = queryString.parse(location.search);
         let {team} = query;
@@ -39,7 +23,7 @@ const Community = ({location}) => {
         .then(response => {
             console.log(response.data)
             setPostList(response.data)
-        })
+        })  
     },[])
     const getTimestamp = (ts) => {
         let returnData = "";

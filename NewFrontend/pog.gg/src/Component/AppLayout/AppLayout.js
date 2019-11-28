@@ -1,10 +1,39 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './AppLayout.css';
 import { white } from 'ansi-colors';
+import axios from 'axios';
 
 const AppLayout = ({ children }) => {
     const [username, setUsername] = useState('');
+    const [userInfo, setUserInfo] = useState({});
+    const [isLogin, setIsLogin] = useState(false);
+    const LogOut = () => {
+        localStorage.removeItem('token');
+        window.location = "/";
+    }
+    useEffect(() => {
+        if(localStorage.getItem('token')) {
+            axios.post("http://192.168.137.1:8080/tokenRequest", {}, {
+                headers: {
+                    token: localStorage.getItem('token')
+                }
+            })
+            .then(response => {
+                setUserInfo({
+                    password: response.data.password,
+                    userid: response.data.userid,
+                    username: response.data.username
+                })
+                setIsLogin(true)
+                console.log(userInfo)
+            })
+            .catch(error => {
+                setIsLogin(false)
+                console.log(error)
+          })
+        } 
+    },[])
     const onClick = (e) => {
         e.preventDefault();
         window.location = 'http://localhost:3000/summoner?name='+username;
@@ -26,6 +55,13 @@ const AppLayout = ({ children }) => {
                                     <span style={{fontSize: "12px"}}>리그오브레전드</span>
                                 </a>
                             </li>
+                            {
+                                isLogin ? (
+                                    <div onClick={() => LogOut()} className="Menus__login float-right">{userInfo.username}</div>
+                                ) : (
+                                    <Link to="/login"><div className="Menus__login float-right"><span>로그인</span></div></Link>
+                                )
+                            }
                         </ul>
                     </div>
                 </div>

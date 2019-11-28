@@ -38,11 +38,13 @@ const TeamPost = ({location}) => {
             setCommentArray(response.data)
         })
         .catch(error => console.log(error))
-        axios.get("http://192.168.137.1:8080/tokenRequest", {
-            params: {
-                freeId: freeid,
-                postType: 1
+        axios.post("http://192.168.137.1:8080/tokenRequest",{}, {
+            headers: {
+                token: localStorage.getItem('token')
             }
+        })
+        .then(response => {
+            setUserInfo(response.data)
         })
     },[])
     const commentPost = () => {
@@ -220,7 +222,7 @@ const TeamPost = ({location}) => {
                     </div>
                     <div className="comment-write">
                         <div className="comment-write-inner">
-                            <div className="comment-write__name">{postInfo.writer}</div>
+                            <div className="comment-write__name">{userInfo.username}</div>
                             <div className="comment-write__content">
                                 <textarea value={postComment} onChange={(e) => onCommentChange(e)}/>
                             </div>

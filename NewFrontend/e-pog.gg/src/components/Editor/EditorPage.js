@@ -14,11 +14,7 @@ const EditorPage = () => {
     const onClick = () => {
         console.log(editorInput)
         axios.post(`http://192.168.137.1:8080/teamboardWriteRequest`,{
-            blob: new Blob([editorInput],{
-                type: 'text/html',
-                endings: 'native'
-            }),
-            content: '',
+            content: editorInput,
             title: editorTitle,
             teamName: editorTeam
         },{    

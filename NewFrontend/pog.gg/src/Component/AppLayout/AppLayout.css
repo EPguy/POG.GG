@@ -23,7 +23,7 @@ a {
 }
 .site-item {
     float: left;
-    width: 800px;
+    width: 1300px;
     height: 40px;
 }
 .site-item ul li span{
@@ -31,16 +31,21 @@ a {
     color: #c0daf1;
 }
 .header-items ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
 }
 .header-items ul li{
-    padding: 0 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     width:  120px;
 }
 .header-items ul li:first-child{
     padding-left: 0px;
-    padding-right: 16px;
+
 }
 .header-items ul li:active{
     background-color: #313641;
@@ -134,4 +139,15 @@ a {
     width: 1050px;
     margin: 0 auto;
     line-height: 40px;  
+}
+.Menus__login {
+    font-size: .75px;
+    font-size: .75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    cursor: pointer;
+    height: 2rem;
+    border: 1px solid #01d1b2;
+    color: #01d1b2;
+    padding-top: .4rem;
 }
