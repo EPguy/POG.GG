@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import * as api from '../../api/api';
 import logo from '../../static/logo.png';
 import './LoginForm.scss';
 const LoginForm = () => {
@@ -11,7 +12,7 @@ const LoginForm = () => {
     const [isLogin, SetIsLogin] = useState(true);
     const onJoinClick = () => {
         console.log(Email, Password, Username)
-        axios.post("http://192.168.137.1:8080/joinRequest", {
+        axios.post(`${api.ServerAddress}/joinRequest`, {
             userid: Email,
             password: Password,
             username: Username
@@ -25,7 +26,7 @@ const LoginForm = () => {
     }
     const onSignInClick = () => {
         console.log(Email, Password)
-        axios.post("http://192.168.137.1:8080/loginRequest", {
+        axios.post(`${api.ServerAddress}/loginRequest`, {
             userid: Email,
             password: Password,
         }).then(response => {

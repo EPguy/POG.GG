@@ -75,6 +75,7 @@
     margin: 0 auto;
 }
 .comment-wrap {
+    padding-bottom: 10px;
     border-radius: 10px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -109,7 +110,7 @@
 .comment-sort__item {
     float: left;
 }
-.comment-sort__item.active button{
+.comment-sort__item.true button{
     color: #16ae81;
     border-color: #46cfa7;
 }

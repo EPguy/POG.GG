@@ -5,6 +5,7 @@ import plugins from 'suneditor/src/plugins'
 import './EditorPage.css';
 import {Select, Button, Input} from 'antd';
 import axios from 'axios';
+import * as api from '../api/api';
 import AppLayout from '../Component/AppLayout/AppLayout';
 import CharBox from '../Component/Community/CharBox/CharBox';
 const { Option } = Select;
@@ -15,7 +16,7 @@ const EditorPage = () => {
     const [editorChamp, setEditorChamp] = useState('Aatrox');
     const onClick = () => {
         console.log(editorInput, editorChamp, editorTitle)
-        axios.post(`http://192.168.137.1:8080/tipboardWriteRequest`,{
+        axios.post(`${api.ServerAddress}/tipboardWriteRequest`,{
             content: editorInput,
             title: editorTitle,
             champion: editorChamp

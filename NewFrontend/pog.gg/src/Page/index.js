@@ -7,7 +7,7 @@ const Home = () => {
     const [username, setUsername] = useState('');
     const onClick = (e) => {
         e.preventDefault();
-        window.location = 'http://localhost:3000/summoner?name='+username;
+        window.location = `${api.LocalAddress}/summoner?name=`+username;
     }
     const onEnterClick = (e) => {
         if(e.charCode == 13){

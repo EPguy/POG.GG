@@ -3,15 +3,15 @@
     height: 220px;
 }
 .Summoner_Info {
-    width: 400px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .Summoner_Header_Wrapper {
     display: flex;
     align-items: center;
-    width: 1200px;
+    justify-content: space-between;
+    width: 1020px;
     margin: 0 auto; 
     height:100%;
 }
@@ -60,4 +60,7 @@
 }
 .Summoner_Prefer {
     width: 650px;   
+}
+.sub-items-top-input input {
+    color: black;
 }

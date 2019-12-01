@@ -12,7 +12,7 @@
 }
 .Selector_container {
     width: 980px;
-    margin: 0 auto;
+    margin: auto;
 }
 .upload-button {
     float: left;
@@ -33,6 +33,7 @@
 }
 .Selector_underline {
     width: 980px;
+    height: 2px;
     border-bottom: 1px solid #fbfbfb;
     opacity: .2;
 }

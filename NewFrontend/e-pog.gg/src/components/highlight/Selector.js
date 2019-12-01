@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Modal} from 'antd';
 import {Link}  from 'react-router-dom';
 import { Input, Select } from 'antd';
+import * as api from '../../api/api';
 import axios from 'axios';
 import './Selector.css';
 
@@ -21,10 +22,10 @@ const Selector = ({modal2Visible, SetModal2Visible}) => {
                 </div>
                 <div className="Selector_underline"></div>
                 <div className="Selector_bottom">
-                    <div className="categori"><span><Link to="/highlights?category=0"><a>전체</a></Link></span></div>
-                    <div className="categori"><span><Link to="/highlights?category=1"><a>게임</a></Link></span></div>
-                    <div className="categori"><span><Link to="/highlights?category=2"><a>유머</a></Link></span></div>
-                    <div className="categori"><span><Link to="/highlights?category=3"><a>음악</a></Link></span></div>
+                    <a href="/highlights?category=0"><div className="categori"><span>전체</span></div></a>
+                    <a href="/highlights?category=1"><div className="categori"><span>게임</span></div></a>
+                    <a href="/highlights?category=2"><div className="categori"><span>유머</span></div></a>
+                    <a href="/highlights?category=3"><div className="categori"><span>음악</span></div></a>
                 </div>
             </div>
             <Modal
@@ -32,7 +33,7 @@ const Selector = ({modal2Visible, SetModal2Visible}) => {
                 centered
                 visible={modal2Visible}
                 onOk={() => {
-                    axios.post("http://192.168.137.1:8080/highlightboardWriteRequest", {
+                    axios.post(`${api.ServerAddress}/highlightboardWriteRequest`, {
                         link: youtubeLink,
                         category: category,
                     }, {

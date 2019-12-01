@@ -4,6 +4,7 @@ import { Typography } from 'antd';
 import queryString from 'query-string';
 import axios from 'axios';
 import './teamPost.css';
+import * as api from '../api/api';
 const { Title } = Typography;
 
 const TeamPost = ({location}) => {
@@ -17,7 +18,7 @@ const TeamPost = ({location}) => {
         setPostComment(e.target.value);
     },[])
     useEffect(() => {
-        axios.get("http://192.168.137.1:8080/postInfo", {
+        axios.get(`${api.ServerAddress}/postInfo`, {
             params: {
                 freeId: freeid,
                 postType: 1
@@ -28,7 +29,7 @@ const TeamPost = ({location}) => {
             setPostInfo(response.data.board)
         })
         .catch(error  => console.log(error))
-        axios.get("http://192.168.137.1:8080/showByRecommended", {
+        axios.get(`${api.ServerAddress}/showByRecommended`, {
             params: {
                 freeId: freeid,
                 postType: 1
@@ -38,7 +39,7 @@ const TeamPost = ({location}) => {
             setCommentArray(response.data)
         })
         .catch(error => console.log(error))
-        axios.post("http://192.168.137.1:8080/tokenRequest",{}, {
+        axios.post(`${api.ServerAddress}/tokenRequest`,{}, {
             headers: {
                 token: localStorage.getItem('token')
             }
@@ -48,7 +49,7 @@ const TeamPost = ({location}) => {
         })
     },[])
     const commentPost = () => {
-        axios.post("http://192.168.137.1:8080/makeComment", {
+        axios.post(`${api.ServerAddress}/makeComment`, {
             freeId: freeid,
             postType: 1,
             content: postComment
@@ -58,13 +59,13 @@ const TeamPost = ({location}) => {
             }
         })
         .then(response => {
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `${api.LocalAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => console.log(error))
         setPostComment('');
     }
     const onCommentLikeButton = (commentId) => {
-        axios.patch("http://192.168.137.1:8080/ddabbong", {}, {
+        axios.patch(`${api.ServerAddress}/ddabbong`, {}, {
             params: {
                 comment_id: commentId,
                 voteCount: 1
@@ -72,14 +73,14 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `${api.LocalAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
         })
     }
     const onCommentDisLikeButton = (commentId) => {
-        axios.patch("http://192.168.137.1:8080/ddabbong", {}, {
+        axios.patch(`${api.ServerAddress}/ddabbong`, {}, {
             params: {
                 comment_id: commentId,
                 voteCount: -1
@@ -87,14 +88,14 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("비추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `${api.LocalAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
         })
     } 
     const onPostLikeButton = () => {
-        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+        axios.patch(`${api.ServerAddress}/voteRequest`, {}, {
             params: {
                 freeId: freeid,
                 voteCount: 1,
@@ -103,14 +104,14 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `${api.LocalAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
         })
     }
     const onPostDisLikeButton = () => {
-        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+        axios.patch(`${api.LocalAddress}/voteRequest`, {}, {
             params: {
                 freeId: freeid,
                 voteCount: -1,
@@ -119,7 +120,7 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://localhost:3000/teamPost?freeid=${freeid}`
+            window.location = `${api.LocalAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")

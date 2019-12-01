@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './AppLayout.css';
+import * as api from '../../api/api';
 import { white } from 'ansi-colors';
 import axios from 'axios';
 
@@ -14,7 +15,7 @@ const AppLayout = ({ children }) => {
     }
     useEffect(() => {
         if(localStorage.getItem('token')) {
-            axios.post("http://192.168.137.1:8080/tokenRequest", {}, {
+            axios.post(`${api.ServerAddress}/tokenRequest`, {}, {
                 headers: {
                     token: localStorage.getItem('token')
                 }
@@ -36,7 +37,7 @@ const AppLayout = ({ children }) => {
     },[])
     const onClick = (e) => {
         e.preventDefault();
-        window.location = 'http://localhost:3000/summoner?name='+username;
+        window.location = `${api.LocalAddress}/summoner?name=`+username;
     }
     const onEnterClick = (e) => {
         if(e.charCode == 13){
@@ -78,7 +79,7 @@ const AppLayout = ({ children }) => {
                     <div class="sub-items-list">
                         <ul>
                             <li><a href="/">홈</a></li>
-                            <li><a href="http://localhost:3001/">e스포츠</a></li>
+                            <li><a href={`${api.OtherAddress}`}>e스포츠</a></li>
                             <li><a href="/community">팁 게시판</a></li>
                         </ul>
                     </div>

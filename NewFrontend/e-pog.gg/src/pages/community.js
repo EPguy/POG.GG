@@ -3,6 +3,7 @@ import TeamIntro from '../components/Home/TeamIntro';
 import AppLayout from '../components/AppLayout/AppLayout';
 import {Link}  from 'react-router-dom';
 import queryString from 'query-string';
+import * as api from '../api/api';
 import axios from 'axios';
 import './community.css';
 
@@ -13,7 +14,7 @@ const Community = ({location}) => {
         let {team} = query;
         if(team === undefined) {team = "all";}
         console.log(team)
-        axios.get("http://192.168.137.1:8080/teamboard",{
+        axios.get(`${api.ServerAddress}/teamboard`,{
             params: {
                 teamName: team,
                 pageNum: 1,
@@ -25,46 +26,27 @@ const Community = ({location}) => {
             setPostList(response.data)
         })  
     },[])
-    const getTimestamp = (ts) => {
-        let returnData = "";
-        var writeDay = new Date(ts);
-        var nowtimestamp = new Date().getTime();
-        var now = new Date(nowtimestamp);
+    function getTimestamp(dt) {
+		var min = 60 * 1000;
+		var c = new Date()
+		var d = new Date(dt);
+		var minsAgo = Math.floor((c - d) / (min));
 
-        var minus;
-        if(now.getFullYear() > writeDay.getFullYear()){
-            minus= now.getFullYear()-writeDay.getFullYear();
-            returnData = minus+"년 전";
-        }else if(now.getMonth() > writeDay.getMonth()){
-            minus= now.getMonth()-writeDay.getMonth();
-            returnData =minus+"달 전";
-        }else if(now.getDate() > writeDay.getDate()){
-            minus= now.getDate()-writeDay.getDate();
-            returnData = minus+"일 전";
-        }else if(now.getDate() == writeDay.getDate()){
-            var nowTime = now.getTime();
-            var writeTime = writeDay.getTime();
+		var result = {
+			'raw': d.getFullYear() + '-' + (d.getMonth() + 1 > 9 ? '' : '0') + (d.getMonth() + 1) + '-' + (d.getDate() > 9 ? '' : '0') +  d.getDate() + ' ' + (d.getHours() > 9 ? '' : '0') +  d.getHours() + ':' + (d.getMinutes() > 9 ? '' : '0') +  d.getMinutes() + ':'  + (d.getSeconds() > 9 ? '' : '0') +  d.getSeconds(),
+			'formatted': '',
+		};
 
-            if(nowTime>writeTime){
-                let sec = parseInt(nowTime - writeTime) / 1000;
-                let day  = parseInt(sec/60/60/24);
-                sec = (sec - (day * 60 * 60 * 24));
-                let hour = parseInt(sec/60/60);
-                sec = (sec - (hour*60*60));
-                let min = parseInt(sec/60);
-                sec = parseInt(sec-(min*60));
+		if (minsAgo < 60) { // 1시간 내
+			result.formatted = minsAgo + '분 전';
+		} else if (minsAgo < 60 * 24) { // 하루 내
+			result.formatted = Math.floor(minsAgo / 60) + '시간 전';
+		} else { // 하루 이상
+			result.formatted = Math.floor(minsAgo / 60 / 24) + '일 전';
+		};
 
-                if(hour>0){
-                    returnData = hour+"시간 전";
-                }else if(min>0){
-                    returnData = min+"분 전";
-                }else if(sec>0){
-                    returnData = sec+"초 전";
-                }
-            }
-        }
-        return returnData;
-    }
+		return result.formatted;
+	};
     return (
         <>
             <AppLayout/>

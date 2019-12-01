@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import * as api from '../../api/api';
 import './AppLayout.css';
 const AppLayout = ({location}) => {
     const [userInfo, setUserInfo] = useState({});
@@ -11,7 +12,7 @@ const AppLayout = ({location}) => {
     }
     useEffect(() => {
         if(localStorage.getItem('token')) {
-            axios.post("http://192.168.137.1:8080/tokenRequest", {}, {
+            axios.post(`${api.ServerAddress}/tokenRequest`, {}, {
                 headers: {
                     token: localStorage.getItem('token')
                 }

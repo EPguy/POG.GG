@@ -4,14 +4,16 @@ import axios from 'axios';
 import Selector from '../components/highlight/Selector';
 import AppLayout from '../components/AppLayout/AppLayout';
 import queryString from 'query-string';
+import * as api from '../api/api';
 import './highlights.css';
 const HighlightPage = ({location}) => {
     const [highlightInfo, SetHighlightInfo] = useState([]);
+    const [modal2Visible,SetModal2Visible] = useState(false);
     const query = queryString.parse(location.search);
     useEffect(() => {
         let {category} = query;
         if(category === undefined) {category = 0;}
-        axios.get("http://192.168.137.1:8080/highlightboard", {
+        axios.get(`${api.ServerAddress}/highlightboard`, {
             params: {
                 pageNum: 1,
                 way: "voteCount",
@@ -19,28 +21,28 @@ const HighlightPage = ({location}) => {
             }
         })
         .then(response => {
+            console.log(response.data)
             SetHighlightInfo(response.data);
         })
         .catch(error => {
             console.log(error)
         })
-    },[query])
-    const [modal2Visible,SetModal2Visible] = useState(false);
+    },[])
         return (
         <>
             <AppLayout/>
             <div className="Home">
-                <div className="container" style={{marginBottom: "20px"}}>
-                    <Selector modal2Visible={modal2Visible} SetModal2Visible={SetModal2Visible}/>
-                </div>
-                <div className="container">
-                    {
-                        highlightInfo.map((v,i) => {
-                            return (
-                                <Highlight key={i}  videoInfo={v} freeid={v.freeid}/>
-                            )
-                        })
-                    }
+                    <div style={{marginTop:"30px"}} className="container">
+                        <Selector modal2Visible={modal2Visible} SetModal2Visible={SetModal2Visible}/>
+                    </div>
+                    <div className="container">
+                        {
+                            highlightInfo.map((v,i) => {
+                                return (
+                                    <Highlight key={i}  videoInfo={v} freeid={v.freeid}/>
+                                )
+                            })
+                        }
                 </div>
             </div>
         </>

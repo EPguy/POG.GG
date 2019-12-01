@@ -4,6 +4,7 @@ import SUNEDITOR from 'suneditor'
 import plugins from 'suneditor/src/plugins'
 import './EditorPage.css';
 import {Select, Button, Input } from 'antd';
+import * as api from '../../api/api';
 import axios from 'axios';
 const { Option } = Select;
 
@@ -13,7 +14,7 @@ const EditorPage = () => {
     const [editorTeam, setEditorTeam] = useState('skt');
     const onClick = () => {
         console.log(editorInput)
-        axios.post(`http://192.168.137.1:8080/teamboardWriteRequest`,{
+        axios.post(`${api.ServerAddress}/teamboardWriteRequest`,{
             content: editorInput,
             title: editorTitle,
             teamName: editorTeam

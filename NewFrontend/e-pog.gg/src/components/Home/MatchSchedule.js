@@ -33,6 +33,46 @@ const MatchSchedule = () => {
         })
         .catch(error => console.log(error))
     },[])
+    const getTimestamp = (ts) => {
+        let returnData = "";
+        var writeDay = new Date(ts);
+        var nowtimestamp = new Date().getTime();
+        var now = new Date(nowtimestamp);
+
+        var minus;
+        if(now.getFullYear() > writeDay.getFullYear()){
+            minus= now.getFullYear()-writeDay.getFullYear();
+            returnData = minus+"년 전";
+        }else if(now.getMonth() > writeDay.getMonth()){
+            minus= now.getMonth()-writeDay.getMonth();
+            returnData =minus+"달 전";
+        }else if(now.getDate() > writeDay.getDate()){
+            minus= now.getDate()-writeDay.getDate();
+            returnData = minus+"일 전";
+        }else if(now.getDate() == writeDay.getDate()){
+            var nowTime = now.getTime();
+            var writeTime = writeDay.getTime();
+
+            if(nowTime>writeTime){
+                let sec = parseInt(nowTime - writeTime) / 1000;
+                let day  = parseInt(sec/60/60/24);
+                sec = (sec - (day * 60 * 60 * 24));
+                let hour = parseInt(sec/60/60);
+                sec = (sec - (hour*60*60));
+                let min = parseInt(sec/60);
+                sec = parseInt(sec-(min*60));
+
+                if(hour>0){
+                    returnData = hour+"시간 전";
+                }else if(min>0){
+                    returnData = min+"분 전";
+                }else if(sec>0){
+                    returnData = sec+"초 전";
+                }
+            }
+        }
+        return returnData;
+    }
     return (
         <>
             <div className="FluidContainer container-fluid">
@@ -57,7 +97,7 @@ const MatchSchedule = () => {
                                         <li>
                                             <a className="MatchBar" href="#">
                                                 <div className="MatchBar__column date Gilroy finished">
-                                                    {v.end_at}
+                                                    {getTimestamp(v.end_at)}
                                                     <br/>
                                                 </div>
                                                 <div className="MatchBar__column home">
@@ -80,7 +120,7 @@ const MatchSchedule = () => {
                                                     </div>
                                                 
                                                 <div className="MatchBar__column arrow Gilroy">
-                                                    DETAIL
+                                                    
                                                 </div>
                                             </a>
                                         </li>

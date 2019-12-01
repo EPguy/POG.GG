@@ -4,6 +4,7 @@ import { Typography } from 'antd';
 import queryString from 'query-string';
 import axios from 'axios';
 import $ from 'jquery';
+import * as api from '../api/api';
 import './teamPost.css';
 window.jQuery = window.$ = $;
 const { Title } = Typography;
@@ -12,14 +13,16 @@ const TeamPost = ({location}) => {
     const query = queryString.parse(location.search);
     let {freeid} = query;
     const [userInfo, setUserInfo] = useState({});
+    const [isRecommended, setIsRecommeded] = useState(true);
     const [postInfo, setPostInfo] = useState({});
     const [postComment, setPostComment] = useState('');
-    const [commentArray, setCommentArray] = useState([]);
+    const [commentRecommendedArray, setCommentRecommendedArray] = useState([]);
+    const [commentTimeArray, setCommentTimeArray] = useState([]);
     const onCommentChange = useCallback((e) => {
         setPostComment(e.target.value);
     },[])
     useEffect(() => {
-        axios.get("http://192.168.137.1:8080/postInfo", {
+        axios.get(`${api.ServerAddress}/postInfo`, {
             params: {
                 freeId: freeid,
                 postType: 2
@@ -30,17 +33,32 @@ const TeamPost = ({location}) => {
             setPostInfo(response.data.board)
         })
         .catch(error  => console.log(error))
-        axios.get("http://192.168.137.1:8080/showByRecommended", {
+        axios.get(`${api.ServerAddress}/showByRecommended`, {
             params: {
                 freeId: freeid,
                 postType: 2
             }
         })
         .then(response => {
-            setCommentArray(response.data)
+            setCommentRecommendedArray(response.data)
         })
         .catch(error => console.log(error))
-        axios.post("http://192.168.137.1:8080/tokenRequest",{}, {
+        axios.post(`${api.ServerAddress}/tokenRequest`,{}, {
+            headers: {
+                token: localStorage.getItem('token')
+            }
+        })
+        axios.get(`${api.ServerAddress}/showByComment_id`, {
+            params: {
+                freeId: freeid,
+                postType: 2
+            }
+        })
+        .then(response => {
+            setCommentTimeArray(response.data)
+        })
+        .catch(error => console.log(error))
+        axios.post(`${api.ServerAddress}/tokenRequest`,{}, {
             headers: {
                 token: localStorage.getItem('token')
             }
@@ -51,7 +69,7 @@ const TeamPost = ({location}) => {
         })
     },[])
     const commentPost = () => {
-        axios.post("http://192.168.137.1:8080/makeComment", {
+        axios.post(`${api.ServerAddress}/makeComment`, {
             freeId: freeid,
             postType: 2,
             content: postComment
@@ -61,13 +79,13 @@ const TeamPost = ({location}) => {
             }
         })
         .then(response => {
-            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
+            window.location = `${api.OtherAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => console.log(error))
         setPostComment('');
     }
     const onCommentLikeButton = (commentId) => {
-        axios.patch("http://192.168.137.1:8080/ddabbong", {}, {
+        axios.patch(`${api.ServerAddress}/ddabbong`, {}, {
             params: {
                 comment_id: commentId,
                 voteCount: 1
@@ -75,14 +93,14 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
+            window.location = `${api.OtherAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
         })
     }
     const onCommentDisLikeButton = (commentId) => {
-        axios.patch("http://192.168.137.1:8080/ddabbong", {}, {
+        axios.patch(`${api.ServerAddress}/ddabbong`, {}, {
             params: {
                 comment_id: commentId,
                 voteCount: -1
@@ -90,14 +108,14 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("비추천 완료!")
-            window.location = `http://192.168.137.221:300/1teamPost?freeid=${freeid}`
+            window.location = `${api.LocalAddress}/1teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
         })
     } 
     const onPostLikeButton = () => {
-        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+        axios.patch(`${api.ServerAddress}/voteRequest`, {}, {
             params: {
                 freeId: freeid,
                 voteCount: 1,
@@ -106,14 +124,14 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
+            window.location = `${api.OtherAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
         })
     }
     const onPostDisLikeButton = () => {
-        axios.patch("http://192.168.137.1:8080/voteRequest", {}, {
+        axios.patch(`${api.ServerAddress}/voteRequest`, {}, {
             params: {
                 freeId: freeid,
                 voteCount: -1,
@@ -122,11 +140,14 @@ const TeamPost = ({location}) => {
         })
         .then(response => {
             alert("추천 완료!")
-            window.location = `http://192.168.137.221:3001/teamPost?freeid=${freeid}`
+            window.location = `${api.OtherAddress}/teamPost?freeid=${freeid}`
         })
         .catch(error => {
             alert("에러!")
         })
+    }
+    const changeMode = () => {
+        setIsRecommeded(!isRecommended)
     }
     const getTimestamp = (ts) => {
         let returnData = "";
@@ -241,17 +262,18 @@ const TeamPost = ({location}) => {
                     <div className="comment-bottom">
                         <div className="comment-sort">
                             <ul className="comment-sort__list">
-                                <li className="comment-sort__item active">
-                                    <button>인기순</button>
+                                <li className={`comment-sort__item ${isRecommended}`}>
+                                    <button onClick={changeMode}>인기순</button>
                                 </li>
-                                <li className="comment-sort__item">
-                                    <button>최신순</button>
+                                <li className={`comment-sort__item ${!isRecommended}`}>
+                                    <button onClick={changeMode}>최신순</button>
                                 </li>
                             </ul>
                         </div>
                         <div className="comment-list">
                             {
-                                commentArray && commentArray.map((v,i) => {
+                                isRecommended ? (
+                                commentRecommendedArray && commentRecommendedArray.map((v,i) => {
                                     return (
                                         <div key={i} className="comment-l">
                                             <div className="comment_body">
@@ -282,7 +304,40 @@ const TeamPost = ({location}) => {
                                         </div>
                                     )
                                 })
-                            }
+                                ) : (
+                                commentTimeArray && commentTimeArray.map((v,i) => {
+                                    return (
+                                        <div key={i} className="comment-l">
+                                            <div className="comment_body">
+                                                <div className="comment-vote">
+                                                    <button className="comment-vote__up" onClick={() => onCommentLikeButton(v.comment_id)}></button>
+                                                    <div className="comment-vote__count">{v.recommended}</div>
+                                                    <button className="comment-vote__down" onClick={() => onCommentDisLikeButton(v.comment_id)}></button>
+                                                </div>
+                                                <div className="comment-meta">
+                                                    <span className="comment__name">
+                                                        <span>{v.writer}</span>
+                                                    </span>
+                                                    <span className="comment__date">
+                                                        {getTimestamp(v.reg_date)}
+                                                    </span>
+                                                </div>
+                                                <div className="comment-content">
+                                                    <div className="comment-content">
+                                                        <div>
+                                                            <p>{v.content}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="comment-button">
+                                                    <button className="comment-button__item"><img src="https://talk.op.gg/images/icon-reply@2x.png"/>답글쓰기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                
+                                })
+                            )}
                         </div>
                     </div>
                 </div>
